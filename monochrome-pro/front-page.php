@@ -46,8 +46,15 @@ function monochrome_front_page_genesis_meta() {
 function monochrome_enqueue_front_script_styles() {
 
 	wp_enqueue_script( 'monochrome-front-script', get_stylesheet_directory_uri() . '/js/front-page.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_style( 'monochrome-front-styles', get_stylesheet_directory_uri() . '/style-front.css' );
 
+    /* Version the CSS so that it is forced to refresh and break the cache */
+    $parent_style = 'monochrome-front-styles';
+    wp_enqueue_style($parent_style, get_template_directory_uri() . "/style-front.css");
+    wp_enqueue_style('child-style',
+      get_stylesheet_directory_uri() . "/style-front.css",
+      array($parent_style),
+      wp_get_theme()->get('Version')
+    );
 }
 
 // Add front-page body class.
@@ -96,7 +103,7 @@ function monochrome_front_page_widgets() {
 	) );
 
 	genesis_widget_area( 'front-page-7', array(
-		'before' => '<div class="front-page-7 solid-section blue"><div class="flexible-widgets widget-area fadeup-effect' . monochrome_widget_area_class( 'front-page-7' ) . '"><div class="wrap">',
+		'before' => '<div class="front-page-7 solid-section"><div class="flexible-widgets widget-area fadeup-effect' . monochrome_widget_area_class( 'front-page-7' ) . '"><div class="wrap">',
 		'after'  => '</div></div></div>',
 	) );
 
