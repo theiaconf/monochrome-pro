@@ -573,6 +573,7 @@ button.sub-menu-toggle:hover {
 	display: inline-block;
 	margin-bottom: 15px;
 	margin-top: 5px;
+	text-transform: uppercase;
 }
 
 .button.large {
@@ -2415,6 +2416,19 @@ overflow:hidden;}
 .end-events {height:8rem;}
 
 span.event-categories {font-weight:700;}
+
+/**
+ * Specific elements for theme
+ */
+/**
+ * Sponsors
+ */
+.sponsor_cards_small {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
