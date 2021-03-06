@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: https://www.studiopress.com/
 
-	Version: 1.1.1
+	Version: 1.1.2.1
 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, e-commerce, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -571,13 +571,13 @@ button.sub-menu-toggle:hover {
 
 .button {
 	display: inline-block;
-	margin-bottom: 15px;
-	margin-top: 5px;
+	margin-bottom: 1.5rem;
+	margin-top: 0.5rem;
 	text-transform: uppercase;
+	border: 1px solid rgb(0, 0, 0);
 }
 
 .button.large {
-	font-size: 14px;
 	font-size: 1.4rem;
 }
 
@@ -2423,11 +2423,276 @@ span.event-categories {font-weight:700;}
 /**
  * Sponsors
  */
+ .sponsor_cards {}
+
+.sponsor_card {
+	padding: 10px 10px 20px 10px;
+	width: 250px;
+	box-shadow: 0 2px 4px 0 rgba(92, 87, 85, .33);
+	border-radius: 5px;
+  text-align: center;
+}
+
+.sponsor_card:hover {
+	box-shadow: 0 2px 4px 0 rgba(92, 87, 85, .66);
+	/**
+	 * Fade in border over 1s 
+	 */
+}
+
+.sponsor_cards, 
+.sponsor_cards_small {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.sponsor_card {
+	width: 200px;
+	margin: 0 2.5rem 2.5rem 0;
+	padding: 0 0 2rem 0;
+	
+}
+
+.sponsor_card-name {
+	font-size: 80%;
+}
+
+.sponsor_card-name a {
+	text-decoration: none;
+}
+
+.sponsor_card-name a:hover {
+	text-decoration: underline;
+}
+
+.sponsor_card-logo {
+	background: rgb(245, 245, 245);
+	margin: 1rem;
+	padding: 1rem;
+	height: 107px;
+	border-radius: 0.5rem;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sponsor_card-logo img {
+	max-height: 82px;
+	width: auto;
+}
+
+.sponsor_card-tier {
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 75%;
+	margin-bottom: 10px;
+}
+
+.sponsor_card_small {
+    width: 120px;
+	height: 120px;
+	box-shadow: 0 2px 4px 0 rgba(92, 87, 85, .33);
+	border-radius: 5px;
+    text-align: center;
+	justify-content: center;
+	
+	margin-right: 10px;
+}
+
+.sponsor_card_small-logo {
+	margin: 1rem;
+	padding: 1rem;
+	height: 10rem;
+	border-radius: 5px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sponsor_card_small img {
+	max-height: 65px;
+	width: auto;
+}
+
+.sponsorship_benefits {
+  width: 280px;
+	margin: 25px 25px 0 0;
+	padding: 25px;
+	box-shadow: 0 2px 4px 0 rgba(92, 87, 85, .33);
+	border-radius: 5px;
+	font-size: 80%;
+}
+
+.sponsorship_benefits h3 {
+	color: rgb(255, 106, 57);
+}
+
+.sponsorship_benefits hr {
+	height: 2px;
+	background: rgb(255, 106, 57);
+	border: 0;
+	width: 50px;
+	margin-bottom: 25px;
+}
+
+.sponsorship_benefits ul {
+	margin-left: 1em;
+}
+
+.sponsorship_benefits li {
+}
+
 .sponsor_cards_small {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.sponsor_packages {
+	max-width: 85rem;
+	font-size: 1.4rem;
+}
+
+.sponsor_packages thead th {
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(230, 117, 72);
+	color: rgb(255, 255, 255);
+	width: 18%;
+	min-width: 8rem;
+	max-width: 18rem;
+}
+
+.sponsor_packages thead th:first-of-type {
+	width: 27%;
+	min-width: 12rem;
+	max-width: 27rem;
+}
+
+.sponsor_packages tbody tr {}
+
+.sponsor_packages tr:nth-of-type(2n) {
+	background: rgb(249, 227, 217);
+}
+
+.sponsor_packages tbody td {
+	border: 0;
+	padding: 1.5em 0.5em;
+}
+
+/* Session details */
+.session-conference {
+	font-weight: bold;
+}
+
+.session-speaker-image {
+	text-align: center;
+}
+
+.session-transcription-full_text {
+	height: 20em;
+	overflow: scroll;
+}
+
+.session-video iframe {
+  width: 90%;
+}
+
+.session-speaker_bio {
+	margin-bottom: 0.5em;
+}
+
+.session-speaker_bio-summary {
+  margin-bottom: 2.5rem;
+}
+
+.session-workshop {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 3em;
+}
+
+.session-workshop_header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 1em;
+}
+
+.session-workshop_date {
+	font-style: italic;
+	margin-right: 1em;
+	width: 4em;
+}
+
+h3.session-workshop_title {
+	flex: 4;
+	margin-left: 3em;
+	padding-top: 0;
+}
+
+.session-workshop_details {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.session-workshop_cost {
+	font-weight: bold;
+}
+
+.session-workshop_presenters {
+  display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 1em;
+}
+
+.session-workshop_presenter {
+	display: flex;
+	margin-right: 2em;
+}
+
+.session-workshop_presenter img {
+	height: 3em;
+	width: auto;
+	margin-right: 0.5em;
+}
+
+.session-session_summary {
+	margin-bottom: 2.5rem;
+}
+
+.session-session_summary-speakers {
+	clear: both;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: stretch;
+}
+
+.session-session_summary-speaker {
+	width: 150px;
+	margin-right: 1em;
+}
+
+.session-session_summary-speaker img {
+	width: 100px;
+	margin-left: 25px;
+}
+
+.session-session_summary-speaker_name {
+	font-size: 80%;
+	text-align: center;
 }
 
 /* Media Queries
@@ -2890,4 +3155,3 @@ body .gform_wrapper a:hover, body .gform_wrapper a:focus {
   text-decoration: underline; }
 
 body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {font-size: 1em; }
-

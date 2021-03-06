@@ -62,8 +62,8 @@ function monochrome_enqueue_scripts_styles() {
 	wp_localize_script( 'monochrome-responsive-menu', 'genesis_responsive_menu', monochrome_responsive_menu_settings() );
 
     /* Version the CSS so that it is forced to refresh and break the cache */
-    $parent_style = 'monochrome-pro';
-    wp_enqueue_style($parent_style, get_template_directory_uri() . "/style.css");
+    $parent_style = 'monochrome-pro-styles';
+    //wp_enqueue_style($parent_style, get_template_directory_uri() . "/style.css");
     wp_enqueue_style('child-style',
       get_stylesheet_directory_uri() . "/style.css",
       array($parent_style),
