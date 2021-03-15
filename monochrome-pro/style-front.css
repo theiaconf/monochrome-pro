@@ -4,7 +4,7 @@
  Description: IA Conference tweaks to base theme
  Author: Anita Cheng & Nathan Rogers
  Author URI: https://github.com/AnitaYCheng
- Version: 1.1.1.3
+ Version: 1.1.1.5
 */
 
 /* Front Page
@@ -208,6 +208,7 @@ p .line {
 .front-page-1 .widget-title {
 	color: #fff;
 	font-weight: 200;
+	text-align: center;
 }
 
 .front-page-1 .widget-title {
@@ -240,6 +241,7 @@ p .line {
 
 .front-page-1 .hero-ctas {
 	display: flex;	
+	justify-content: center;
 }
 
 .front-page-1 .hero-ctas .button {
@@ -551,7 +553,7 @@ p .line {
 }
 
 .front-page-7 h3 {
-	text-align:left;
+	text-align: center;
 }
 
 .front-page-7 .flexible-widgets.widget-fourths,

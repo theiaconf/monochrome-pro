@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: https://www.studiopress.com/
 
-	Version: 1.1.2.1
+	Version: 1.1.2.12
 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, e-commerce, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -1482,7 +1482,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 .genesis-nav-menu a,
 .genesis-nav-menu .toggle-header-search {
-	color: #fff!important;
+	color: rgb(51, 63, 72);
 	display: block;
 	font-family: 'Arial', sans-serif;
 	font-size: 15px;
@@ -1499,16 +1499,6 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	border-bottom:5px solid #234870;
 }
 
-.genesis-nav-menu .sub-menu a:focus, 
-.genesis-nav-menu .sub-menu a:focus,
-.genesis-nav-menu .sub-menu a:hover,
-.genesis-nav-menu .sub-menu .current-menu-item > a, 
-.genesis-nav-menu .button a:focus,
-.genesis-nav-menu .button a:hover,
-.genesis-nav-menu .button.current-menu-item > a {
-	border-bottom:5px solid transparent;
-}
-
 .genesis-nav-menu .sub-menu {
 	background-color: #234870;
 	left: -9999px;
@@ -1523,6 +1513,20 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	margin-top:-5px;
 	z-index: 99;
 	box-shadow: 0 5px 15px 0 #4C4C4D;
+}
+
+.genesis-breadcrumbs-hidden .sub-menu a {
+	color: rgb(0, 0, 0);
+}
+
+.genesis-nav-menu .sub-menu a:focus, 
+.genesis-nav-menu .sub-menu a:focus,
+.genesis-nav-menu .sub-menu a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a, 
+.genesis-nav-menu .button a:focus,
+.genesis-nav-menu .button a:hover,
+.genesis-nav-menu .button.current-menu-item > a {
+	border-bottom:5px solid transparent;
 }
 
 .genesis-nav-menu .sub-menu:before {
@@ -2546,6 +2550,17 @@ span.event-categories {font-weight:700;}
 .sponsorship_benefits li {
 }
 
+/**
+ * Override defaults with greater specificity
+ */
+.wp-block-columns .sponsorship_benefits:not(:first-child) {
+	margin-left: 0;
+}
+
+.primary_cta a {
+  font-size: 1.6rem;
+}
+
 .sponsor_cards_small {
   display: flex;
   flex-direction: row;
@@ -2585,6 +2600,25 @@ span.event-categories {font-weight:700;}
 }
 
 /* Session details */
+article.type-session h1 {
+	text-align: left;
+	margin: 1rem 0 1rem 0;
+	padding: 0;
+}
+
+article.session-type-single-session .entry-content h2 {
+	margin: 0 0 1rem 0;
+	padding: 0;
+}
+
+.session-date_time {
+	margin: 0 0 1rem 0;
+}
+
+.session-speaker_bio-summary {
+	  padding-bottom: 5rem;
+	  
+}
 .session-conference {
 	font-weight: bold;
 }
@@ -2666,6 +2700,13 @@ h3.session-workshop_title {
 	height: 3em;
 	width: auto;
 	margin-right: 0.5em;
+}
+
+h2.schedule-date_header {
+    margin: 2.5rem 0;
+    padding: 1rem 0 1rem 1rem;
+    background: rgb(255, 106, 57);
+    color: rgb(255, 255, 255);
 }
 
 .session-session_summary {
