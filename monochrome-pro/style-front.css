@@ -75,12 +75,6 @@ p .line {
 	padding:0 0.1em;
 }
 
-.front-page .site-header {
-	background: rgb(242, 204, 143) !important;
-	color: rgb(0, 0, 0) !important;
-}
-
-
 .front-page-2.solid-section .flexible-widgets {
 	padding: 0;
 }
@@ -97,6 +91,15 @@ p .line {
 	width: 100%!important;
 }
 
+/**
+ * Site header
+ */
+.front-page .site-header {
+	background: rgb(242, 204, 143);
+	min-height: 4em;
+	height: 4em;
+	padding: 1em 0;
+}
 .front-page .site-header .wrap {
 	max-width: 100%;
 }
@@ -196,14 +199,18 @@ p .line {
 ---------------------------------------------------------------------------------------------------- */
 
 .front-page-1 {
-	background-color: rgb(61, 64, 91);
-	margin-top: 75px;
+	background-color: #000;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size:    cover;
+	background-size:         cover;
 }
 
 .front-page-1,
 .front-page-1 p,
 .front-page-1 .widget-title {
-	color: rgb(255, 255, 255);
+	color: #fff;
 	font-weight: 200;
 	text-align: center;
 }
