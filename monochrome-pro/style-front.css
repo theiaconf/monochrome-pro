@@ -74,11 +74,13 @@ p .line {
 	font-size:2.4em;
 	padding:0 0.1em;
 }
+
 .front-page .site-header {
-	background:none;
-	position: absolute;
-	top: 0;
+	background: rgb(242, 204, 143) !important;
+	color: rgb(0, 0, 0) !important;
 }
+
+
 .front-page-2.solid-section .flexible-widgets {
 	padding: 0;
 }
@@ -194,19 +196,14 @@ p .line {
 ---------------------------------------------------------------------------------------------------- */
 
 .front-page-1 {
-	background-color: #000;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size:    cover;
-	background-size:         cover;
+	background-color: rgb(61, 64, 91);
 	margin-top: 75px;
 }
 
 .front-page-1,
 .front-page-1 p,
 .front-page-1 .widget-title {
-	color: #fff;
+	color: rgb(255, 255, 255);
 	font-weight: 200;
 	text-align: center;
 }

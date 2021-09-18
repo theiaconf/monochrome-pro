@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: https://www.studiopress.com/
 
-	Version: 1.1.2.29
+	Version: 1.2.0.2
 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, e-commerce, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -1355,17 +1355,16 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 /* Site Header
 ---------------------------------------------------------------------------------------------------- */
-
 .site-header {
-	background: #000000 url("http://iasummit.org/wp-content/uploads/2017/07/desktop-homepage-background.png") no-repeat center top;
-	border-bottom: 1px solid transparent;
-	min-height: 200px;
-	padding: 20px 40px;
+	border-bottom: 0.1em solid transparent;
+	min-height: 1.5em;
+	padding: 2em 4em;
 	position: static;
 	top: 0;
 	width: 100%;
 	z-index: 9999;
 }
+
 .triangle {
 	background: #fff url("http://iasummit.org/wp-content/uploads/2017/08/trianglebkgd.png") no-repeat center top;
 	background-size:100% 100%;
@@ -1416,10 +1415,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 .site-title {
 	font-family: 'Anton', Helvetica, Arial, sans-serif;
-/*	font-size: 16px;
-	font-size: 1.6rem;*/
 	font-weight: 700;
-	/*line-height: 1.2;*/
 	margin-bottom: 0;
 	text-transform: uppercase;
 }
@@ -1433,11 +1429,11 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 .header-image .site-title > a {
 	background-size: contain !important;
-	background-position: left center !important;
+	background-position: 0 0 !important;
 	float: left;
-	min-height: 150px;
-	margin-top:-0.9em;
+	min-height: 4em;
 	width: 100%;
+	margin-top: -1em;
 }
 
 .header-image .site-title,
@@ -3179,3 +3175,232 @@ body .gform_wrapper a:hover, body .gform_wrapper a:focus {
   text-decoration: underline; }
 
 body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {font-size: 1em; }
+
+/**
+ * Extra CSS from Wordpress to be cleaned up and refactored
+ */
+.header-image .site-title > a {
+	min-height: 78px;
+}
+
+.front-page .site-header {
+	background-color: rgb(242, 204, 143);
+	min-height: 275px; 
+	height: 275px;
+}
+
+.header-image .site-title > a {
+  min-height: 75px;
+}
+
+.button {
+	border-radius: 25px;
+}
+	
+.genesis-nav-menu a, .genesis-nav-menu .toggle-header-search { color:white;}
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link {
+	background-color: #32373c;
+	border: 0;
+	border-radius: 1.55em;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.125em;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	padding: .667em 1.333em;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+	box-shadow: none;
+	margin-right: 2em;
+}
+
+button:hover, button:focus, input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], input:focus[type="button"], input:focus[type="reset"], input:focus[type="submit"], .archive-pagination a:hover, .archive-pagination a:focus, .archive-pagination li.active a, .button:hover, .button:focus, .image-section button:hover, .image-section button:focus, .image-section input[type="button"]:hover, .image-section input[type="button"]:focus, .image-section input[type="reset"]:hover, .image-section input[type="reset"]:focus, .image-section input[type="submit"]:hover, .image-section input[type="submit"]:focus, .image-section .button:hover, .image-section .button:focus, .image-section .more-link:hover, .image-section .more-link:focus, .more-link:hover, .more-link:focus {
+	background-color: #fff;
+	color: #32373c;
+}
+
+img.alignleft{
+	margin: 8px 20px 20px 0;
+}
+
+.co-chair-bio-links {
+	font-size: .55em;
+  display: block;
+  font-weight: 300;
+}
+
+.button {
+	background: #00232f;
+	border: 2px solid #00232f;
+}
+
+.button.secondary {
+	background-color: #fff;
+}
+
+.onBlack {
+    background: #708090;
+    border: 2px solid #708090;
+}
+
+.person .entry-title {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.person .img-circle, .person .img-circle img {
+	max-height: none;
+	max-width: none;
+	border-radius: 0;
+}
+
+#volunteerlist .gca-column.one-third {
+	min-height: 21em !important;
+}
+
+/*tables on Program page*/
+#tablepress-24 .column-2 {
+    width: 75%;
+}
+
+.front-page-3 .entry-meta {
+	margin-top: 0;
+}
+
+/* Table on Sponsors */
+table {
+    border: collapse;
+    line-height: 1.2;
+    width: 100%;
+    word-break: keep-all;
+}
+
+thead {
+	font-weight: bolder;
+}
+
+tbody {
+	font-size: .9em;
+}
+
+tr {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+figcaption {text-align: left;}
+td {border: 1px solid #666; padding:.3em;vertical-align:top;}
+th {
+    font-size:1.2em;font-weight:700;
+    border: 1px solid #666; padding:.3em;
+    text-align: left;
+    background-color: #ccc;
+}
+/**
+ * Temporary hacks until theme can be properly updated
+ */
+.important_dates-list-date {
+  font-weight: bold;
+}
+
+.important_dates-see_more {
+  margin-top: 1em;	
+}
+
+.contact_information {
+  text-align: left;
+  margin-top: 0.5em;
+	margin-bottom: 0.5em;
+  font-style: italic;
+}
+
+.contact_information-address {
+  margin-bottom: 1em;
+}
+
+.headshot-name {
+	text-align: center;
+}
+
+/**
+ * Ticket options
+ */
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+	margin-bottom: 1em;
+}
+
+.table-cell {
+	padding-left: 0.25em;
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.tickets-tier {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 15em;
+	height: auto;
+	margin-top: 1em;
+	
+	border: 1px solid rgb(0, 0, 0);
+	border-bottom: 0;
+}
+
+.tickets-label {
+	font-weight: bold;
+	background: rgb(192, 192, 192);
+}
+
+.tickets-pricing {}
+.tickets-benefits {
+	flex: 1 0 auto;
+}
+
+.tickets-benefits ul > li.no-bullet {
+	list-style-type: none;
+}
+
+.tickets-benefits ul > li i {
+	color: green;
+	margin-right: 0.25em;
+}
+
+.primary_cta a {
+	text-transform: uppercase;
+	background: rgb(255, 106, 57);
+	color: rgb(255, 255, 255);
+}
+
+.homepage_ctas {
+	 max-width: 960px;
+	 margin: auto;
+}
+
+/* mobile screens (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	/* Styles */
+	.front-page-1 {
+		height: 649px;
+	}
+	
+	.front-page-1 .widget-wrap {
+		margin-top: -30px;
+	}
+	
+	.front-page-1 h1 {
+		font-size: 3rem!important;
+	}
+	
+	.front-page-1 h2 { 
+		font-size: 1.2rem;
+	padding-bottom: 5px;
+	}
+
+}
