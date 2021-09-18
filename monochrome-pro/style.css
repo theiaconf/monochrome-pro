@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: https://www.studiopress.com/
 
-	Version: 1.1.2.12
+	Version: 1.1.2.29
 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, e-commerce, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -317,7 +317,7 @@ h1, h2 strong, h3 strong {
 
 h1, #tribe-events-pg-template .tribe-events-content h1, .tribe-events-after-html h1, .tribe-events-before-html h1 {
 	font-size: 36px;
-	font-size: 3.6rem!important;
+	font-size: 3.6rem;
 }
 
 h2,#tribe-events-pg-template .tribe-events-content h2, .tribe-events-after-html h2, .tribe-events-before-html h2 {
@@ -907,7 +907,7 @@ aside.sidebar img {max-width:250px!important;width:auto!important;max-height:200
 .breadcrumb {
 	font-size: 14px;
 	font-size: 1.4rem;
-	margin-top: 20px;
+	margin: 5rem 0 2.5rem 0;
 }
 
 .full-width-content .breadcrumb {
@@ -1043,14 +1043,12 @@ aside.sidebar img {max-width:250px!important;width:auto!important;max-height:200
 	font-size: 42px;
 	font-size: 4.2rem;
 	font-weight: 400;
-	/*letter-spacing: -0.5px;*/
-	margin-bottom:3rem;
+	margin: 2.5rem 0;
 }
 
 .type-post .entry-title {
 	max-width:900px;
 	margin-left:-5%;
-	/*text-align:center;*/
 }
 
 
@@ -2535,6 +2533,11 @@ span.event-categories {font-weight:700;}
 	color: rgb(255, 106, 57);
 }
 
+.sponsorship_benefits-subheading {
+	font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
 .sponsorship_benefits hr {
 	height: 2px;
 	background: rgb(255, 106, 57);
@@ -2645,38 +2648,18 @@ article.session-type-single-session .entry-content h2 {
 }
 
 .session-workshop {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	margin-bottom: 3em;
+  margin-bottom: 2.5rem;
 }
 
-.session-workshop_header {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	margin-bottom: 1em;
-}
-
-.session-workshop_date {
-	font-style: italic;
-	margin-right: 1em;
-	width: 4em;
+.session-workshop_times {
+	margin-bottom: 2.5rem;
 }
 
 h3.session-workshop_title {
-	flex: 4;
-	margin-left: 3em;
 	padding-top: 0;
 }
 
 .session-workshop_details {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
 }
 
 .session-workshop_cost {
