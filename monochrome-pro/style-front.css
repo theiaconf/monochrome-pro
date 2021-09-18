@@ -4,7 +4,7 @@
  Description: IA Conference tweaks to base theme
  Author: Anita Cheng & Nathan Rogers
  Author URI: https://github.com/AnitaYCheng
- Version: 1.1.1.5
+ Version: 1.2.4.1
 */
 
 /* Front Page
@@ -199,18 +199,17 @@ p .line {
 ---------------------------------------------------------------------------------------------------- */
 
 .front-page-1 {
-	background-color: #000;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size:    cover;
-	background-size:         cover;
+	background-color: rgb(61, 64, 91);
+	background-image: url("//www.theiaconference.com/wp-content/themes/monochrome-pro/images/left_squiggle.png"), 
+    url("//www.theiaconference.com/wp-content/themes/monochrome-pro/images/right_squiggle.png");
+	background-position: left top, right top;
+	background-repeat: no-repeat, no-repeat;
 }
 
 .front-page-1,
 .front-page-1 p,
 .front-page-1 .widget-title {
-	color: #fff;
+	color: rgb(255, 255, 255);
 	font-weight: 200;
 	text-align: center;
 }
@@ -373,7 +372,7 @@ p .line {
 ---------------------------------------------------------------------------------------------------- */
 
 .front-page-4 {
-	background-color: #fff;
+	background: rgb(242, 239, 218);
 }
 
 .front-page-4 h3 {
@@ -432,8 +431,8 @@ p .line {
 ---------------------------------------------------------------------------------------------------- */
 
 .front-page-5 {
-	background-color: #fff;
-	margin-bottom:20px;
+	background-color: rgb(242, 204, 143);
+	padding-bottom: 1.5em;
 }
 
 .front-page-5 h3 {
