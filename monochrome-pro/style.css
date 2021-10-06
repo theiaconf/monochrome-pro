@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: https://www.studiopress.com/
 
-	Version: 1.2.0.42
+	Version: 1.2.4.92
 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, e-commerce, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -547,6 +547,10 @@ button:hover, button:focus, input:hover[type="button"], input:hover[type="reset"
   font-size: 1.6rem;
   background: rgb(255, 106, 57);
   color: rgb(255, 255, 255);
+}
+
+.secondary_cta {
+	text-align: center;
 }
 
 .secondary_cta a {
@@ -1372,7 +1376,6 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 /* Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-	border-bottom: 0.1em solid transparent;
 	min-height: 1.5em;
 	padding: 2em 4em;
 	position: static;
@@ -1450,6 +1453,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	min-height: 4em;
 	width: 100%;
 	margin-top: -1em;
+	margin-left: 0.5em;
 }
 
 .header-image .site-title,
@@ -2319,7 +2323,7 @@ overflow:hidden;}
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #02232F;
+	background-color: rgb(33, 34, 49);
 	/*bottom: 0;*/
 	font-size: 14px;
 	font-size: 0.8em;
@@ -2649,8 +2653,8 @@ h3.session-workshop_title {
 .presenter_list {
   display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 	margin-top: 1em;
 }
 
@@ -3181,8 +3185,8 @@ body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {fo
 
 .front-page .site-header {
 	background-color: rgb(242, 204, 143);
-	min-height: 275px; 
-	height: 275px;
+	min-height: 4em; 
+	height: 4em;
 }
 
 .header-image .site-title > a {

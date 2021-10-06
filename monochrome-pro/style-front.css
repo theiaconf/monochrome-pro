@@ -4,7 +4,7 @@
  Description: IA Conference tweaks to base theme
  Author: Anita Cheng & Nathan Rogers
  Author URI: https://github.com/AnitaYCheng
- Version: 1.2.4.1
+ Version: 1.2.13.42
 */
 
 /* Front Page
@@ -199,11 +199,12 @@ p .line {
 ---------------------------------------------------------------------------------------------------- */
 
 .front-page-1 {
-	background-color: rgb(61, 64, 91);
+	background-color: rgb(33, 34, 49);
 	background-image: url("//www.theiaconference.com/wp-content/themes/monochrome-pro/images/left_squiggle.png"), 
     url("//www.theiaconference.com/wp-content/themes/monochrome-pro/images/right_squiggle.png");
 	background-position: left top, right top;
 	background-repeat: no-repeat, no-repeat;
+	background-size: 14em auto;
 }
 
 .front-page-1,
@@ -343,7 +344,6 @@ p .line {
 
 .front-page-3 h3 {
 	font-weight: 700;
-	text-align: left;
 }
 
 .front-page-3 .flexible-widgets .widget_text:nth-of-type(1)::after {
@@ -741,6 +741,10 @@ p .line {
 
 @media only screen and (max-width: 1023px) {
 
+	.front-page-1 {
+			background-size: 10em auto;
+	}
+
 	.flexible-widgets.widget-fourths .widget,
 	.flexible-widgets.widget-halves .widget,
 	.flexible-widgets.widget-thirds .widget {
@@ -774,6 +778,10 @@ p .line {
 @media only screen and (max-width: 800px) {
 	.front-page-1 .gca-column.one-fourth {
 		width:23.076923076923077%;
+	}
+
+	.front-page-1 {
+			background-size: 7.5em auto;
 	}
 
 	.widget-halves a.button {
