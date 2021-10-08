@@ -347,8 +347,21 @@ h3 {
 
 .blue {	background-color: #3ac1de;
 	color:#fff;}
-.img-circle{overflow:hidden;max-width: 140px;max-height: 140px; margin:0 auto;}
-.img-circle img{border-radius:50%; overflow:hidden; max-width: 140px; max-height: 140px;}
+
+.img-circle{
+	overflow:hidden;
+	max-width: 140px;
+	max-height: 140px; 
+	margin:0 auto;
+}
+
+.img-circle img{
+	border-radius:50%; 
+	overflow:hidden; 
+	max-width: 140px; 
+	max-height: 140px;
+	object-fit: cover;
+}
 
 .comment-respond h3,
 .entry-comments h3 {
