@@ -43,7 +43,7 @@ include_once( get_stylesheet_directory() . '/lib/output.php' );
 // include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
 // Child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'IAC Theme' );
+define( 'CHILD_THEME_NAME', 'Monochrome Pro' );
 define( 'CHILD_THEME_URL', 'https://github.com/theiaconf/iac-theme' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
