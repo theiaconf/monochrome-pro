@@ -348,11 +348,11 @@ h3 {
 .blue {	background-color: #3ac1de;
 	color:#fff;}
 
-.img-circle{
-	overflow:hidden;
+.img-circle {
+	overflow: hidden;
 	max-width: 140px;
-	max-height: 140px; 
-	margin:0 auto;
+	max-height: 140px;
+	margin: 1em;
 }
 
 .img-circle img{
@@ -2693,6 +2693,27 @@ h3.session-workshop_title {
 .presenter .presenter-name a {
 	text-decoration: none;
 }
+
+/* Speakers grid
+--------------------------------------------- */
+
+.presenter_list_left {
+	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em;
+    
+       
+}
+
+.presenter {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	#
+	margin: 1em;
+}
+
 
 h2.schedule-date_header {
     margin: 2.5rem 0;
