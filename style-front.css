@@ -200,11 +200,11 @@ p .line {
 
 .front-page-1 {
 	background-color: rgb(33, 34, 49);
-	background-image: url("//www.theiaconference.com/wp-content/themes/monochrome-pro/images/left_squiggle.png"), 
-    url("//www.theiaconference.com/wp-content/themes/monochrome-pro/images/right_squiggle.png");
+	background-image: url("https://www.theiaconference.com//wp-content/themes/monochrome-pro/images/squiggle-left.png"), 
+    url("https://theiaconference.com/stage/wp-content/themes/monochrome-pro/images/squiggle-right.png");
 	background-position: left top, right top;
 	background-repeat: no-repeat, no-repeat;
-	background-size: 14em auto;
+	background-size: 16em auto;
 }
 
 .front-page-1,
