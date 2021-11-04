@@ -2706,6 +2706,34 @@ h3.session-workshop_title {
        
 }
 
+@media screen and (max-width: 800px) {
+
+
+	.presenter_list_left {
+	
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1em;
+	}
+	
+	
+	}
+	
+	@media screen and (max-width: 650px) {
+	
+	
+	.presenter_list_left {
+	
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1em;
+		justify-content: space-around;
+		
+	}
+	
+	
+}
+
 .presenter {
 	display: flex;
 	flex-flow: column;
