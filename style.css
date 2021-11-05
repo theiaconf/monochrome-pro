@@ -162,7 +162,7 @@ body > div {
 
 body {
 	color: #4C4C4D;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
 	font-weight: 300;
@@ -304,14 +304,14 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Arial', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 10px;
 }
 
 h1, h2 strong, h3 strong {
-	font-family:'Anton', sans-serif;
+	font-family:'Montserrat', sans-serif;
 	font-weight:400;
 }
 
@@ -581,7 +581,7 @@ input[type="submit"],
 	border-radius: 0;
 	color: #fff;
 	cursor: pointer;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.0em;
 	font-weight: 500;
 	letter-spacing: 1px;
@@ -1110,7 +1110,7 @@ body.archive h2.entry-title {
 }
 
 .widget-title {
-	font-family: 'Arial', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 22px;
 	font-size: 2.0em;
 	font-weight: 700;
@@ -1446,7 +1446,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 }
 
 .site-title {
-	font-family: 'Anton', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -1512,7 +1512,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 .genesis-nav-menu .toggle-header-search {
 	color: rgb(0, 0, 0);
 	display: block;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -1755,7 +1755,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 }
 
 .nav-secondary .genesis-nav-menu {
-	font-family: 'Arial', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
 	margin-top: 20px;
 }
@@ -1765,7 +1765,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 }
 
 .nav-secondary .genesis-nav-menu a {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 300;
@@ -2006,7 +2006,7 @@ body.archive p.entry-meta {
 	background-color: #22af4b;
 	border-radius: 3px;
 	color: #fff;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
@@ -2160,7 +2160,7 @@ body.archive p.entry-meta {
 }
 
 .pricing-table .price {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 48px;
 	font-size: 4.8rem;
 	font-weight: 400;
@@ -2537,7 +2537,7 @@ span.event-categories {font-weight:700;}
 }
 
 .sponsorship_benefits-subheading {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
 
@@ -2817,7 +2817,7 @@ aside.sidebar {displa}
 		border-width: 0;
 		color: #fff;
 		display: block;
-		font-family: 'Arial', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		margin: 0 auto;
 		overflow: hidden;
 		text-align: center;
