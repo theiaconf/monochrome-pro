@@ -229,8 +229,8 @@ textarea:focus,
 }
 
 a {
-	color: #234870;/* change link colors for every year*/
-	text-decoration: underline;
+	color: rgb(61, 64, 91);/* change link colors for every year*/
+	/* text-decoration: underline; IAC20 */
 }
 
 a:hover,
@@ -1407,7 +1407,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 }
 
 .site-header .wrap {
-	max-width:1000px;
+	max-width:100%;
 }
 
 .site-header > .wrap > * {
@@ -1465,8 +1465,9 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	float: left;
 	min-height: 4em;
 	width: 100%;
-	margin-top: -1em;
+	margin-top: -.5em;
 	margin-left: 0.5em;
+	background: url(https://www.theiaconference.com/stage/wp-content/uploads/2021/10/iac-2022-logo-black.png) no-repeat;
 }
 
 .header-image .site-title,
@@ -1509,7 +1510,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 .genesis-nav-menu a,
 .genesis-nav-menu .toggle-header-search {
-	color: rgb(51, 63, 72);
+	color: rgb(0, 0, 0);
 	display: block;
 	font-family: 'Arial', sans-serif;
 	font-size: 15px;
@@ -1523,7 +1524,8 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 .genesis-nav-menu a:focus,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a {
-	border-bottom:5px solid #234870;
+	/* border-bottom:5px solid #234870; IAC20*/
+	font-weight: bold;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1559,7 +1561,8 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 .genesis-nav-menu .sub-menu:before {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-bottom: 5px solid #234870;
+	/* border-bottom: 5px solid #234870; */
+	font-weight: bold;
 	content: " ";
 	height: 10px;
 	left: 15px;
