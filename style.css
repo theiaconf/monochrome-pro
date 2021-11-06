@@ -1642,7 +1642,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 .nav-primary .genesis-nav-menu .sub-menu a:focus,
 .nav-primary .genesis-nav-menu .sub-menu a:hover {
-	background-color: #3A78B6;
+	background-color: rgb(129, 178, 154);
 	color: #fff;
 }
 
@@ -2810,7 +2810,7 @@ aside.sidebar {displa}
 	.menu-toggle,
 	.sub-menu-toggle {
 		border-width: 0;
-		color: #fff;
+		color: rgb(33, 34, 49);
 		display: block;
 		font-family: 'Montserrat', sans-serif;
 		margin: 0 auto;
@@ -2909,8 +2909,8 @@ aside.sidebar {displa}
 		background-color:rgb(242, 204, 143);
 	}
 	.genesis-responsive-menu .genesis-nav-menu a:hover {
-		color:#fff!important;
-		background-color:#1e3e61;
+		color:#fff;
+		background-color:rgb(129, 178, 154);
 	}
 
 
