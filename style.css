@@ -2840,7 +2840,7 @@ aside.sidebar {displa}
 	.js .genesis-nav-menu .sub-menu a,
 	.js #genesis-mobile-nav-primary {
 		background:none;
-		color: #fff;
+		color: rgb(61, 64, 91);
 	}
 
 	#genesis-mobile-nav-primary.activated {
