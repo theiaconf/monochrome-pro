@@ -1520,9 +1520,11 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 }
 
 .genesis-nav-menu a:focus,
-.genesis-nav-menu a:hover,
+.genesis-nav-menu a:hover {
+	border-bottom:5px solid rgb(61, 64, 91);
+}
+
 .genesis-nav-menu .current-menu-item > a {
-	/* border-bottom:5px solid #234870; IAC20*/
 	font-weight: bold;
 }
 
@@ -2847,7 +2849,7 @@ aside.sidebar {displa}
 
 	#genesis-mobile-nav-primary:focus,
 	#genesis-mobile-nav-primary:hover {
-		color: #0066cc;
+		color: rgb(61, 64, 91);
 	}
 
 	.menu-toggle {
