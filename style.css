@@ -1393,7 +1393,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	background: rgb(242, 204, 143);
 	min-height: 4em;
 	height: 4em;
-	padding: 1em 0;
+	padding: 1em 1em;
 }
 
 .triangle {
@@ -1633,7 +1633,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 }
 
 .nav-primary .genesis-nav-menu .sub-menu a {
-	color: #fff;
+	color: rgb(0,0,0);
 }
 
 .nav-primary .genesis-nav-menu .sub-menu li:last-child a {
@@ -1643,7 +1643,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 .nav-primary .genesis-nav-menu .sub-menu a:focus,
 .nav-primary .genesis-nav-menu .sub-menu a:hover {
 	background-color: rgb(129, 178, 154);
-	color: #fff;
+	color: rgb(0,0,0);
 }
 
 /* Header Search
