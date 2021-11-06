@@ -2936,7 +2936,7 @@ aside.sidebar {displa}
 	}
 
 	.genesis-responsive-menu.nav-primary .genesis-nav-menu .sub-menu a {
-		color: #fff;
+		color: rgb(0, 0, 0);
 	}
 
 	.genesis-nav-menu > .menu-item .sub-menu > .menu-item:first-child {
@@ -3204,7 +3204,7 @@ body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {fo
   min-height: 75px;
 }
 	
-.genesis-nav-menu a, .genesis-nav-menu .toggle-header-search { color:white;}
+.genesis-nav-menu a, .genesis-nav-menu .toggle-header-search { color:rgb(0,0,0)}
 button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link {
 	background-color: #32373c;
 	border: 0;
