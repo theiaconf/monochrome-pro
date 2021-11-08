@@ -2695,6 +2695,39 @@ h3.session-workshop_title {
 	text-decoration: none;
 }
 
+/* Speakers grid
+--------------------------------------------- */
+.presenter_list_left {	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em;
+}
+
+@media screen and (max-width: 50rem) {
+	.presenter_list_left {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1em;
+	}
+}
+	
+@media screen and (max-width: 40.6rem) {
+	.presenter_list_left {	
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1em;
+		justify-content: space-around;
+	}
+}
+
+.presenter {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	#
+	margin: 1em;
+}
+
 h2.schedule-date_header {
     margin: 2.5rem 0;
     padding: 1rem 0 1rem 1rem;
