@@ -13,4 +13,5 @@
  */
 
 // Run the Genesis loop.
+test
 genesis();
