@@ -2703,24 +2703,34 @@ h3.session-workshop_title {
     display: flex;
     border-radius: 0.625rem;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+	  margin-bottom: 2rem;
 }
   
 .session-card-overview {
-    min-width: 24rem;
+    min-width: 22rem;
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
 	  margin: 0.5rem 0.5rem 0 1rem;
 	
-	  border-right: 1px solid rgb(64, 64, 64);
+	  /**
+	   * This should go into an :after block 
+	   */
+	  border-right: 1px solid rgb(64, 64, 64); 
 }
   
 .session-card-summary {
 	  width: auto;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
-	  padding-left: 1rem;
+	  padding: 0 1rem 0.5rem 2rem;
 }
 	
+/* These should eventually be changed site wide */
+.session-card-summary-title a,
+.session-card-speakers-speaker-name a {
+	text-decoration: none;
+}
+
 .session-card-summary p {
     margin-bottom: 3em;
 }
@@ -2742,7 +2752,7 @@ h3.session-workshop_title {
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
-  
+ 
 .session-card-speakers-speaker-image {
 	border-radius: 50%; 
 	overflow: hidden; 
