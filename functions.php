@@ -745,3 +745,9 @@ END REE */
 		return;
 	}
 
+
+// add filter to allow Pods to have excerpts
+
+function my_excerpt_filter ( $content ) {
+   return wp_trim_words( $content, 70 );
+}
