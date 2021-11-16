@@ -44,7 +44,7 @@ include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Monochrome Pro' );
-define( 'CHILD_THEME_URL', 'https://github.com/theiaconf/iac-theme' );
+define( 'CHILD_THEME_URL', 'https://github.com/theiaconf/monochrome-pro' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 // Remove default Genesis Child Theme Stylesheet
@@ -65,7 +65,7 @@ function monochrome_enqueue_scripts_styles() {
 
      $theme_name = defined('CHILD_THEME_NAME') && CHILD_THEME_NAME ? sanitize_title_with_dashes(CHILD_THEME_NAME) : 'child-theme';
      //$version = defined( 'CHILD_THEME_VERSION' ) && CHILD_THEME_VERSION ? CHILD_THEME_VERSION : PARENT_THEME_VERSION;
-     $version .= date ( "njYHi", filemtime( get_stylesheet_directory() . '/style.css' ) );
+     $version = date ( "njYHi", filemtime( get_stylesheet_directory() . '/style.css' ) );
      wp_enqueue_style( $theme_name, get_stylesheet_uri(), array(), $version );
 }
 
