@@ -51,7 +51,7 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 add_action( 'wp_enqueue_scripts', 'monochrome_enqueue_scripts_styles' );
 function monochrome_enqueue_scripts_styles() {
 // Add Anton font instead of Open Sans
-	wp_enqueue_style( 'monochrome-fonts', 'https://fonts.googleapis.com/css?family=Anton', array(), CHILD_THEME_VERSION );
+	// wp_enqueue_style( 'monochrome-fonts', 'https://fonts.googleapis.com/css?family=Anton', array(), CHILD_THEME_VERSION ); removed 11/16/2021 jacob geib-rosch
 	wp_enqueue_style( 'monochrome-ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_script( 'monochrome-global-script', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), '1.0.0', true );
@@ -750,4 +750,17 @@ END REE */
 
 function my_excerpt_filter ( $content ) {
    return wp_trim_words( $content, 70 );
+}
+
+// genesis cache busting
+
+// Remove default Genesis Child Theme Stylesheet
+remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
+// Create function to append last modified file to stylesheet URL
+add_action( 'wp_enqueue_scripts', 'wd_genesis_child_stylesheet' );
+function wd_genesis_child_stylesheet() {
+     $theme_name = defined('CHILD_THEME_NAME') && CHILD_THEME_NAME ? sanitize_title_with_dashes(CHILD_THEME_NAME) : 'child-theme';
+     $version = defined( 'CHILD_THEME_VERSION' ) && CHILD_THEME_VERSION ? CHILD_THEME_VERSION : PARENT_THEME_VERSION;
+     $version .= '.' . date ( "njYHi", filemtime( get_stylesheet_directory() . '/style.css' ) );
+     wp_enqueue_style( $theme_name, get_stylesheet_uri(), array(), $version );
 }
