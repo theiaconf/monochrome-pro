@@ -47,9 +47,11 @@ function monochrome_enqueue_front_script_styles() {
 	wp_enqueue_script( 'monochrome-front-script', get_stylesheet_directory_uri() . '/js/front-page.js', array( 'jquery' ), '1.0.0' );
 
     /* Version the CSS so that it is forced to refresh and break the cache */
+    $parent_style = 'monochrome-front-styles';
+    wp_enqueue_style($parent_style, get_template_directory_uri() . "/style-front.css");
+     
     $theme_name = defined('CHILD_THEME_NAME') && CHILD_THEME_NAME ? sanitize_title_with_dashes(CHILD_THEME_NAME) : 'child-theme';
-    //$version = defined( 'CHILD_THEME_VERSION' ) && CHILD_THEME_VERSION ? CHILD_THEME_VERSION : PARENT_THEME_VERSION;
-    $version .= date ( "njYHi", filemtime( get_stylesheet_directory() . '/style.css' ) );
+    $version .= date ( "njYHi", filemtime( get_stylesheet_directory() . '/style-front.css' ) );
     wp_enqueue_style( $theme_name, get_stylesheet_uri(), array(), $version );
 }
 
