@@ -44,17 +44,13 @@ function monochrome_front_page_genesis_meta() {
 
 // Define scripts and styles.
 function monochrome_enqueue_front_script_styles() {
-
 	wp_enqueue_script( 'monochrome-front-script', get_stylesheet_directory_uri() . '/js/front-page.js', array( 'jquery' ), '1.0.0' );
 
     /* Version the CSS so that it is forced to refresh and break the cache */
-    $parent_style = 'monochrome-front-styles';
-    wp_enqueue_style($parent_style, get_template_directory_uri() . "/style-front.css");
-    wp_enqueue_style('child-style',
-      get_stylesheet_directory_uri() . "/style-front.css",
-      array($parent_style),
-      wp_get_theme()->get('Version')
-    );
+    $theme_name = defined('CHILD_THEME_NAME') && CHILD_THEME_NAME ? sanitize_title_with_dashes(CHILD_THEME_NAME) : 'child-theme';
+    //$version = defined( 'CHILD_THEME_VERSION' ) && CHILD_THEME_VERSION ? CHILD_THEME_VERSION : PARENT_THEME_VERSION;
+    $version .= date ( "njYHi", filemtime( get_stylesheet_directory() . '/style.css' ) );
+    wp_enqueue_style( $theme_name, get_stylesheet_uri(), array(), $version );
 }
 
 // Add front-page body class.
