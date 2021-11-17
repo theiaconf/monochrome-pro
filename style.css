@@ -2828,6 +2828,25 @@ h2.schedule-date_header {
 	text-align: center;
 }
 
+/**
+ * Grid for co-chairs using a similar layout to presenters
+ */
+.cochairs {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	align-items: top;
+}
+
+.cochairs .cochairs-cochair {
+	width: 22rem;
+	margin-right: 1rem;
+}
+
+.cochairs-cochair-name {
+	text-align: center;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
