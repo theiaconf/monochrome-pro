@@ -19,7 +19,7 @@ add_action( 'genesis_before_content', 'theme_prefix_show_notice' );
 function theme_prefix_show_notice() {
 	echo '
 		
-		<div class="front-page-1 image-section">
+		<div class="front-page-1 image-section masthead-banner">
 			<div class="flexible-widgets widget-area fadeup-effect widget-full fadeInUp">
 				<div class="wrap">
 					<section id="textblockswidget-14" class="widget widget_textblockswidget">

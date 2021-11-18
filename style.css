@@ -3515,3 +3515,9 @@ th {
 	}
 
 }
+
+/*Masthead Banner for Site Sections*/
+
+.masthead-banner {
+	background: #ddd;
+}
