@@ -19,23 +19,11 @@ add_action( 'genesis_before_content', 'theme_prefix_show_notice' );
 function theme_prefix_show_notice() {
 	echo '
 		
-		<div class="front-page-1 image-section masthead-banner">
-			<div class="flexible-widgets widget-area fadeup-effect widget-full fadeInUp">
-				<div class="wrap">
-					<section id="textblockswidget-14" class="widget widget_textblockswidget">
-						<div class="widget-wrap">
-							<div class="text-block hometown-hero">
-								<p>Join us online for<br>
-								IAC: the information architecture conference</p>
-								<h2 class="hero-title hero-theme">[Re]Connect</h2>
-								<p>April 19th-23rd, 2022</p>
-								<div class="secondary_cta">
-									Registration opens in December
-								</div>
-							</div>
-						</div>
-					</section>
-		        </div>
+		<div class="masthead-banner engage">
+			<div class="text-block">
+				<span class="banner-site-title">IAC 22</span>
+				<span class="banner-site-subtitle"><strong>[Re]</strong>Connect</span>
+				<span class="banner-section-title">&nbsp;</span>
 			</div>
 		</div>
 		
