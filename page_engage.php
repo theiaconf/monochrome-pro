@@ -13,9 +13,6 @@
  */
 
 add_action( 'genesis_before_content', 'theme_prefix_show_notice' );
-/**
- * Display a custom notice.
- */
 function theme_prefix_show_notice() {
 	echo '
 		
