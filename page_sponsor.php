@@ -20,7 +20,7 @@ function theme_prefix_show_notice() {
 			<div class="text-block">
 				<span class="banner-site-title">IAC 22</span>
 				<span class="banner-site-subtitle"><strong>[Re]</strong>Connect</span>
-				<span class="banner-section-title">&nbsp;</span>
+				<span class="banner-section-title"></span>
 			</div>
 		</div>
 		
