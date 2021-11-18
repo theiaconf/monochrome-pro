@@ -2859,6 +2859,9 @@ h2.schedule-date_header {
   background-size: 16em auto;
   padding: 2rem 0;
 }
+.masthead-banner strong {
+	font-weight: 1000;
+}
 
 .masthead-banner.about,
 .page-template-page_about .masthead-banner {
@@ -2891,7 +2894,6 @@ h2.schedule-date_header {
     content: "Present"; 
 }
 
-
 .masthead-banner.program,
 .page-template-page_program .masthead-banner {
 	background-color: #3D405B;
@@ -2901,7 +2903,6 @@ h2.schedule-date_header {
 .page-template-page_program .banner-section-title::after {
     content: "Program"; 
 }
-
 
 .masthead-banner.register,
 .page-template-page_register .masthead-banner {
@@ -2913,7 +2914,6 @@ h2.schedule-date_header {
     content: "Register"; 
 }
 
-
 .masthead-banner.sponsor,
 .page-template-page_sponsor .masthead-banner {
 	background-color: #212231;
@@ -2923,7 +2923,6 @@ h2.schedule-date_header {
 .page-template-page_sponsor .banner-section-title::after {
   content: "Sponsor"; 
 }
-
 
 .masthead-banner .text-block {
 	margin: 0 auto;
@@ -2936,7 +2935,7 @@ h2.schedule-date_header {
 
 .banner-site-title {
 	font-size: 3rem;
-	margin-left: -30%;
+	/*margin-left: -30%;*/
 }
 .banner-site-subtitle {
 	font-size: 3rem;
@@ -2944,7 +2943,7 @@ h2.schedule-date_header {
 .banner-section-title {
 	font-size: 3rem;
 	font-weight: 700;
-	margin-left: 30%;
+	/*margin-left: 30%;*/
 }
 
 
