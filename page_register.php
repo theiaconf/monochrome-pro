@@ -12,7 +12,7 @@
  * @link    https://my.studiopress.com/themes/monochrome/
  */
 
-add_action( 'genesis_before_content', 'theme_prefix_show_notice' );
+add_action( 'genesis_after_header', 'theme_prefix_show_notice' );
 function theme_prefix_show_notice() {
 	echo '
 		
