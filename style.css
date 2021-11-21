@@ -3283,7 +3283,7 @@ aside.sidebar {displa}
 	.masthead-banner {
   		background-size: 25%;
     }
-	.font-page-1 .text-block .hometown-hero {
+	.font-page-1 .text-block.hometown-hero {
 		margin: 0 2rem;
 	}
 
