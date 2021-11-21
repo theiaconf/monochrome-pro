@@ -3274,6 +3274,13 @@ aside.sidebar {displa}
 		width: 100%;
 	}
 
+	/* Masthead Banners Responsive Styles */
+    .front-page-1,
+	.masthead-banner {
+  		background-size: 20%;
+    }
+	
+
 }
 
 @media screen and (max-width: 800px) {
