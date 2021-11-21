@@ -2851,75 +2851,76 @@ h2.schedule-date_header {
  * Masthead Banner for Site Sections *
  *************************************/
 
+.front-page-1,
 .masthead-banner {
   background-image: url("https://www.theiaconference.com//wp-content/themes/monochrome-pro/images/squiggle-left.png"),
 					url("https://theiaconference.com/stage/wp-content/themes/monochrome-pro/images/squiggle-right.png");
   background-position: left top, right top;
   background-repeat: no-repeat, no-repeat;
-  background-size: 16em auto;
+  background-size: 16rem auto;
   padding: 2rem 0;
 }
 .masthead-banner strong {
 	font-weight: 1000;
 }
 
-.masthead-banner.about,
+/*.masthead-banner.about,*/
 .page-template-page_about .masthead-banner {
 	background-color: #A699CB;
 	color: #3D405B;
 }
-.masthead-banner.about .banner-section-title::after,
+/*.masthead-banner.about .banner-section-title::after,*/
 .page-template-page_about .banner-section-title::after {
     content: "About"; 
 }
 
-.masthead-banner.engage,
+/*.masthead-banner.engage,*/
 .page-template-page_engage .masthead-banner {
 	background-color: #F4F1DE;
 	color: #212231;
 }
-.masthead-banner.engage .banner-section-title::after,
+/*.masthead-banner.engage .banner-section-title::after,*/
 .page-template-page_engage .banner-section-title::after {
     content: "Engage"; 
 }
 
 
-.masthead-banner.present,
+/*.masthead-banner.present,*/
 .page-template-page_present .masthead-banner {
 	background-color: #F2CC8F;
 	color: #F4F1DE;
 }
-.masthead-banner.present .banner-section-title::after,
+/*.masthead-banner.present .banner-section-title::after,*/
 .page-template-page_present .banner-section-title::after {
     content: "Present"; 
 }
 
-.masthead-banner.program,
+/*.masthead-banner.program,*/
 .page-template-page_program .masthead-banner {
 	background-color: #3D405B;
 	color: #F4F1DE;
 }
-.masthead-banner.program .banner-section-title::after,
+/*.masthead-banner.program .banner-section-title::after,*/
 .page-template-page_program .banner-section-title::after {
     content: "Program"; 
 }
 
-.masthead-banner.register,
+/*.masthead-banner.register,*/
 .page-template-page_register .masthead-banner {
 	background-color: #E07A5F;
 	color: #F4F1DE;
 }
-.masthead-banner.register .banner-section-title::after,
+/*.masthead-banner.register .banner-section-title::after,*/
 .page-template-page_register .banner-section-title::after {
     content: "Register"; 
 }
 
-.masthead-banner.sponsor,
+/*.masthead-banner.sponsor,*/
 .page-template-page_sponsor .masthead-banner {
 	background-color: #212231;
 	color: #E07A5F;
 }
-.masthead-banner.sponsor .banner-section-title::after,
+/*.masthead-banner.sponsor .banner-section-title::after,*/
 .page-template-page_sponsor .banner-section-title::after {
   content: "Sponsor"; 
 }
@@ -3277,7 +3278,7 @@ aside.sidebar {displa}
 	/* Masthead Banners Responsive Styles */
     .front-page-1,
 	.masthead-banner {
-  		background-size: 20%;
+  		background-size: 25%;
     }
 	
 

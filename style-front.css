@@ -220,15 +220,15 @@ p .line {
 /* Front Page 1
 ---------------------------------------------------------------------------------------------------- */
 
-.front-page-1 {
+/*.front-page-1 {
   background-color: rgb(33, 34, 49);
   background-image: url("https://www.theiaconference.com//wp-content/themes/monochrome-pro/images/squiggle-left.png"),
     url("https://theiaconference.com/stage/wp-content/themes/monochrome-pro/images/squiggle-right.png");
   background-position: left top, right top;
   background-repeat: no-repeat, no-repeat;
-  background-size: 16em auto;
+  background-size: 16rem auto;
 }
-
+*/
 .front-page-1,
 .front-page-1 p,
 .front-page-1 .widget-title {
