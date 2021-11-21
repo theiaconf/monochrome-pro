@@ -2857,7 +2857,7 @@ h2.schedule-date_header {
 					url("https://theiaconference.com/stage/wp-content/themes/monochrome-pro/images/squiggle-right.png");
   background-position: left top, right top;
   background-repeat: no-repeat, no-repeat;
-  background-size: 16rem auto;
+  background-size: 18rem auto;
   padding: 2rem 0;
 }
 .front-page-1 {
@@ -3283,7 +3283,9 @@ aside.sidebar {displa}
 	.masthead-banner {
   		background-size: 25%;
     }
-	
+	.font-page-1 .text-block .hometown-hero {
+		margin: 0 2rem;
+	}
 
 }
 
