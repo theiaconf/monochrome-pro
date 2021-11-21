@@ -3284,7 +3284,7 @@ aside.sidebar {displa}
   		background-size: 25%;
     }
 	.front-page-1 .text-block.hometown-hero {
-		margin: 0 2rem;
+		margin: 0 15rem;
 	}
 
 }
@@ -3320,6 +3320,12 @@ aside.sidebar {displa}
 	.footer-cta-button {
 		display: block;
 	}
+	
+	/* Masthead Banners Responsive Styles */
+	.front-page-1 .text-block.hometown-hero {
+		margin: 0 9rem;
+	}
+	
 
 }
 
