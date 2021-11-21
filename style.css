@@ -3284,7 +3284,7 @@ aside.sidebar {displa}
   		background-size: 25%;
     }
 	.front-page-1 .text-block.hometown-hero {
-		margin: 0 15rem;
+		margin: 0 20rem;
 	}
 
 }
@@ -3300,6 +3300,12 @@ aside.sidebar {displa}
 	.cloud-city-dash, .cloud-city-tripdash {height:2.5em!important;}
 		.cloud-city-dash_title {font-size:0.6em!important;}
 	.cloud-city-digit {font-size:0.9em!important;}
+	
+	/* Masthead Banners Responsive Styles */
+	.front-page-1 .text-block.hometown-hero {
+		margin: 0 14rem;
+	}
+	
 }
 
 @media only screen and (max-width: 600px) {
