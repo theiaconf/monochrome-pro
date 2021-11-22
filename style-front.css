@@ -9,6 +9,15 @@
 
 /* Front Page
 ---------------------------------------------------------------------------------------------------- */
+.front-page-2 .flexible-widgets .widget:nth-of-type(1) .widget-title,
+.front-page-3 .flexible-widgets .widget:nth-of-type(1) .widget-title, 
+.front-page-4 .flexible-widgets .widget:nth-of-type(1) .widget-title, 
+.front-page-5 .flexible-widgets .widget:nth-of-type(1) .widget-title,
+.front-page-6 .flexible-widgets .widget:nth-of-type(1) .widget-title, 
+.front-page-7 .flexible-widgets .widget:nth-of-type(1) .widget-title {
+  font-family: 'Montserrat', sans-serif; font-weight: 900;
+}
+
 
 .front-page .site-container {
   background-color: #fff;
@@ -112,15 +121,12 @@ p .line {
  * Site header
  */
 .front-page .site-header .title-area {
-  /* background: rgb(242, 204, 143);
-	min-height: 4em;
-	height: 4em;
-	padding: 1em 0;
-	from when the menu was only styled for the front page*/
   margin-top: -8px;
 }
+
 .front-page .site-header .wrap {
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Flexible Widgets
