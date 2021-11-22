@@ -87,7 +87,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 /*IAS Import Anton font*/
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');*/*/
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');*/
+/*The above does not work for the specific theme, but this is the font needed for future reference. For genesis theme, use Customizations > Theme Settings. - Jake Geib-Rosch 2021-11-22*/
 
 /* Box Sizing
 --------------------------------------------- */
