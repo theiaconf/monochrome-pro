@@ -54,6 +54,14 @@ remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
 add_action( 'wp_enqueue_scripts', 'monochrome_enqueue_scripts_styles' );
 function monochrome_enqueue_scripts_styles() {
 // Add Anton font instead of Open Sans
+
+//* Add Google Font in Genesis - http://www.basicwp.com/?p=2054
+//* Add Montserrat Regular 400 & Semi-bold 600
+add_action( 'wp_enqueue_scripts', 'genesis_ig_google_fonts' );
+function genesis_ig_google_fonts() {
+	wp_enqueue_style( 'google-fonts', 'fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap', array(), CHILD_THEME_VERSION );
+}
+
 	wp_enqueue_style( 'monochrome-ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_script( 'monochrome-global-script', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), '1.0.0', true );
