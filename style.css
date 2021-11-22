@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: https://www.studiopress.com/
 
-	Version: 1.22.20211106.1931
+	Version: 1.22.20211106.1932
 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, e-commerce, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -85,7 +85,11 @@
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}template,[hidden]{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background-color:#ff0;color:#4C4C4D}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:1}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 
 /*IAS Import Anton font*/
+/**
 @import url('https://fonts.googleapis.com/css?family=Anton');
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');*/
 
 /* Box Sizing
 --------------------------------------------- */
@@ -782,6 +786,7 @@ th:first-child {
 .site-inner,
 .wrap {
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .site-inner {
@@ -1391,9 +1396,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 .site-header {
 	position: static;
 	background: rgb(242, 204, 143);
-	min-height: 4em;
-	height: 4em;
-	padding: 1em 1em;
+	padding: 1rem;
 }
 
 .triangle {
@@ -2695,6 +2698,72 @@ h3.session-workshop_title {
 	text-decoration: none;
 }
 
+/**
+ * Session overview cards with date, time, and summary
+ */
+.session-card {
+    max-width: 90rem;
+    display: flex;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+	  margin-bottom: 2rem;
+}
+  
+.session-card-overview {
+    min-width: 22rem;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+	  margin: 0.5rem 0.5rem 0 1rem;
+	
+	  /**
+	   * This should go into an :after block 
+	   */
+	  border-right: 1px solid rgb(64, 64, 64); 
+}
+  
+.session-card-summary {
+	  width: auto;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+	  padding: 0 1rem 0.5rem 2rem;
+}
+	
+/* These should eventually be changed site wide */
+.session-card-summary-title a,
+.session-card-speakers-speaker-name a {
+	text-decoration: none;
+}
+
+.session-card-summary p {
+    margin-bottom: 3em;
+}
+  
+.session-card-speakers {
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.625rem 0.625rem 0.625rem 0;
+}
+  
+.session-card-speakers-speaker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+ 
+.session-card-speakers-speaker-image {
+	border-radius: 50%; 
+	overflow: hidden; 
+	max-width: 6.25rem; 
+	max-height: 6.25rem;
+	object-fit: cover;
+}
+
 /* Speakers grid
 --------------------------------------------- */
 .presenter_list_left {	
@@ -2761,6 +2830,129 @@ h2.schedule-date_header {
 	font-size: 80%;
 	text-align: center;
 }
+
+/**
+ * Grid for co-chairs using a similar layout to presenters
+ */
+.cochairs {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	align-items: top;
+}
+
+.cochairs .cochairs-cochair {
+	width: 22rem;
+	margin-right: 1rem;
+}
+
+.cochairs-cochair-name {
+	text-align: center;
+}
+
+/************************************* 
+ * Masthead Banner for Site Sections *
+ *************************************/
+
+.front-page-1,
+.masthead-banner {
+  background-image: url("https://www.theiaconference.com//wp-content/themes/monochrome-pro/images/squiggle-left.png"),
+					url("https://theiaconference.com/stage/wp-content/themes/monochrome-pro/images/squiggle-right.png");
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 18rem auto;
+  padding: 2rem 0;
+}
+.front-page-1 {
+  background-color: rgb(33, 34, 49);
+}
+.masthead-banner strong {
+	font-weight: 600;
+}
+
+/*.masthead-banner.about,*/
+.page-template-page_about .masthead-banner {
+	background-color: #A699CB;
+	color: #3D405B;
+}
+/*.masthead-banner.about .banner-section-title::after,*/
+.page-template-page_about .banner-section-title::after {
+    content: "About"; 
+}
+
+/*.masthead-banner.engage,*/
+.page-template-page_engage .masthead-banner {
+	background-color: #F4F1DE;
+	color: #212231;
+}
+/*.masthead-banner.engage .banner-section-title::after,*/
+.page-template-page_engage .banner-section-title::after {
+    content: "Engage"; 
+}
+
+
+/*.masthead-banner.present,*/
+.page-template-page_present .masthead-banner {
+	background-color: #F2CC8F;
+	color: #F4F1DE;
+}
+/*.masthead-banner.present .banner-section-title::after,*/
+.page-template-page_present .banner-section-title::after {
+    content: "Present"; 
+}
+
+/*.masthead-banner.program,*/
+.page-template-page_program .masthead-banner {
+	background-color: #3D405B;
+	color: #F4F1DE;
+}
+/*.masthead-banner.program .banner-section-title::after,*/
+.page-template-page_program .banner-section-title::after {
+    content: "Program"; 
+}
+
+/*.masthead-banner.register,*/
+.page-template-page_register .masthead-banner {
+	background-color: #E07A5F;
+	color: #F4F1DE;
+}
+/*.masthead-banner.register .banner-section-title::after,*/
+.page-template-page_register .banner-section-title::after {
+    content: "Register"; 
+}
+
+/*.masthead-banner.sponsor,*/
+.page-template-page_sponsor .masthead-banner {
+	background-color: #212231;
+	color: #E07A5F;
+}
+/*.masthead-banner.sponsor .banner-section-title::after,*/
+.page-template-page_sponsor .banner-section-title::after {
+  content: "Sponsor"; 
+}
+
+.masthead-banner .text-block {
+	margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.masthead-banner span {
+	display: block;
+}
+
+.banner-site-title {
+	font-size: 3rem;
+	/*margin-left: -30%;*/
+}
+.banner-site-subtitle {
+	font-size: 3rem;
+}
+.banner-section-title {
+	font-size: 3rem;
+	font-weight: 700;
+	/*margin-left: 30%;*/
+}
+
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -3089,6 +3281,15 @@ aside.sidebar {displa}
 		width: 100%;
 	}
 
+	/* Masthead Banners Responsive Styles */
+    .front-page-1,
+	.masthead-banner {
+  		background-size: 25%;
+    }
+	.front-page-1 .text-block.hometown-hero {
+		margin: 0 20rem;
+	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -3102,6 +3303,12 @@ aside.sidebar {displa}
 	.cloud-city-dash, .cloud-city-tripdash {height:2.5em!important;}
 		.cloud-city-dash_title {font-size:0.6em!important;}
 	.cloud-city-digit {font-size:0.9em!important;}
+	
+	/* Masthead Banners Responsive Styles */
+	.front-page-1 .text-block.hometown-hero {
+		margin: 0 16rem;
+	}
+	
 }
 
 @media only screen and (max-width: 600px) {
@@ -3122,6 +3329,12 @@ aside.sidebar {displa}
 	.footer-cta-button {
 		display: block;
 	}
+	
+	/* Masthead Banners Responsive Styles */
+	.front-page-1 .text-block.hometown-hero {
+		margin: 0 9rem;
+	}
+	
 
 }
 

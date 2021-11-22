@@ -10,6 +10,11 @@
  * @link    https://my.studiopress.com/themes/monochrome/
  */
 
+// Child theme (do not remove).
+define( 'CHILD_THEME_NAME', 'Monochrome Pro');
+define( 'CHILD_THEME_URL', 'https://github.com/theiaconf/monochrome-pro');
+define( 'CHILD_THEME_VERSION', '1.0.0');
+
 add_action( 'genesis_meta', 'monochrome_front_page_genesis_meta' );
 /**
  * Add widget support for homepage. If no widgets active, display the default loop.
@@ -18,10 +23,16 @@ add_action( 'genesis_meta', 'monochrome_front_page_genesis_meta' );
  */
 function monochrome_front_page_genesis_meta() {
 
-	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || is_active_sidebar( 'front-page-5' ) || is_active_sidebar( 'front-page-6' ) || is_active_sidebar( 'front-page-7' ) ) {
+	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || 
+	     is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || 
+	     is_active_sidebar( 'front-page-5' ) || is_active_sidebar( 'front-page-6' ) || 
+	     is_active_sidebar( 'front-page-7' ) ) {
+
+        // Remove default Genesis Child Theme Stylesheet
+        remove_action('genesis_meta', 'genesis_load_stylesheet');
 
 		// Enqueue scripts and styles.
-		add_action( 'wp_enqueue_scripts', 'monochrome_enqueue_front_script_styles', 1 );
+		add_action('wp_enqueue_scripts', 'monochrome_enqueue_front_script_styles', 1);
 
 		// Add front-page body class.
 		add_filter( 'body_class', 'monochrome_body_class' );
@@ -37,24 +48,35 @@ function monochrome_front_page_genesis_meta() {
 
 		// Add front page widgets.
 		add_action( 'genesis_before_loop', 'monochrome_front_page_widgets' );
-
 	}
-
 }
 
-// Define scripts and styles.
+/*
+ * Define scripts and styles
+ *
+ * Uses cache busting techniques so updates will refresh immediately without any
+ * additional steps needing to be taken
+ */
 function monochrome_enqueue_front_script_styles() {
+    /**
+	wp_enqueue_script( 'monochrome-front-script', get_stylesheet_directory_uri() . '/js/front-page.js', array( 'jquery' ), CHILD_THEME_VERSION);
 
-	wp_enqueue_script( 'monochrome-front-script', get_stylesheet_directory_uri() . '/js/front-page.js', array( 'jquery' ), '1.0.0' );
+    $theme_name = 'monochrome-front-style';
+    //$version = date( "njYHi", filemtime(get_stylesheet_directory() . '/style-front.css' ));
 
-    /* Version the CSS so that it is forced to refresh and break the cache */
-    $parent_style = 'monochrome-front-styles';
-    wp_enqueue_style($parent_style, get_template_directory_uri() . "/style-front.css");
-    wp_enqueue_style('child-style',
+    wp_enqueue_style($theme_name, get_template_directory_uri() . "/style-front.css");
+    //wp_enqueue_style($theme_name, get_stylesheet_directory_uri(), array(), $version);
+    */
+    
+ 	wp_enqueue_script( 'monochrome-front-script', get_stylesheet_directory_uri() . '/js/front-page.js', array( 'jquery' ), '1.0.0' );
+
+    $theme_name = 'monochrome-front-styles';
+    $version = date( "njYHi", filemtime(get_stylesheet_directory() . 
+      '/style-front.css' ));
+    wp_enqueue_style($theme_name, 
       get_stylesheet_directory_uri() . "/style-front.css",
-      array($parent_style),
-      wp_get_theme()->get('Version')
-    );
+      array(),
+      $version);
 }
 
 // Add front-page body class.
