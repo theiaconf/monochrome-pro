@@ -59,8 +59,14 @@ function monochrome_enqueue_scripts_styles() {
 //* Add Montserrat Regular 400 & Semi-bold 600
 add_action( 'wp_enqueue_scripts', 'genesis_ig_google_fonts' );
 function genesis_ig_google_fonts() {
-	wp_enqueue_style( 'google-fonts', 'fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap', array(), CHILD_THEME_VERSION );
 }
+
+// Add New Google Font
+// add_action( 'wp_enqueue_scripts', 'sp_load_google_fonts' );
+// function sp_load_google_fonts() {
+// wp_enqueue_style( 'google-font-montserrat', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap', array(), CHILD_THEME_VERSION );
+// }
 
 	wp_enqueue_style( 'monochrome-ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
