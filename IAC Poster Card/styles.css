@@ -1,0 +1,92 @@
+/**
+ * Session overview cards with date, time, and summary
+ */
+
+
+ .poster-card {
+    max-width: 31rem;
+    min-height: 33rem;
+    display: flex;
+    border-radius: 0.625rem;
+    box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
+	margin-bottom: 3rem;
+}
+  
+.poster-card-summary {
+	width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+	padding: 1rem 2rem 0.5rem 2rem;
+}
+
+.poster-card-summary-item {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster-card-summary-title a,
+.poster-card-speakers-speaker-name a {
+	text-decoration: none;
+}
+
+.poster-card-summary p {
+    margin-right: 1rem;
+    margin-bottom: 3em;
+}
+  
+.poster-card-speakers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 3rem 0rem 1rem 0;
+}
+
+.poster-card-speakers-item {
+
+}
+  
+.poster-card-speakers-speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 0 1rem 1rem 1rem;
+}
+
+.poster-card-speakers-speaker a {
+	text-align: center;
+}
+ 
+.poster-card-speakers-speaker-image {
+	border-radius: 50%; 
+	margin-bottom: 1rem;
+	overflow: hidden; 
+	width: 6rem; 
+	height: 6rem;
+	object-fit: cover;
+	object-position: cover;
+}
+
+.poster-card-speakers-speaker-image img {
+	max-width: 100%;
+	max-height: 100%;
+
+} 
+
+.poster-card-speakers-speaker-name {
+    margin-top: 1rem;
+    white-space: nowrap;
+}
+
+/* ----- */
+.img-circle{
+	overflow:hidden;
+	max-width: 140px;
+	max-height: 140px; 
+	margin:0 auto;
+}
+
