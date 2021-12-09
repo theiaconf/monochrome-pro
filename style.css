@@ -2299,12 +2299,10 @@ overflow:hidden;}
 }
 
 .before-footer-cta {
-	background-color: #0066cc;
-	background: linear-gradient(45deg,#0066cc,#02cbfb);
+	background-color: #3D405B;
 	line-height: 1.5;
 	padding-bottom: 40px;
 	padding-top: 45px;
-	margin-bottom:30px;
 	margin-top:-40px;
 	text-align: left;
 	color:#fff!important;
@@ -2347,11 +2345,16 @@ overflow:hidden;}
 	font-size: 2rem;
 }
 
+.before-footer-cta #custom_html-7,
+.before-footer-cta #custom_html-8 {
+	max-width: 40%;
+}
+
 /* Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: rgb(33, 34, 49);
+	background-color: #3D405B;
 	/*bottom: 0;*/
 	font-size: 14px;
 	font-size: 0.8em;
@@ -2364,7 +2367,6 @@ overflow:hidden;}
 	z-index: -99;
 	/*max-width:900px;*/
 	display:block;
-	margin:0 auto;
 	flex-shrink: 0;
 }
 
