@@ -2347,6 +2347,8 @@ overflow:hidden;}
 
 .before-footer-cta #custom_html-6 h3 {
 	border-bottom: 3px solid #fff;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .before-footer-cta #custom_html-6,
