@@ -2351,6 +2351,7 @@ overflow:hidden;}
 .before-footer-cta a.button.secondary-cta:hover {
     background: #fff;
 	border: none;
+	color: #000;
 }
 
 .before-footer-cta #custom_html-6 h3 {
