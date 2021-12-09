@@ -3037,7 +3037,7 @@ h2.schedule-date_header {
 @media only screen and (max-width: 1023px) {
 	
 	.footer-col1 {
-		padding-left: 14rem;
+		padding-left: 16rem;
 	}
 	.site-footer {
 		background-position: -13rem;
@@ -3288,6 +3288,13 @@ aside.sidebar {displa}
 	}
 
 @media only screen and (max-width: 782px) {
+
+	.footer-col1 {
+		padding-left: 16rem;
+	}
+	.site-footer {
+		background-position: -18rem;
+	}
 
 	.before-footer-cta .wrap,
 	.site-inner, .flexible-widgets .widget, .site-footer {
