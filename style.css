@@ -2397,12 +2397,13 @@ overflow:hidden;}
 	/*max-width:900px;*/
 	display:block;
 	flex-shrink: 0;
-	transition: background-position 0.5s ease;
+	transition: background-position 0.5s ease-in-out;
 }
 
 .footer-col1 {
     display: inline-block;
     float: left;
+	transition: 0.5s ease-in-out;
 }
 
 .footer-col2 {
