@@ -3272,7 +3272,10 @@ aside.sidebar {displa}
 	.before-footer-cta #custom_html-7, 
 	.before-footer-cta #custom_html-8 {
 		display: block;
-	    width: 92%;
+	    width: 93%;
+	}
+	.before-footer-cta a.button.secondary-cta {
+		margin-right: 0;
 	}
 
 	.front-page-2 .flexible-widgets, .front-page-3 .flexible-widgets,.front-page-3 .flexible-widgets, .front-page-5 .flexible-widgets {
