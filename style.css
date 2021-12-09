@@ -2380,6 +2380,7 @@ overflow:hidden;}
 
 .site-footer {
 	background-color: #3D405B;
+	background-image: url("images/squiggle-footer.png");
 	/*bottom: 0;*/
 	font-size: 14px;
 	font-size: 0.8em;
