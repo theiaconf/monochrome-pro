@@ -107,6 +107,7 @@ input[type="search"]{
 	box-sizing: inherit;
 }
 
+/* Page*/
 
 /* Float Clearing
 --------------------------------------------- */
@@ -148,6 +149,15 @@ input[type="search"]{
 	display: table;
 }
 
+/* Vertical Page Sizing for Sticky Footer */
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Defaults
 ---------------------------------------------------------------------------------------------------- */
@@ -774,6 +784,7 @@ th:first-child {
 .site-container {
 	background-color: #fff;
 	z-index: 99;
+	flex: 1 0 auto;
 }
 
 .gmm-active .site-container {
@@ -2354,6 +2365,7 @@ overflow:hidden;}
 	/*max-width:900px;*/
 	display:block;
 	margin:0 auto;
+	flex-shrink: 0;
 }
 
 .footer-col1 {
