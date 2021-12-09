@@ -2362,7 +2362,7 @@ overflow:hidden;}
 .before-footer-cta #custom_html-8 {
 	display: inline-block;
 	margin: 0 5%;
-	max-width: 40%;
+	width: 39.75%;
 }
 
 /* Site Footer
@@ -2990,7 +2990,7 @@ h2.schedule-date_header {
 
 	.before-footer-cta .wrap,
 	.site-inner, .site-footer .wrap {
-		max-width: 800px;
+		/*max-width: 800px;*/
 	}
 
 	.content {
