@@ -2305,7 +2305,7 @@ overflow:hidden;}
 	padding-top: 45px;
 	margin-top:-40px;
 	text-align: left;
-	color:#fff!important;
+	color: #fff;
 }
 
 .before-footer-cta .wrap {
@@ -2321,7 +2321,7 @@ overflow:hidden;}
 .before-footer-cta a,
 .before-footer-cta p,
 .before-footer-cta .widget-title {
-	color: #fff!important;
+	
 	text-align:left;
 }
 
