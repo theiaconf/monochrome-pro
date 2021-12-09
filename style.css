@@ -3403,6 +3403,14 @@ aside.sidebar {displa}
 
 @media only screen and (max-width: 600px) {
 
+	.footer-col1 {
+		padding-left: 16rem;
+	}
+	.site-footer {
+		background-position: -30rem;
+	}
+
+
 /*	.admin-bar .site-inner {
 		margin-top: 98px;
 	}*/
