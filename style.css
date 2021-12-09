@@ -2397,6 +2397,7 @@ overflow:hidden;}
 	/*max-width:900px;*/
 	display:block;
 	flex-shrink: 0;
+	transition: background-position 0.5s ease;
 }
 
 .footer-col1 {
