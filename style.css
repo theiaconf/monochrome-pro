@@ -3002,14 +3002,22 @@ h2.schedule-date_header {
 
 @media only screen and (max-width: 1500px) {
 	.footer-col1 {
-		padding-left: 2rem;
+		padding-left: 7rem;
 	}
 	.site-footer {
-		background-position: -2rem;
+		background-position: -4rem;
 	}
 }
 
 @media only screen and (max-width: 1280px) {
+	
+	.footer-col1 {
+		padding-left: 9rem;
+	}
+	.site-footer {
+		background-position: -6rem;
+	}
+	
 
 	.before-footer-cta .wrap,
 	.site-inner, .site-footer .wrap {
