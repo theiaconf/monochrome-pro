@@ -2356,7 +2356,7 @@ overflow:hidden;}
 
 .before-footer-cta [id^="custom_html-"] {
 	text-align: center;
-	font-weight: bold;
+	font-weight: 500;
 }
 .before-footer-cta [id^="custom_html-"] span {
 	display: block;
@@ -3265,6 +3265,9 @@ aside.sidebar {displa}
 		max-width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.before-footer-cta #custom_html-7 {
+		margin-bottom: 3rem;
 	}
 	.before-footer-cta #custom_html-7, 
 	.before-footer-cta #custom_html-8 {
