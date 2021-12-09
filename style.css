@@ -3401,7 +3401,7 @@ aside.sidebar {displa}
 	
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 734px) {
 
 	.footer-col1 {
 		padding-left: 16rem;
@@ -3409,6 +3409,9 @@ aside.sidebar {displa}
 	.site-footer {
 		background-position: -30rem;
 	}
+}
+
+@media only screen and (max-width: 600px) {
 
 
 /*	.admin-bar .site-inner {
