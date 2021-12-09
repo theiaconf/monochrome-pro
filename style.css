@@ -3013,6 +3013,11 @@ h2.schedule-date_header {
 	.site-inner {
 		/*max-width: 780px;*/
 	}
+	.before-footer-cta #custom_html-7, 
+	.before-footer-cta #custom_html-8 {
+	    margin: 0 4%;
+	}
+	
 
 	.content,
 	.full-width-content .content, .full-width-content .content-sidebar-wrap .content, 
@@ -3251,6 +3256,11 @@ aside.sidebar {displa}
 		max-width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.before-footer-cta #custom_html-7, 
+	.before-footer-cta #custom_html-8 {
+		display: block;
+	    width: 90%;
 	}
 
 	.front-page-2 .flexible-widgets, .front-page-3 .flexible-widgets,.front-page-3 .flexible-widgets, .front-page-5 .flexible-widgets {
