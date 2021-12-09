@@ -2345,8 +2345,19 @@ overflow:hidden;}
 	font-size: 2rem;
 }
 
+.before-footer-cta #custom_html-6 h3 {
+	border-bottom: 3px solid #fff;
+}
+
+.before-footer-cta #custom_html-6,
 .before-footer-cta #custom_html-7,
 .before-footer-cta #custom_html-8 {
+	text-align: center;
+}
+.before-footer-cta #custom_html-7,
+.before-footer-cta #custom_html-8 {
+	display: inline-block;
+	margin: 0 5%;
 	max-width: 40%;
 }
 
