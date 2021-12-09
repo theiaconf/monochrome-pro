@@ -2301,7 +2301,7 @@ overflow:hidden;}
 .before-footer-cta {
 	background-color: #3D405B;
 	line-height: 1.5;
-	padding-bottom: 40px;
+	padding-bottom: 0;
 	padding-top: 45px;
 	margin-top:-40px;
 	text-align: left;
@@ -2381,12 +2381,15 @@ overflow:hidden;}
 .site-footer {
 	background-color: #3D405B;
 	background-image: url("images/squiggle-footer.png");
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
 	/*bottom: 0;*/
 	font-size: 14px;
 	font-size: 0.8em;
 	line-height: 1.6;
 	/*padding-bottom: 40px;*/
-	padding-top: 20px;
+	padding-top: 6rem;
 	/*position: fixed;*/
 	/*text-align: center;*/
 	/*width: 100%;*/
