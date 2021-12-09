@@ -2344,8 +2344,13 @@ overflow:hidden;}
 	font-size: 2rem;
 }
 
-.before-footer-cta a.secondary-cta {
+.before-footer-cta a.button.secondary-cta {
     background: rgb(224, 122, 95);
+	border: none;
+}
+.before-footer-cta a.button.secondary-cta:hover {
+    background: #fff;
+	border: none;
 }
 
 .before-footer-cta #custom_html-6 h3 {
