@@ -2541,6 +2541,7 @@ span.event-categories {font-weight:700;}
 	justify-content: center;
 	background: rgb(255, 255, 255);
 	margin-right: 10px;
+	margin-top: 10px;
 }
 
 .sponsor_card_small-logo {
@@ -3045,7 +3046,7 @@ h2.schedule-date_header {
 		/*max-width: 780px;*/
 	}
 	.before-footer-cta [id^="textblockswidget-"] {
-	    margin: 0 4%;
+	    margin: 4rem 4% 0 4%;
 	}
 
 	.content,
