@@ -2350,11 +2350,12 @@ overflow:hidden;}
 .before-footer-cta [id^="textblockswidget-"] {
 	text-align: center;
 	display: inline-block;
-	margin: 0 5%;
+	margin: 4rem 5% 0;
 	width: 39.75%;
 }
 .before-footer-cta [id^="textblockswidget-"]:first-of-type {
 	width: 90%;
+	margin-top: 0;
 }
 .before-footer-cta .text-block h3 {
 	border-bottom: 3px solid #fff;
@@ -2362,12 +2363,6 @@ overflow:hidden;}
 	padding-bottom: 1.5rem;
     width: -moz-fit-content;
     width: fit-content;
-}
-.before-footer-cta #custom_html-7,
-.before-footer-cta #custom_html-8 {
-	display: inline-block;
-	margin: 0 5%;
-	width: 39.75%;
 }
 
 /* Site Footer
