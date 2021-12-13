@@ -2347,13 +2347,13 @@ overflow:hidden;}
 	color: #000;
 }
 
-.before-footer-cta .text-block {
+.before-footer-cta [id^="textblockswidget-"] {
 	text-align: center;
 	display: inline-block;
 	margin: 0 5%;
 	width: 39.75%;
 }
-.before-footer-cta .text-block:first-of-type {
+.before-footer-cta [id^="textblockswidget-"]:first-of-type {
 	width: 90%;
 }
 .before-footer-cta .text-block h3 {
