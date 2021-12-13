@@ -2317,9 +2317,9 @@ overflow:hidden;}
 	margin-bottom: 0;
 }
 
-.before-footer-cta .widget-title {
-	font-size:24px;
-	font-size:1.5em;
+.before-footer-cta .widget-title,
+.before-footer-cta h3 {
+	font-size: 2.8rem;
 }
 
 .before-footer-cta a {
