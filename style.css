@@ -2317,13 +2317,6 @@ overflow:hidden;}
 	margin-bottom: 0;
 }
 
-.before-footer-cta,
-.before-footer-cta a,
-.before-footer-cta p,
-.before-footer-cta .widget-title {
-	text-align:left;
-}
-
 .before-footer-cta .widget-title {
 	font-size:24px;
 	font-size:1.5em;
@@ -2338,9 +2331,10 @@ overflow:hidden;}
 	border-bottom: 1px solid transparent;
 }
 
-.before-footer-cta p {
-	font-size: 20px;
-	font-size: 2rem;
+.before-footer-cta p,
+.before-footer-cta span {
+	font-size: 1.8rem;
+	font-weight: 500;
 }
 
 .before-footer-cta a.button.secondary-cta {
@@ -2356,7 +2350,6 @@ overflow:hidden;}
 .before-footer-cta [id^="custom_html-"],
 .before-footer-cta .text-block {
 	text-align: center;
-	font-weight: 500;
 }
 .before-footer-cta [id^="custom_html-"] span,
 .before-footer-cta .text-block span {
