@@ -3044,8 +3044,7 @@ h2.schedule-date_header {
 	.site-inner {
 		/*max-width: 780px;*/
 	}
-	.before-footer-cta #custom_html-7, 
-	.before-footer-cta #custom_html-8 {
+	.before-footer-cta [id^="textblockswidget-"] {
 	    margin: 0 4%;
 	}
 
@@ -3294,11 +3293,10 @@ aside.sidebar {displa}
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.before-footer-cta #custom_html-7 {
+	.before-footer-cta [id^="textblockswidget-"] {
 		margin-bottom: 3rem;
 	}
-	.before-footer-cta #custom_html-7, 
-	.before-footer-cta #custom_html-8 {
+	.before-footer-cta [id^="textblockswidget-"] {
 		display: block;
 	    width: 92%;
 	}
