@@ -2362,7 +2362,7 @@ overflow:hidden;}
 .before-footer-cta .text-block span {
 	display: block;
 }
-.before-footer-cta #custom_html-6 h3
+.before-footer-cta #custom_html-6 h3,
 .before-footer-cta .text-block h3 {
 	border-bottom: 3px solid #fff;
 	display: inline-block;
