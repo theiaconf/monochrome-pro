@@ -2906,65 +2906,76 @@ h2.schedule-date_header {
 	font-weight: 600;
 }
 
-/*.masthead-banner.about,*/
 .page-template-page_about .masthead-banner {
 	background-color: #A699CB;
 	color: #3D405B;
 }
-/*.masthead-banner.about .banner-section-title::after,*/
 .page-template-page_about .banner-section-title::after {
     content: "About"; 
 }
 
-/*.masthead-banner.engage,*/
 .page-template-page_engage .masthead-banner {
 	background-color: #F4F1DE;
 	color: #212231;
 }
-/*.masthead-banner.engage .banner-section-title::after,*/
 .page-template-page_engage .banner-section-title::after {
     content: "Engage"; 
 }
 
-
-/*.masthead-banner.present,*/
 .page-template-page_present .masthead-banner {
 	background-color: #F2CC8F;
 	color: #F4F1DE;
 }
-/*.masthead-banner.present .banner-section-title::after,*/
 .page-template-page_present .banner-section-title::after {
     content: "Present"; 
 }
 
-/*.masthead-banner.program,*/
 .page-template-page_program .masthead-banner {
 	background-color: #3D405B;
 	color: #F4F1DE;
 }
-/*.masthead-banner.program .banner-section-title::after,*/
 .page-template-page_program .banner-section-title::after {
     content: "Program"; 
 }
 
-/*.masthead-banner.register,*/
 .page-template-page_register .masthead-banner {
 	background-color: #E07A5F;
 	color: #F4F1DE;
 }
-/*.masthead-banner.register .banner-section-title::after,*/
 .page-template-page_register .banner-section-title::after {
     content: "Register"; 
 }
 
-/*.masthead-banner.sponsor,*/
 .page-template-page_sponsor .masthead-banner {
 	background-color: #212231;
 	color: #E07A5F;
 }
-/*.masthead-banner.sponsor .banner-section-title::after,*/
 .page-template-page_sponsor .banner-section-title::after {
   content: "Sponsor"; 
+}
+
+.page-template-page_what-is-iac .masthead-banner {
+	background-color: #A699CB;
+	color: #3D405B;
+}
+.page-template-page_what-is-iac .banner-section-title::after {
+  content: "What Is IAC?"; 
+}
+
+.page-template-page_attend .masthead-banner {
+	background-color: #E07A5F;
+	color: #F4F1DE;
+}
+.page-template-page_attend .banner-section-title::after {
+  content: "Attend"; 
+}
+
+.page-template-page_attendee-login .masthead-banner {
+	background-color: #F4F1DE;
+	color: #212231;
+}
+.page-template-page_attendee-login .banner-section-title::after {
+  content: "Attendee Login"; 
 }
 
 .masthead-banner .text-block {
@@ -2978,7 +2989,6 @@ h2.schedule-date_header {
 
 .banner-site-title {
 	font-size: 3rem;
-	/*margin-left: -30%;*/
 }
 .banner-site-subtitle {
 	font-size: 3rem;
@@ -2986,7 +2996,6 @@ h2.schedule-date_header {
 .banner-section-title {
 	font-size: 3rem;
 	font-weight: 700;
-	/*margin-left: 30%;*/
 }
 
 
