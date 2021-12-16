@@ -785,6 +785,8 @@ th:first-child {
 	background-color: #fff;
 	z-index: 99;
 	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .gmm-active .site-container {
@@ -807,6 +809,8 @@ th:first-child {
 	position: relative;
 	word-wrap: normal;
 	z-index: 1;
+	flex-grow: inherit;
+	width: 100%;
 }
 
 .full-width-content.featured-image .site-inner {
@@ -2331,6 +2335,9 @@ overflow:hidden;}
 	border-bottom: 1px solid transparent;
 }
 
+.before-footer-cta p {
+	max-width: none;
+}
 .before-footer-cta p,
 .before-footer-cta span {
 	font-size: 1.8rem;
@@ -2910,6 +2917,14 @@ h2.schedule-date_header {
 }
 .page-template-page_attendee-login .banner-section-title::after {
   content: "Attendee Login"; 
+}
+
+.page-template-page_dashboard .masthead-banner {
+	background-color: #F4F1DE;
+	color: #212231;
+}
+.page-template-page_dashboard .banner-section-title::after {
+    content: "Dashboard";
 }
 
 .masthead-banner .text-block {
