@@ -810,6 +810,7 @@ th:first-child {
 	word-wrap: normal;
 	z-index: 1;
 	flex-grow: inherit;
+	width: 100%;
 }
 
 .full-width-content.featured-image .site-inner {
