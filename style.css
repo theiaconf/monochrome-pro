@@ -103,6 +103,7 @@ input[type="search"]{
 	box-sizing: inherit;
 }
 
+/* Page*/
 
 /* Float Clearing
 --------------------------------------------- */
@@ -144,6 +145,15 @@ input[type="search"]{
 	display: table;
 }
 
+/* Vertical Page Sizing for Sticky Footer */
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Defaults
 ---------------------------------------------------------------------------------------------------- */
@@ -774,6 +784,7 @@ th:first-child {
 .site-container {
 	background-color: #fff;
 	z-index: 99;
+	flex: 1 0 auto;
 }
 
 .gmm-active .site-container {
@@ -2288,15 +2299,13 @@ overflow:hidden;}
 }
 
 .before-footer-cta {
-	background-color: #0066cc;
-	background: linear-gradient(45deg,#0066cc,#02cbfb);
+	background-color: #3D405B;
 	line-height: 1.5;
-	padding-bottom: 40px;
+	padding-bottom: 0;
 	padding-top: 45px;
-	margin-bottom:30px;
 	margin-top:-40px;
 	text-align: left;
-	color:#fff!important;
+	color: #fff;
 }
 
 .before-footer-cta .wrap {
@@ -2308,57 +2317,83 @@ overflow:hidden;}
 	margin-bottom: 0;
 }
 
-.before-footer-cta,
-.before-footer-cta a,
-.before-footer-cta p,
-.before-footer-cta .widget-title {
-	color: #fff!important;
-	text-align:left;
-}
-
-.before-footer-cta .widget-title {
-	font-size:24px;
-	font-size:1.5em;
+.before-footer-cta .widget-title,
+.before-footer-cta h3 {
+	font-size: 2.8rem;
 }
 
 .before-footer-cta a {
 	border-bottom: 1px solid currentColor;
 }
 
-
 .before-footer-cta a:focus,
 .before-footer-cta a:hover, .before-footer-cta a.button {
 	border-bottom: 1px solid transparent;
 }
 
-.before-footer-cta p {
-	font-size: 20px;
-	font-size: 2rem;
+.before-footer-cta p,
+.before-footer-cta span {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.before-footer-cta a.button.secondary-cta {
+    background: rgb(224, 122, 95);
+	border: none;
+}
+.before-footer-cta a.button.secondary-cta:hover {
+    background: #fff;
+	border: none;
+	color: #000;
+}
+
+.before-footer-cta [id^="textblockswidget-"] {
+	text-align: center;
+	display: inline-block;
+	margin: 4rem 5% 0;
+	width: 39.75%;
+}
+.before-footer-cta [id^="textblockswidget-"]:first-of-type {
+	width: 90%;
+	margin-top: 0;
+}
+.before-footer-cta .text-block h3 {
+	border-bottom: 3px solid #fff;
+	display: inline-block;
+	padding-bottom: 1.5rem;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 /* Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: rgb(33, 34, 49);
+	background-color: #3D405B;
+	background-image: url("images/squiggle-footer.png");
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
 	/*bottom: 0;*/
 	font-size: 14px;
 	font-size: 0.8em;
 	line-height: 1.6;
 	/*padding-bottom: 40px;*/
-	padding-top: 20px;
+	padding-top: 6rem;
 	/*position: fixed;*/
 	/*text-align: center;*/
 	/*width: 100%;*/
 	z-index: -99;
 	/*max-width:900px;*/
 	display:block;
-	margin:0 auto;
+	flex-shrink: 0;
+	transition: background-position 0.5s ease-in-out;
 }
 
 .footer-col1 {
     display: inline-block;
     float: left;
+	transition: 0.5s ease-in-out;
 }
 
 .footer-col2 {
@@ -2506,6 +2541,7 @@ span.event-categories {font-weight:700;}
 	justify-content: center;
 	background: rgb(255, 255, 255);
 	margin-right: 10px;
+	margin-top: 10px;
 }
 
 .sponsor_card_small-logo {
@@ -2765,14 +2801,162 @@ h2.schedule-date_header {
 	text-align: center;
 }
 
+/**
+ * Grid for co-chairs using a similar layout to presenters
+ */
+.cochairs {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	align-items: top;
+}
+
+.cochairs .cochairs-cochair {
+	width: 22rem;
+	margin-right: 1rem;
+}
+
+.cochairs-cochair-name {
+	text-align: center;
+}
+
+/************************************* 
+ * Masthead Banner for Site Sections *
+ *************************************/
+
+.front-page-1,
+.masthead-banner {
+  background-image: url("https://www.theiaconference.com//wp-content/themes/monochrome-pro/images/squiggle-left.png"),
+					url("https://theiaconference.com/stage/wp-content/themes/monochrome-pro/images/squiggle-right.png");
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 18rem auto;
+  padding: 2rem 0;
+}
+.front-page-1 {
+  background-color: rgb(33, 34, 49);
+}
+.masthead-banner strong {
+	font-weight: 600;
+}
+
+.page-template-page_about .masthead-banner {
+	background-color: #A699CB;
+	color: #3D405B;
+}
+.page-template-page_about .banner-section-title::after {
+    content: "About"; 
+}
+
+.page-template-page_engage .masthead-banner {
+	background-color: #F4F1DE;
+	color: #212231;
+}
+.page-template-page_engage .banner-section-title::after {
+    content: "Engage"; 
+}
+
+.page-template-page_present .masthead-banner {
+	background-color: #F2CC8F;
+	color: #F4F1DE;
+}
+.page-template-page_present .banner-section-title::after {
+    content: "Present"; 
+}
+
+.page-template-page_program .masthead-banner {
+	background-color: #3D405B;
+	color: #F4F1DE;
+}
+.page-template-page_program .banner-section-title::after {
+    content: "Program"; 
+}
+
+.page-template-page_register .masthead-banner {
+	background-color: #E07A5F;
+	color: #F4F1DE;
+}
+.page-template-page_register .banner-section-title::after {
+    content: "Register"; 
+}
+
+.page-template-page_sponsor .masthead-banner {
+	background-color: #212231;
+	color: #E07A5F;
+}
+.page-template-page_sponsor .banner-section-title::after {
+  content: "Sponsor"; 
+}
+
+.page-template-page_what-is-iac .masthead-banner {
+	background-color: #A699CB;
+	color: #3D405B;
+}
+.page-template-page_what-is-iac .banner-section-title::after {
+  content: "What Is IAC?"; 
+}
+
+.page-template-page_attend .masthead-banner {
+	background-color: #E07A5F;
+	color: #F4F1DE;
+}
+.page-template-page_attend .banner-section-title::after {
+  content: "Attend"; 
+}
+
+.page-template-page_attendee-login .masthead-banner {
+	background-color: #F4F1DE;
+	color: #212231;
+}
+.page-template-page_attendee-login .banner-section-title::after {
+  content: "Attendee Login"; 
+}
+
+.masthead-banner .text-block {
+	margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.masthead-banner span {
+	display: block;
+}
+
+.banner-site-title {
+	font-size: 3rem;
+}
+.banner-site-subtitle {
+	font-size: 3rem;
+}
+.banner-section-title {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
+@media only screen and (max-width: 1500px) {
+	.footer-col1 {
+		padding-left: 7rem;
+	}
+	.site-footer {
+		background-position: -4rem;
+	}
+}
+
 @media only screen and (max-width: 1280px) {
+	
+	.footer-col1 {
+		padding-left: 12rem;
+	}
+	.site-footer {
+		background-position: -11rem;
+	}
+	
 
 	.before-footer-cta .wrap,
 	.site-inner, .site-footer .wrap {
-		max-width: 800px;
+		/*max-width: 800px;*/
 	}
 
 	.content {
@@ -2786,6 +2970,14 @@ h2.schedule-date_header {
 }
 
 @media only screen and (max-width: 1023px) {
+	
+	.footer-col1 {
+		padding-left: 16rem;
+	}
+	.site-footer {
+		background-position: -13rem;
+	}
+		
 	.header-image .site-title > a {
 		min-height:50px;
 		margin-top:-1.1em;
@@ -2793,7 +2985,10 @@ h2.schedule-date_header {
 
 	.before-footer-cta .wrap,
 	.site-inner {
-		max-width: 780px;
+		/*max-width: 780px;*/
+	}
+	.before-footer-cta [id^="textblockswidget-"] {
+	    margin: 4rem 4% 0 4%;
 	}
 
 	.content,
@@ -3028,11 +3223,28 @@ aside.sidebar {display}
 
 @media only screen and (max-width: 782px) {
 
+	.footer-col1 {
+		padding-left: 16rem;
+	}
+	.site-footer {
+		background-position: -18rem;
+	}
+
 	.before-footer-cta .wrap,
 	.site-inner, .flexible-widgets .widget, .site-footer {
 		max-width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.before-footer-cta [id^="textblockswidget-"] {
+		margin-bottom: 3rem;
+	}
+	.before-footer-cta [id^="textblockswidget-"] {
+		display: block;
+	    width: 92%;
+	}
+	.before-footer-cta a.button.secondary-cta {
+		margin-right: 0;
 	}
 
 	.front-page-2 .flexible-widgets, .front-page-3 .flexible-widgets,.front-page-3 .flexible-widgets, .front-page-5 .flexible-widgets {
@@ -3107,11 +3319,18 @@ aside.sidebar {display}
 	.cloud-city-digit {font-size:0.9em!important;}
 }
 
-/* @media only screen and (max-width: 600px) { */
+@media only screen and (max-width: 734px) {
 
-/*	.admin-bar .site-inner {
-		margin-top: 98px;
-	}*/
+	.footer-col1 {
+		padding-left: 16rem;
+	}
+	.site-footer {
+		background-position: -30rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) { */
 
 	.admin-bar .site-header {
 		position: relative;
