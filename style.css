@@ -2741,6 +2741,35 @@ h3.session-workshop_title {
 	text-decoration: none;
 }
 
+/**
+ * Styling for the registration form components relating to workshops
+*/
+.gform_wrapper.gravity-theme .workshop-registration-entries input[type="checkbox"] {
+	vertical-align: top;
+	margin-top: 6px;
+}
+
+.gform_wrapper.gravity-theme .workshop-registration-entries input + label {
+	margin-left: 1.5rem;
+	vertical-align: top;
+}
+
+.workshop-registration-entries .workshop-title {
+	font-weight: 400;
+}
+
+.workshop-registration-entries .workshop-date ul {
+  margin: 0;
+	margin-top: 2rem;
+  padding: 0;
+}
+
+.workshop-registration-entries .workshop-date li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Speakers grid
 --------------------------------------------- */
 .presenter_list_left {	
