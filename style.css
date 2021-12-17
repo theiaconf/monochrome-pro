@@ -432,7 +432,8 @@ h6 {
 
 .header-background {
 	background-image: url("images/header-background.svg");
-	background-size: contain;
+	background-size: cover;
+	background-repeat: none;
 	color: #fff;
 }
 
