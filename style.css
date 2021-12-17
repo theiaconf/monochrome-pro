@@ -426,6 +426,16 @@ h6 {
 	font-size: 1.6rem;
 }
 
+/************************************* 
+ * Header Background Banners         *
+ *************************************/
+
+.header-background {
+	background-image: url("images/header-background.svg");
+	background-size: contain;
+	color: #fff;
+}
+
 /* Objects
 --------------------------------------------- */
 
@@ -2975,6 +2985,7 @@ h2.schedule-date_header {
 	font-size: 3rem;
 	font-weight: 700;
 }
+
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
