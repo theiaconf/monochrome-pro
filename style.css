@@ -439,15 +439,19 @@ h6 {
 }
 .header-background.blue {
 	background-image: url("images/header-background.svg");
+	padding: 2rem;
 }
 .header-background.red {
 	background-image: url("images/header-background-red.svg");
+	padding: 2rem;
 }
 .header-background.orange {	
 	background-image: url("images/header-background-orange.svg");
+	padding: 2rem;
 }
 .header-background.salmon {	
 	background-image: url("images/header-background-salmon.svg");
+	padding: 2rem;
 }
 
 /* Objects
