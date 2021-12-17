@@ -431,10 +431,23 @@ h6 {
  *************************************/
 
 .header-background {
+	background-color: transparent;
 	background-image: url("images/header-background.svg");
 	background-size: cover;
 	background-repeat: none;
 	color: #fff;
+}
+.header-background.blue {
+	background-image: url("images/header-background.svg");
+}
+.header-background.red {
+	background-image: url("images/header-background-red.svg");
+}
+.header-background.orange {	
+	background-image: url("images/header-background-orange.svg");
+}
+.header-background.salmon {	
+	background-image: url("images/header-background-salmon.svg");
 }
 
 /* Objects
