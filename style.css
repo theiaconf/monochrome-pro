@@ -2466,6 +2466,68 @@ overflow:hidden;}
 span.event-categories {font-weight:700;}
 
 /**
+ * Ticket options
+ */
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+	margin-bottom: 1em;
+}
+
+.table-cell {
+	padding-left: 0.25em;
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.ticket-tiers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+}
+
+.ticket-tier {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	min-width: 15rem;
+	max-width: 50rem;
+	height: auto;
+	margin-top: 1em;
+	margin-bottom: 2rem;
+	
+	border: 1px solid rgb(0, 0, 0);
+	border-bottom: 0;
+}
+
+.ticket-label {
+	font-weight: bold;
+	background: rgb(192, 192, 192);
+	padding-left: 1.5rem;
+}
+
+.ticket-pricing {
+  padding-left: 1.5rem;
+}
+
+.ticket-benefits {
+	flex: 1 0 auto;
+	padding-left: 1.5rem;
+}
+
+.ticket-benefits ul > li.no-bullet {
+	list-style-type: none;
+}
+
+.ticket-benefits ul > li i {
+	color: green;
+	margin-right: 0.25em;
+}
+
+/**
  * Specific elements for theme
  */
 /**
@@ -3615,53 +3677,6 @@ th {
 
 .headshot-name {
 	text-align: center;
-}
-
-/**
- * Ticket options
- */
-.table {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-	margin-bottom: 1em;
-}
-
-.table-cell {
-	padding-left: 0.25em;
-	border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-.tickets-tier {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	min-width: 15em;
-	height: auto;
-	margin-top: 1em;
-	
-	border: 1px solid rgb(0, 0, 0);
-	border-bottom: 0;
-}
-
-.tickets-label {
-	font-weight: bold;
-	background: rgb(192, 192, 192);
-}
-
-.tickets-pricing {}
-.tickets-benefits {
-	flex: 1 0 auto;
-}
-
-.tickets-benefits ul > li.no-bullet {
-	list-style-type: none;
-}
-
-.tickets-benefits ul > li i {
-	color: green;
-	margin-right: 0.25em;
 }
 
 .primary_cta a {
