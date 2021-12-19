@@ -433,6 +433,7 @@ h6 {
 .header-background {
 	background-color: transparent;
 	background-image: url("images/header-background.svg");
+	background-position: right;
 	background-size: cover;
 	background-repeat: none;
 	color: #fff;
