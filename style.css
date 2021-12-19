@@ -3377,6 +3377,13 @@ aside.sidebar {display}
 		margin: 0;
 		width: 100%;
 	}
+	
+	.front-page-1, .masthead-banner {
+	    background-size: 25%;
+	}
+	.front-page-1 .text-block.hometown-hero {
+	    margin: 0 20rem;
+	}
 
 }
 
@@ -3391,6 +3398,10 @@ aside.sidebar {display}
 	.cloud-city-dash, .cloud-city-tripdash {height:2.5em!important;}
 		.cloud-city-dash_title {font-size:0.6em!important;}
 	.cloud-city-digit {font-size:0.9em!important;}
+	
+	.front-page-1 .text-block.hometown-hero {
+	    margin: 0 16rem;
+	}
 }
 
 @media only screen and (max-width: 734px) {
@@ -3417,6 +3428,10 @@ aside.sidebar {display}
 
 	.footer-cta-button {
 		display: block;
+	}
+	
+	.front-page-1 .text-block.hometown-hero {
+	    margin: 0 9rem;
 	}
 
 }
