@@ -1677,6 +1677,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	float: right;
 	margin-top: 2px;
 	text-align: right;
+	z-index: 9999;
 }
 
 .nav-primary .genesis-nav-menu .sub-menu a {
