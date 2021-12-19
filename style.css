@@ -2902,6 +2902,9 @@ h2.schedule-date_header {
 .front-page-1 {
   background-color: rgb(33, 34, 49);
 }
+.front-page-1 .hero-title {
+	font-size: 3rem;
+}
 .masthead-banner strong {
 	font-weight: 600;
 }
