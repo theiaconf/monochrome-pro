@@ -82,10 +82,10 @@
 --------------------------------------------- */
 /* normalize.css v4.1.1 | MIT License | http://necolas.github.io/normalize.css/ */
 
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}template,[hidden]{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background-color:#ff0;color:#4C4C4D}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:1}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/*IAS Import Montserrat font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-/*IAS Import Anton font*/
-@import url('https://fonts.googleapis.com/css?family=Anton');
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}template,[hidden]{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background-color:#ff0;color:#4C4C4D}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:1}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 
 /* Box Sizing
 --------------------------------------------- */
@@ -424,6 +424,35 @@ h5 {
 h6 {
 	font-size: 16px;
 	font-size: 1.6rem;
+}
+
+/************************************* 
+ * Header Background Banners         *
+ *************************************/
+
+.header-background {
+	background-color: transparent;
+	background-image: url("images/header-background.svg");
+	background-position: right;
+	background-size: cover;
+	background-repeat: none;
+	color: #fff;
+}
+.header-background.blue {
+	background-image: url("images/header-background.svg");
+	padding: 2rem;
+}
+.header-background.red {
+	background-image: url("images/header-background-red.svg");
+	padding: 2rem;
+}
+.header-background.orange {	
+	background-image: url("images/header-background-orange.svg");
+	padding: 2rem;
+}
+.header-background.salmon {	
+	background-image: url("images/header-background-salmon.svg");
+	padding: 2rem;
 }
 
 /* Objects
@@ -1648,6 +1677,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	float: right;
 	margin-top: 2px;
 	text-align: right;
+	z-index: 9999;
 }
 
 .nav-primary .genesis-nav-menu .sub-menu a {
@@ -2934,6 +2964,9 @@ h2.schedule-date_header {
 .front-page-1 {
   background-color: rgb(33, 34, 49);
 }
+.front-page-1 .hero-title {
+	font-size: 3rem;
+}
 .masthead-banner strong {
 	font-weight: 600;
 }
@@ -3037,6 +3070,7 @@ h2.schedule-date_header {
 	font-size: 3rem;
 	font-weight: 700;
 }
+
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -3409,6 +3443,13 @@ aside.sidebar {display}
 		margin: 0;
 		width: 100%;
 	}
+	
+	.front-page-1, .masthead-banner {
+	    background-size: 25%;
+	}
+	.front-page-1 .text-block.hometown-hero {
+	    margin: 0 20rem;
+	}
 
 }
 
@@ -3423,6 +3464,10 @@ aside.sidebar {display}
 	.cloud-city-dash, .cloud-city-tripdash {height:2.5em!important;}
 		.cloud-city-dash_title {font-size:0.6em!important;}
 	.cloud-city-digit {font-size:0.9em!important;}
+	
+	.front-page-1 .text-block.hometown-hero {
+	    margin: 0 16rem;
+	}
 }
 
 @media only screen and (max-width: 734px) {
@@ -3449,6 +3494,10 @@ aside.sidebar {display}
 
 	.footer-cta-button {
 		display: block;
+	}
+	
+	.front-page-1 .text-block.hometown-hero {
+	    margin: 0 9rem;
 	}
 
 }
