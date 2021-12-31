@@ -213,7 +213,7 @@ p .line {
 .front-page-5 .flexible-widgets .widget:nth-of-type(1) .widget-title,
 .front-page-6 .flexible-widgets .widget:nth-of-type(1) .widget-title,
 .front-page-7 .flexible-widgets .widget:nth-of-type(1) .widget-title {
-  font-family: "Arial", sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 48px;
   font-size: 4.8rem;
   font-weight: 600;
@@ -244,7 +244,7 @@ p .line {
 }
 
 .front-page-1 .widget-title {
-  font-family: "Arial", sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 60px;
   font-size: 6rem;
   font-weight: 900;
@@ -716,7 +716,7 @@ p .line {
 
 .flexible-widgets .featured-content .entry-title {
   /* Switch to Nunito / Montserrat */
-  font-family: "Arial", sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   margin: 1.56rem 0 1rem 0;
