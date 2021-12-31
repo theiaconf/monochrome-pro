@@ -2862,6 +2862,110 @@ h3.session-workshop_title {
   padding: 0;
 }
 
+/**
+ * Session overview cards with date, time, and summary
+ */
+ .session-card {
+    max-width: 90rem;
+    display: flex;
+    border-radius: 0.625rem;
+    box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
+	margin-bottom: 3rem;
+}
+  
+.session-card-overview {
+    min-width: 22rem;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+	padding: 1rem 3rem 0 5rem;
+}
+
+
+/* .divider {
+	height: 50rem;
+	width: 1.5rem;
+	background-color:#DE795D;
+	margin-top: 3rem; 
+	margin-bottom: 3rem;
+
+} */
+
+  
+.session-card-summary {
+	width: auto;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+	padding: 1rem 5rem 0.5rem 3rem;
+}
+
+.session-card-summary-item {
+	margin-bottom: 2rem;
+}
+
+.session-card-summary-title a {
+	/* color: #DE795D; */
+}
+
+/* These should eventually be changed site wide */
+
+.session-card-summary-title a,
+.session-card-speakers-speaker-name a {
+	text-decoration: none;
+}
+
+.session-card-summary p {
+    margin-bottom: 3em;
+}
+  
+.session-card-speakers {
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    margin: 3rem 2rem 1rem 0;
+}
+  
+.session-card-speakers-speaker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding: 0 2rem 1rem 1rem;
+}
+
+.session-card-speakers-speaker a {
+	text-align: center;
+}
+ 
+.session-card-speakers-speaker-image {
+	border-radius: 50%; 
+	margin-bottom: 1rem;
+	overflow: hidden; 
+	width: 11rem; 
+	height: 11rem;
+	object-fit: cover;
+	object-position: cover;
+}
+
+.session-card-speakers-speaker-image img {
+	max-width: 100%;
+	max-height: 100%;
+
+}
+
+@media screen and (max-width: 670px) {
+	.session-card {
+		max-width: 90rem;
+		display: flex;
+		flex-direction: column;
+		border-radius: 0.625rem;
+		box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+		margin-bottom: 3rem;
+	}
+}
+
+
 /* Speakers grid
 --------------------------------------------- */
 .presenter_list_left {	
