@@ -2917,6 +2917,10 @@ h3.session-workshop_title {
     margin-bottom: 3em;
 }
   
+.session-card-additional-times p {
+	margin: 0;
+}
+
 .session-card-speakers {
     max-height: 100%;
     display: flex;
