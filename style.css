@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: https://www.studiopress.com/
 
-	Version: 1.22.20211106.1931
+	Version: 1.22.20211106.1932
 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, e-commerce, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -1121,7 +1121,8 @@ aside.sidebar img {max-width:250px!important;width:auto!important;max-height:200
 }
 
 .entry-title {
-	font-size: 56px;
+	font-size: 42px;
+	font-size: 4.2rem;
 	font-weight: 400;
 	margin: 2.5rem 0;
 }
@@ -2333,13 +2334,15 @@ overflow:hidden;}
 }
 
 .before-footer-cta {
-	background-color: #3D405B;
+	background-color: #0066cc;
+	background: linear-gradient(45deg,#0066cc,#02cbfb);
 	line-height: 1.5;
-	padding-bottom: 0;
+	padding-bottom: 40px;
 	padding-top: 45px;
+	margin-bottom:30px;
 	margin-top:-40px;
 	text-align: left;
-	color: #fff;
+	color:#fff!important;
 }
 
 .before-footer-cta .wrap {
@@ -2351,9 +2354,17 @@ overflow:hidden;}
 	margin-bottom: 0;
 }
 
-.before-footer-cta .widget-title,
-.before-footer-cta h3 {
-	font-size: 2.8rem;
+.before-footer-cta,
+.before-footer-cta a,
+.before-footer-cta p,
+.before-footer-cta .widget-title {
+	color: #fff!important;
+	text-align:left;
+}
+
+.before-footer-cta .widget-title {
+	font-size:24px;
+	font-size:1.5em;
 }
 
 .before-footer-cta a {
@@ -2366,65 +2377,28 @@ overflow:hidden;}
 }
 
 .before-footer-cta p {
-	max-width: none;
-}
-.before-footer-cta p,
-.before-footer-cta span {
-	font-size: 1.8rem;
-	font-weight: 500;
-}
-
-.before-footer-cta a.button.secondary-cta {
-    background: rgb(224, 122, 95);
-	border: none;
-}
-.before-footer-cta a.button.secondary-cta:hover {
-    background: #fff;
-	border: none;
-	color: #000;
-}
-
-.before-footer-cta [id^="textblockswidget-"] {
-	text-align: center;
-	display: inline-block;
-	margin: 4rem 5% 0;
-	width: 39.75%;
-}
-.before-footer-cta [id^="textblockswidget-"]:first-of-type {
-	width: 90%;
-	margin-top: 0;
-}
-.before-footer-cta .text-block h3 {
-	border-bottom: 3px solid #fff;
-	display: inline-block;
-	padding-bottom: 1.5rem;
-    width: -moz-fit-content;
-    width: fit-content;
+	font-size: 20px;
+	font-size: 2rem;
 }
 
 /* Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #3D405B;
-	background-image: url("images/squiggle-footer.png");
-	background-position: left;
-	background-size: contain;
-	background-repeat: no-repeat;
+	background-color: rgb(33, 34, 49);
 	/*bottom: 0;*/
 	font-size: 14px;
 	font-size: 0.8em;
 	line-height: 1.6;
 	/*padding-bottom: 40px;*/
-	padding-top: 6rem;
+	padding-top: 20px;
 	/*position: fixed;*/
 	/*text-align: center;*/
 	/*width: 100%;*/
 	z-index: -99;
 	/*max-width:900px;*/
 	display:block;
-	flex-shrink: 0;
-	transition: background-position 0.5s ease-in-out;
+	margin:0 auto;
 }
 
 .footer-col1 {
@@ -2913,10 +2887,14 @@ h3.session-workshop_title {
 	text-decoration: none;
 }
 
-.session-card-summary p {
+.session-card-summary-abstract p {
     margin-bottom: 3em;
 }
-  
+
+.session-card-additional-times p {
+	margin: 0;
+}
+
 .session-card-speakers {
     max-height: 100%;
     display: flex;
@@ -3981,4 +3959,3 @@ th {
 	max-height: 140px; 
 	margin:0 auto;
 }
-
