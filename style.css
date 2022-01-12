@@ -3871,7 +3871,11 @@ th {
 /* ------------------- */ 
 /**
  * Session overview cards with date, time, and summary
+ *
+ * Generalized so that it can be used for landing pages as well using the 
+ * .card-full and .card-half set of classes
  */
+.card-container,
 .present-cards-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -3879,15 +3883,17 @@ th {
 	margin: 7rem 0 3rem 0;
 }
 
+.card-full,
 .present-card {
-	max-width: 400px;
+	max-width: 40rem;
 	min-height: 33rem;
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: 3rem;
+	margin-right: 2rem;
 	border-radius: 0.625rem;
 	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
+	padding-left: 2rem;
 }
 
 .present-card-summary {
@@ -3907,14 +3913,21 @@ th {
 	margin: 0 0 2rem 0;
 }
 
+.card-full-title a,
 .present-card-summary-title a,
 .present-card-speakers-speaker-name a {
 	text-decoration: none;
+	color: inherit;
 }
 
+.card-full p,
 .present-card-summary p {
 	margin-right: 1rem;
 	margin-bottom: 3em;
+}
+
+.card-full .wp-block-button {
+	margin-top: 2rem;
 }
 
 .present-card-speakers {
