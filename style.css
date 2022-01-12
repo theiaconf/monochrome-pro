@@ -3464,9 +3464,9 @@ aside.sidebar {display}
 	.pricing-table .one-fifth {
 		width: 50%;
 	}
+}
 
 @media only screen and (max-width: 782px) {
-
 	.footer-col1 {
 		padding-left: 16rem;
 	}
@@ -3806,6 +3806,7 @@ th {
     text-align: left;
     background-color: #ccc;
 }
+
 /**
  * Temporary hacks until theme can be properly updated
  */
@@ -3862,7 +3863,6 @@ th {
 		font-size: 1.2rem;
 	padding-bottom: 5px;
 	}
-
 }
 
 
@@ -3872,10 +3872,7 @@ th {
 /**
  * Session overview cards with date, time, and summary
  */
-
-
 .present-cards-container {
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -3935,13 +3932,6 @@ th {
 	align-items: center;
 	padding: 0 1rem 1rem 1rem;
 }
-/* 
-@media  and (min-width: 485px) {
-	.poster-card-speakers-speaker {
-		justify-content: center;
-	}
-
-} */
 
 .poster-card-speakers-speaker a {
 	text-align: center;
