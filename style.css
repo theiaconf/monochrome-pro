@@ -3889,18 +3889,21 @@ th {
 	min-height: 33rem;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
 	margin-right: 2rem;
 	border-radius: 0.625rem;
 	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
 	margin-bottom: 2rem;
 	padding-left: 2rem;
+	align-content: flex-start;
 }
 
 .present-card-summary {
 	width: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	border-top-right-radius: 0.625rem;
 	border-bottom-right-radius: 0.625rem;
 	padding: 1rem 2rem 1rem 2rem;
