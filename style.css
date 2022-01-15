@@ -2862,6 +2862,114 @@ h3.session-workshop_title {
   padding: 0;
 }
 
+/**
+ * Session overview cards with date, time, and summary
+ */
+ .session-card {
+    max-width: 90rem;
+    display: flex;
+    border-radius: 0.625rem;
+    box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
+	margin-bottom: 3rem;
+}
+  
+.session-card-overview {
+    min-width: 22rem;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+	padding: 1rem 3rem 0 5rem;
+}
+
+
+/* .divider {
+	height: 50rem;
+	width: 1.5rem;
+	background-color:#DE795D;
+	margin-top: 3rem; 
+	margin-bottom: 3rem;
+
+} */
+
+  
+.session-card-summary {
+	width: auto;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+	padding: 1rem 5rem 0.5rem 3rem;
+}
+
+.session-card-summary-item {
+	margin-bottom: 2rem;
+}
+
+.session-card-summary-title a {
+	/* color: #DE795D; */
+}
+
+/* These should eventually be changed site wide */
+
+.session-card-summary-title a,
+.session-card-speakers-speaker-name a {
+	text-decoration: none;
+}
+
+.session-card-summary p {
+    margin-bottom: 3em;
+}
+  
+.session-card-additional-times p {
+	margin: 0;
+}
+
+.session-card-speakers {
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    margin: 3rem 2rem 1rem 0;
+}
+  
+.session-card-speakers-speaker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding: 0 2rem 1rem 1rem;
+}
+
+.session-card-speakers-speaker a {
+	text-align: center;
+}
+ 
+.session-card-speakers-speaker-image {
+	border-radius: 50%; 
+	margin-bottom: 1rem;
+	overflow: hidden; 
+	width: 11rem; 
+	height: 11rem;
+	object-fit: cover;
+	object-position: cover;
+}
+
+.session-card-speakers-speaker-image img {
+	max-width: 100%;
+	max-height: 100%;
+
+}
+
+@media screen and (max-width: 670px) {
+	.session-card {
+		max-width: 90rem;
+		display: flex;
+		flex-direction: column;
+		border-radius: 0.625rem;
+		box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+		margin-bottom: 3rem;
+	}
+}
+
+
 /* Speakers grid
 --------------------------------------------- */
 .presenter_list_left {	
@@ -3360,9 +3468,9 @@ aside.sidebar {display}
 	.pricing-table .one-fifth {
 		width: 50%;
 	}
+}
 
 @media only screen and (max-width: 782px) {
-
 	.footer-col1 {
 		padding-left: 16rem;
 	}
@@ -3702,6 +3810,7 @@ th {
     text-align: left;
     background-color: #ccc;
 }
+
 /**
  * Temporary hacks until theme can be properly updated
  */
@@ -3758,7 +3867,6 @@ th {
 		font-size: 1.2rem;
 	padding-bottom: 5px;
 	}
-
 }
 
 
@@ -3767,33 +3875,39 @@ th {
 /* ------------------- */ 
 /**
  * Session overview cards with date, time, and summary
+ *
+ * Generalized so that it can be used for landing pages as well using the 
+ * .card-full and .card-half set of classes
  */
-
-
+.card-container,
 .present-cards-container {
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 7rem 0 3rem 0;
 }
 
+.card-full,
 .present-card {
-	max-width: 400px;
+	max-width: 40rem;
 	min-height: 33rem;
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: 3rem;
+	justify-content: flex-start;
+	align-content: flex-start;
+	margin-right: 2rem;
 	border-radius: 0.625rem;
 	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
+	padding-left: 2rem;
+	align-content: flex-start;
 }
 
 .present-card-summary {
 	width: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	border-top-right-radius: 0.625rem;
 	border-bottom-right-radius: 0.625rem;
 	padding: 1rem 2rem 1rem 2rem;
@@ -3806,14 +3920,21 @@ th {
 	margin: 0 0 2rem 0;
 }
 
+.card-full-title a,
 .present-card-summary-title a,
 .present-card-speakers-speaker-name a {
 	text-decoration: none;
+	color: inherit;
 }
 
+.card-full p,
 .present-card-summary p {
 	margin-right: 1rem;
 	margin-bottom: 3em;
+}
+
+.card-full .wp-block-button {
+	margin-top: 2rem;
 }
 
 .present-card-speakers {
@@ -3831,13 +3952,6 @@ th {
 	align-items: center;
 	padding: 0 1rem 1rem 1rem;
 }
-/* 
-@media  and (min-width: 485px) {
-	.poster-card-speakers-speaker {
-		justify-content: center;
-	}
-
-} */
 
 .poster-card-speakers-speaker a {
 	text-align: center;
@@ -3871,4 +3985,3 @@ th {
 	max-height: 140px; 
 	margin:0 auto;
 }
-
