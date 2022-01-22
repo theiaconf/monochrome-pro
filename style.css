@@ -4042,7 +4042,7 @@ ul.program-nav span.current {
 	ul.program-nav {
 		flex-direction: column;
 	}
-	ul.program-nav span:first-of-type {
+	ul.program-nav>li:first-of-type {
 		margin-bottom: 2rem;
 	}
 }
