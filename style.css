@@ -3992,11 +3992,16 @@ th {
 	border-radius: 0.625rem;
 	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
+	padding: 0 6rem;
 }
 ul.program-nav li {
 	display: inherit;
+	line-height: 140%;
 	list-style-type: none;
 	margin: 0 2rem;
 	max-width: 4rem;
 	text-align: center;
+}
+ul.program-nav li a {
+	text-decoration: none;
 }
