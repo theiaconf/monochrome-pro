@@ -2975,9 +2975,6 @@ h2.session-card-summary-title {
 		box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 		margin-bottom: 3rem;
 	}
-}
-
-@media only screen and (max-width: 640px) {
 	.session-card-summary {
 		border-left: none;
 		border-top: 0.5rem solid #81B29A;
@@ -2985,8 +2982,8 @@ h2.session-card-summary-title {
 	.session-card-overview {
 		padding: 0 3rem;
 	}
+	
 }
-
 
 /* Speakers grid
 --------------------------------------------- */
