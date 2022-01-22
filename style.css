@@ -4015,6 +4015,9 @@ ul.program-nav li a {
 	text-decoration: none;
 	width: 6rem;
 }
+ul.program-nav ul {
+	display: flex;
+}
 .current {
 	background: #81B29A;
 }
