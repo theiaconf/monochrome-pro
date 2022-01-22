@@ -4024,6 +4024,12 @@ ul.program-nav > li {
 	flex-direction: column;
 	margin: 0;
 }
+ul.program-nav span {
+	broder-bottom: 0.5rem solid #81B29A;
+	font-weight: 600;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
 .current {
 	background: #81B29A;
 }
