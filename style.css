@@ -4001,6 +4001,8 @@ ul.program-nav li {
 	margin: 0 2rem;
 	max-width: 4rem;
 	text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 ul.program-nav li a {
 	text-decoration: none;
