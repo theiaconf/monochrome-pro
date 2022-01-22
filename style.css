@@ -4007,7 +4007,7 @@ ul.program-nav li {
 	line-height: 140%;
 	list-style-type: none;
 	margin: 0 2rem;
-	max-width: 4rem;
+	width: 4rem;
 	text-align: center;
 }
 ul.program-nav li a {
