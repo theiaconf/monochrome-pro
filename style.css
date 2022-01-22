@@ -4006,14 +4006,14 @@ ul.program-nav li {
 	display: inherit;
 	line-height: 140%;
 	list-style-type: none;
-	margin: 0 2rem;
+	margin: 0 1rem;
 	text-align: center;
 }
 ul.program-nav li a {
 	font-weight: 600;
 	padding: 1rem;
 	text-decoration: none;
-	width: 4rem;
+	width: 6rem;
 }
 .current {
 	background: #81B29A;
