@@ -2897,7 +2897,7 @@ h3.session-workshop_title {
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
 	margin: 2rem 0;
-	padding: 0 5rem 0 3rem;
+	padding: 0 3rem;
 	border-left: 0.5rem solid #81B29A;
 }
 
@@ -2974,6 +2974,16 @@ h2.session-card-summary-title {
 		border-radius: 0.625rem;
 		box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 		margin-bottom: 3rem;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.session-card-summary {
+		border-left: none;
+		border-top: 0.5rem solid #81B29A;
+	}
+	.session-card-overview {
+		padding: 0 3rem;
 	}
 }
 
