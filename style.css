@@ -2909,7 +2909,7 @@ h3.session-workshop_title {
 
 /* These should eventually be changed site wide */
 
-.session-card-summary-title {
+h2.session-card-summary-title {
 	font-weight: 600;
 }
 
