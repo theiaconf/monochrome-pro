@@ -2978,6 +2978,9 @@ h2.session-card-summary-title {
 	.session-card-summary {
 		border-left: none;
 		border-top: 0.5rem solid #81B29A;
+	    border-top-right-radius: 0;
+		margin: 2rem 2rem 3rem 2rem;
+		padding: 1rem 0 0 0;
 	}
 	.session-card-overview {
 		padding: 0 3rem;
