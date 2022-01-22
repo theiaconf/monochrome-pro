@@ -3989,6 +3989,8 @@ th {
 /*** Program Navigation ***/
 
 .program-nav {
+	border-radius: 0.625rem;
+	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
 }
 ul.program-nav li {
