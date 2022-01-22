@@ -2875,6 +2875,7 @@ h3.session-workshop_title {
   
 .session-card-overview {
     min-width: 22rem;
+	width: 22rem;
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
 	padding: 1rem 3rem 0 5rem;
