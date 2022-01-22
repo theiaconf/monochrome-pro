@@ -4015,6 +4015,6 @@ ul.program-nav li a {
 	padding: 1rem;
 	text-decoration: none;
 }
-ul.program-nav li a.current {
+a.current {
 	background: #81B29A;
 }
