@@ -4011,6 +4011,10 @@ ul.program-nav li {
 	text-align: center;
 }
 ul.program-nav li a {
+	font-weight: 600;
 	padding: 1rem;
 	text-decoration: none;
+}
+ul.program-nav li a.current {
+	background: #81B29A;
 }
