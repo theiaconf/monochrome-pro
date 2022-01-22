@@ -3991,6 +3991,6 @@ th {
 .program-nav {
 	display: flex;
 }
-.program-nav li {
+ul.program-nav li {
 	list-style-type: none;
 }
