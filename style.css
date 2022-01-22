@@ -3985,3 +3985,12 @@ th {
 	max-height: 140px; 
 	margin:0 auto;
 }
+
+/*** Program Navigation ***/
+
+.program-nav {
+	display: flex;
+}
+.program-nav li {
+	list-style-type: none;
+}
