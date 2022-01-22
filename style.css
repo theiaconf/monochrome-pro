@@ -4017,10 +4017,12 @@ ul.program-nav li a {
 }
 ul.program-nav ul {
 	display: flex;
+	margin: 0;
 }
 ul.program-nav > li {
 	display: flex;
 	flex-direction: column;
+	margin: 0;
 }
 .current {
 	background: #81B29A;
