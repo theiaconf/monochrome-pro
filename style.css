@@ -3994,7 +3994,9 @@ th {
 	display: flex;
 }
 ul.program-nav li {
+	display: inherit;
 	list-style-type: none;
-	padding: 2rem;
 	margin: 0 2rem;
+	max-width: 4rem;
+	text-align: center;
 }
