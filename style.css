@@ -4025,10 +4025,11 @@ ul.program-nav > li {
 	margin: 0;
 }
 ul.program-nav span {
-	broder-bottom: 0.5rem solid #81B29A;
+	border-bottom: 0.5rem solid #81B29A;
+	font-size: 2.5rem;
 	font-weight: 600;
 	padding-bottom: 1rem;
-	margin-bottom: 1rem;
+	margin: 1rem 0.5rem;
 }
 .current {
 	background: #81B29A;
