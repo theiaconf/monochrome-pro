@@ -2909,6 +2909,10 @@ h3.session-workshop_title {
 
 /* These should eventually be changed site wide */
 
+.session-card-summary-title {
+	font-weight: 600;
+}
+
 .session-card-summary-title a,
 .session-card-speakers-speaker-name a {
 	text-decoration: none;
