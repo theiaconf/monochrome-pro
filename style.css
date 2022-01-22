@@ -2896,7 +2896,8 @@ h3.session-workshop_title {
 	width: auto;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
-	padding: 1rem 5rem 0.5rem 3rem;
+	margin: 2rem 0;
+	padding: 0 5rem 0 3rem;
 	border-left: 0.5rem solid #81B29A;
 }
 
@@ -2912,6 +2913,7 @@ h3.session-workshop_title {
 
 h2.session-card-summary-title {
 	font-weight: 600;
+	padding-top: 0;
 }
 
 .session-card-summary-title a,
