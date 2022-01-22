@@ -4018,7 +4018,7 @@ ul.program-nav li a {
 ul.program-nav ul {
 	display: flex;
 }
-ul.program-nav ul>li {
+ul.program-nav>li {
 	display: flex;
 	flex-direction: column;
 }
