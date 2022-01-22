@@ -3988,10 +3988,11 @@ th {
 
 /*** Program Navigation ***/
 
-.program-nav {
+ul.program-nav {
 	border-radius: 0.625rem;
 	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
+	margin: 0 auto 4rem;
 	padding: 0 6rem;
     width: -moz-fit-content;
     width: fit-content;
