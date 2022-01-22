@@ -4027,7 +4027,7 @@ ul.program-nav > li {
 ul.program-nav span {
 	font-size: 2.5rem;
 	padding-bottom: 1rem;
-	margin: 1rem 0.5rem;
+	margin: 1rem;
 }
 ul.program-nav span.current {
 	background: none;
