@@ -1123,7 +1123,7 @@ aside.sidebar img {max-width:250px!important;width:auto!important;max-height:200
 .entry-title {
 	font-size: 56px;
 	font-weight: 400;
-	margin: 2.5rem 0;
+	margin: 0 0 2.5rem 0;
 }
 
 .type-post .entry-title {
@@ -2897,6 +2897,7 @@ h3.session-workshop_title {
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
 	padding: 1rem 5rem 0.5rem 3rem;
+	border-left: 0.5rem solid #81B29A;
 }
 
 .session-card-summary-item {
