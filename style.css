@@ -4037,3 +4037,9 @@ ul.program-nav span.current {
 .current {
 	background: #81B29A;
 }
+
+@media only screen and (max-width: 640px) {
+	ul.program-nav {
+		flex-direction: column;
+	}
+}
