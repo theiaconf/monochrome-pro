@@ -4026,9 +4026,9 @@ ul.program-nav li a {
 	font-weight: 600;
 	padding: 1rem;
 	text-decoration: none;
-	width: 6rem;
+	width: 6.5rem;
 }
-ul.program-nav ul {
+ul.program-nav ol {
 	display: flex;
 	margin: 0;
 }
