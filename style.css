@@ -4005,22 +4005,37 @@ th {
 	justify-content: flex-start;
 }
 
+.talks {
+	margin-bottom: 2em;
+}
+
 .talk-year > h2 {
 	margin: 0;
 	padding: 0;
 	font-size: 36px;
+	letter-spacing: .09em;
 	font-weight: 600;
 }
 
+
+
 h2 > a {
 	color: #DE795D;
+	
+
+}
+
+a > span {
+	text-decoration: none;
+	display: inline-block;
+	margin-left: .3em;
 }
 
 .talks-card > hr {
 	width: 80%;
 	border: 1px solid #F2EFDA;
 	margin-top: 1em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .talks {
@@ -4037,7 +4052,7 @@ h2 > a {
 	margin-bottom: 1em;
 }
 
-.talk > video {
+.talk > iframe {
 	width: 250px;
 	height: 141px;
 }
@@ -4054,9 +4069,14 @@ h2 > a {
 	text-overflow: ellipsis;
 }
 
-.talker {
+a.talker {
 	display: flex;
 	align-items: center;
+	text-decoration: none;
+
+}
+a.talker:hover {
+	text-decoration: underline;
 }
 
 .talker > img {
