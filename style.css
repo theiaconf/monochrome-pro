@@ -2984,7 +2984,7 @@ h2.session-card-summary-title {
 	.session-card-overview {
 		padding: 0 2rem;
 	}
-	.session-card-overview-date_and_time {
+	.session-card-overview {
 		width: inherit;
 	}
 }
