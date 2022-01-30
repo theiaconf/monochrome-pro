@@ -4074,6 +4074,6 @@ ul.program-nav span.current {
 .page-template-page_program .entry-title {
 	margin-bottom: 0;
 }
-.page-template-page_program:first-of-type {
+.page-template-page_program h2:first-of-type {
 	padding-top: 0;
 }
