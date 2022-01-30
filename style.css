@@ -408,7 +408,7 @@ h4, #tribe-events-pg-template .tribe-events-content h4, .tribe-events-after-html
 #tribe-events-pg-template .tribe-events-content h2, .tribe-events-after-html h2, .tribe-events-before-html h2 {
 	margin-bottom: 5px;
 	padding-top: 15px;
-	font-weight:400;
+	font-weight: 600;
 	line-height:1.4;
 	clear:both;
 }
@@ -2741,6 +2741,7 @@ article.type-session h1 {
 	text-align: left;
 	margin: 1rem 0 1rem 0;
 	padding: 0;
+	line-height: 120%;
 }
 
 article.session-type-single-session .entry-content h2 {
