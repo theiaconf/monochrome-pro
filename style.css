@@ -1123,7 +1123,7 @@ aside.sidebar img {max-width:250px!important;width:auto!important;max-height:200
 .entry-title {
 	font-size: 56px;
 	font-weight: 400;
-	margin: 2.5rem 0;
+	margin: 0 0 2.5rem 0;
 }
 
 .type-post .entry-title {
@@ -2875,6 +2875,7 @@ h3.session-workshop_title {
   
 .session-card-overview {
     min-width: 22rem;
+	width: 22rem;
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
 	padding: 1rem 3rem 0 5rem;
@@ -2895,7 +2896,9 @@ h3.session-workshop_title {
 	width: auto;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
-	padding: 1rem 5rem 0.5rem 3rem;
+	margin: 2rem 0;
+	padding: 0 3rem;
+	border-left: 0.5rem solid #81B29A;
 }
 
 .session-card-summary-item {
@@ -2907,6 +2910,11 @@ h3.session-workshop_title {
 }
 
 /* These should eventually be changed site wide */
+
+h2.session-card-summary-title {
+	font-weight: 600;
+	padding-top: 0;
+}
 
 .session-card-summary-title a,
 .session-card-speakers-speaker-name a {
@@ -2967,8 +2975,18 @@ h3.session-workshop_title {
 		box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 		margin-bottom: 3rem;
 	}
+	.session-card-summary {
+		border-left: none;
+		border-top: 0.5rem solid #81B29A;
+	    border-top-right-radius: 0;
+		margin: 1rem 2rem 3rem 2rem;
+		padding: 1rem 0 0 0;
+	}
+	.session-card-overview {
+		padding: 0 2rem;
+	}
+	
 }
-
 
 /* Speakers grid
 --------------------------------------------- */
@@ -3984,4 +4002,60 @@ th {
 	max-width: 140px;
 	max-height: 140px; 
 	margin:0 auto;
+}
+
+/*** Program Navigation ***/
+
+ul.program-nav {
+	border-radius: 0.625rem;
+	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
+	display: flex;
+	margin: 0 auto 4rem;
+	padding: 1rem 6rem;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+ul.program-nav li {
+	display: inherit;
+	line-height: 140%;
+	list-style-type: none;
+	margin: 0 1rem;
+	text-align: center;
+}
+ul.program-nav li a {
+	font-weight: 600;
+	padding: 1rem;
+	text-decoration: none;
+	width: 6.5rem;
+}
+ul.program-nav ol {
+	display: flex;
+	margin: 0;
+}
+ul.program-nav > li {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+ul.program-nav span {
+	font-size: 2.5rem;
+	padding-bottom: 1rem;
+	margin: 1rem;
+}
+ul.program-nav span.current {
+	background: none;
+	border-bottom: 0.5rem solid #81B29A;
+	font-weight: 600;
+}
+.current {
+	background: #81B29A;
+}
+
+@media only screen and (max-width: 640px) {
+	ul.program-nav {
+		flex-direction: column;
+	}
+	ul.program-nav>li:first-of-type {
+		margin-bottom: 2rem;
+	}
 }
