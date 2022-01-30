@@ -2639,7 +2639,6 @@ span.event-categories {font-weight:700;}
     text-align: center;
 	justify-content: center;
 	background: rgb(255, 255, 255);
-	margin-right: 10px;
 	margin-top: 10px;
 }
 
@@ -2648,7 +2647,6 @@ span.event-categories {font-weight:700;}
 	padding: 1rem;
 	height: 10rem;
 	border-radius: 5px;
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2701,6 +2699,7 @@ span.event-categories {font-weight:700;}
 
 .sponsor_cards_small {
   display: flex;
+  gap: 10px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
