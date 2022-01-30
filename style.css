@@ -4070,3 +4070,10 @@ ul.program-nav span.current {
 		margin-bottom: 2rem;
 	}
 }
+
+.page-template-page_program .entry-title {
+	margin-bottom: 0;
+}
+.page-template-page_program:first-of-type {
+	padding-top: 0;
+}
