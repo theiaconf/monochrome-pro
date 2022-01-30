@@ -3740,8 +3740,16 @@ body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {fo
   min-height: 75px;
 }
 	
-.genesis-nav-menu a, .genesis-nav-menu .toggle-header-search { color:rgb(0,0,0)}
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link {
+.genesis-nav-menu a, 
+.genesis-nav-menu .toggle-header-search { 
+	color: rgb(0,0,0)
+}
+button, 
+.button, 
+.more-link,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
 	background-color: #32373c;
 	border: 0;
 	border-radius: 1.55em;
@@ -3758,6 +3766,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 	width: auto;
 	box-shadow: none;
 	margin-right: 2em;
+}
+.button:last-of-type {
+	margin-right: 0;
 }
 
 img.alignleft{
