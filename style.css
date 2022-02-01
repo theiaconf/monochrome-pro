@@ -4094,6 +4094,18 @@ ul.program-nav span.current {
 	font-size: 56px;
 	font-weight: 400;
 }
+
 .page-template-page_program .breadcrumb:before {
-	content: 'Program ';
+	content: 'Program: ';
+}
+.page-template-page_program .breadcrumb {
+	padding-left: 6rem;
+}
+.page-template-page_program .breadcrumb-link-wrap {
+    margin-left: -12rem;
+    margin-right: 6rem;
+}
+.page-template-page_program .breadcrumb.separator {
+	margin-left: -6rem;
+	margin-right: 6.75rem;
 }
