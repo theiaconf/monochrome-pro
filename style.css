@@ -4103,7 +4103,7 @@ ul.program-nav span.current {
 }
 .page-template-page_program span {
 	margin-left: -6.25rem;
-	margin-right: 6.75rem;
+	margin-right: 0;
 }
 .page-template-page_program span.breadcrumb-link-wrap {
     margin-left: -12.25rem;
