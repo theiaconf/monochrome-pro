@@ -4101,7 +4101,7 @@ ul.program-nav span.current {
 .page-template-page_program .breadcrumb {
 	padding-left: 6.25rem;
 }
-.page-template-page_program > span {
+.page-template-page_program > span:first-of-type {
 	margin-left: -12.25rem;
 	margin-right: 0;
 }
