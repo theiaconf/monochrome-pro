@@ -160,7 +160,6 @@ body {
 
 /* Typographical Elements
 --------------------------------------------- */
-
 html {
 	font-size: 62.5%; /* 10px browser default */
 }
@@ -4025,9 +4024,10 @@ ul.program-nav {
 	display: flex;
 	margin: 2rem auto 4rem;
 	padding: 1rem 6rem;
-    width: -moz-fit-content;
-    width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
+
 ul.program-nav li {
 	display: inherit;
 	line-height: 140%;
@@ -4035,32 +4035,38 @@ ul.program-nav li {
 	margin: 0 1rem;
 	text-align: center;
 }
+
 ul.program-nav li a {
 	font-weight: 600;
 	padding: 1rem;
 	text-decoration: none;
 	width: 6.5rem;
 }
+
 ul.program-nav ol {
 	display: flex;
 	margin: 0;
 }
+
 ul.program-nav > li {
 	display: flex;
 	flex-direction: column;
 	margin: 0 2rem;
 }
+
 ul.program-nav span {
 	font-size: 2.5rem;
 	padding-bottom: 1rem;
 	margin: 1rem 1rem 1.5rem 1rem;
 }
+
 ul.program-nav span.current {
 	background: none;
 	border-bottom: 0.5rem solid #81B29A;
 	font-weight: 600;
 	margin-bottom: 1rem;
 }
+
 .current {
 	background: #81B29A;
 }
@@ -4077,9 +4083,11 @@ ul.program-nav span.current {
 .page-template-page_program .entry-title {
 	margin-bottom: 0;
 }
+
 .page-template-page_program h2:first-of-type {
 	padding-top: 0;
 }
+
 .page-template-page_program .entry-title {
 	color: #81B29A;
 	font-size: 4rem;
@@ -4087,6 +4095,7 @@ ul.program-nav span.current {
 	line-height: 175%;
 	margin-bottom: 2rem;
 }
+
 .page-template-page_program .entry-title:before {
 	color: #000;
 	content: 'Program: ';
@@ -4098,13 +4107,16 @@ ul.program-nav span.current {
 .page-template-page_program .breadcrumb:before {
 	content: 'Program: ';
 }
+
 .page-template-page_program .breadcrumb {
 	padding-left: 6.25rem;
 }
+
 .page-template-page_program .breadcrumb > span {
     margin-left: -6.25rem;
 	margin-right: 7rem;
 }
+
 .page-template-page_program .breadcrumb > span.breadcrumb-link-wrap {
     margin-left: -12.5rem;
     margin-right: 6.25rem;

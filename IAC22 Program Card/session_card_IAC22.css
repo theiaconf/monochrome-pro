@@ -1,0 +1,115 @@
+
+ 
+.session-card {
+    max-width: 1000px;
+    min-height: 553px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .session-card-flex-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .line-separator {
+    display: absolute;
+    margin-top: 32px;
+    margin-bottom: auto;
+    min-height: 500px;
+    background-color: black;
+    width: 2px;
+    border-radius: 2px;
+  }
+  
+  .preview {
+    max-width: 600px;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+  
+  
+  .session {
+    display: flex;
+    max-height: 100%;
+    flex-direction: column;
+    padding: 32px 32px;
+    
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 10px 10px 32px;
+  }
+  .session p {
+    margin-bottom: 3em;
+    max-width: 600px;
+    
+  }
+  
+  
+  .speaker-flex {
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0px;
+  }
+  
+  .speaker-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 16px;
+    margin-bottom: 16px
+
+  }
+  
+  .speaker-card .img-circle img{
+	border-radius:50%; 
+	overflow:hidden; 
+	max-width: 100px; 
+	max-height: 100px;
+	object-fit: cover;
+}
+
+  .img-circle{
+	overflow:hidden;
+	max-width: 140px;
+	max-height: 140px; 
+  margin-bottom: 1em;
+}
+
+  
+  .speaker-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span.name {
+    
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+
+  }
+
+  span.info {
+    
+    
+    font-size: 18px;
+    text-align: center;
+  }
