@@ -4080,3 +4080,6 @@ ul.program-nav span.current {
 .page-template-page_program h2:first-of-type {
 	padding-top: 0;
 }
+.page-template-page_program .entry-title:before {
+	content: 'Program, ';
+}
