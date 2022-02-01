@@ -4021,6 +4021,9 @@ th {
 	justify-content: flex-start;
 }
 
+.talks {
+	margin-bottom: 2em;
+}
 
 .talk-year > h2 {
 	margin: 0;
