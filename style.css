@@ -4048,7 +4048,7 @@ ul.program-nav ol {
 ul.program-nav > li {
 	display: flex;
 	flex-direction: column;
-	margin: 0;
+	margin: 0 2rem;
 }
 ul.program-nav span {
 	font-size: 2.5rem;
