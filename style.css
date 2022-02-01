@@ -160,7 +160,6 @@ body {
 
 /* Typographical Elements
 --------------------------------------------- */
-
 html {
 	font-size: 62.5%; /* 10px browser default */
 }
@@ -408,7 +407,7 @@ h4, #tribe-events-pg-template .tribe-events-content h4, .tribe-events-after-html
 #tribe-events-pg-template .tribe-events-content h2, .tribe-events-after-html h2, .tribe-events-before-html h2 {
 	margin-bottom: 5px;
 	padding-top: 15px;
-	font-weight:400;
+	font-weight: 600;
 	line-height:1.4;
 	clear:both;
 }
@@ -2639,7 +2638,6 @@ span.event-categories {font-weight:700;}
     text-align: center;
 	justify-content: center;
 	background: rgb(255, 255, 255);
-	margin-right: 10px;
 	margin-top: 10px;
 }
 
@@ -2648,7 +2646,6 @@ span.event-categories {font-weight:700;}
 	padding: 1rem;
 	height: 10rem;
 	border-radius: 5px;
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2701,6 +2698,7 @@ span.event-categories {font-weight:700;}
 
 .sponsor_cards_small {
   display: flex;
+  gap: 10px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -2742,6 +2740,7 @@ article.type-session h1 {
 	text-align: left;
 	margin: 1rem 0 1rem 0;
 	padding: 0;
+	line-height: 120%;
 }
 
 article.session-type-single-session .entry-content h2 {
@@ -2985,7 +2984,9 @@ h2.session-card-summary-title {
 	.session-card-overview {
 		padding: 0 2rem;
 	}
-	
+	.session-card-overview {
+		width: inherit;
+	}
 }
 
 /* Speakers grid
@@ -3740,8 +3741,16 @@ body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {fo
   min-height: 75px;
 }
 	
-.genesis-nav-menu a, .genesis-nav-menu .toggle-header-search { color:rgb(0,0,0)}
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .more-link {
+.genesis-nav-menu a, 
+.genesis-nav-menu .toggle-header-search { 
+	color: rgb(0,0,0)
+}
+button, 
+.button, 
+.more-link,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
 	background-color: #32373c;
 	border: 0;
 	border-radius: 1.55em;
@@ -3758,6 +3767,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 	width: auto;
 	box-shadow: none;
 	margin-right: 2em;
+}
+.button:last-of-type {
+	margin-right: 0;
 }
 
 img.alignleft{
@@ -4010,11 +4022,12 @@ ul.program-nav {
 	border-radius: 0.625rem;
 	box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
-	margin: 0 auto 4rem;
+	margin: 2rem auto 4rem;
 	padding: 1rem 6rem;
-    width: -moz-fit-content;
-    width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
+
 ul.program-nav li {
 	display: inherit;
 	line-height: 140%;
@@ -4022,31 +4035,38 @@ ul.program-nav li {
 	margin: 0 1rem;
 	text-align: center;
 }
+
 ul.program-nav li a {
 	font-weight: 600;
 	padding: 1rem;
 	text-decoration: none;
 	width: 6.5rem;
 }
+
 ul.program-nav ol {
 	display: flex;
 	margin: 0;
 }
+
 ul.program-nav > li {
 	display: flex;
 	flex-direction: column;
-	margin: 0;
+	margin: 0 2rem;
 }
+
 ul.program-nav span {
 	font-size: 2.5rem;
 	padding-bottom: 1rem;
-	margin: 1rem;
+	margin: 1rem 1rem 1.5rem 1rem;
 }
+
 ul.program-nav span.current {
 	background: none;
 	border-bottom: 0.5rem solid #81B29A;
 	font-weight: 600;
+	margin-bottom: 1rem;
 }
+
 .current {
 	background: #81B29A;
 }
@@ -4058,4 +4078,46 @@ ul.program-nav span.current {
 	ul.program-nav>li:first-of-type {
 		margin-bottom: 2rem;
 	}
+}
+
+.page-template-page_program .entry-title {
+	margin-bottom: 0;
+}
+
+.page-template-page_program h2:first-of-type {
+	padding-top: 0;
+}
+
+.page-template-page_program .entry-title {
+	color: #81B29A;
+	font-size: 4rem;
+	font-weight: 1000;
+	line-height: 175%;
+	margin-bottom: 2rem;
+}
+
+.page-template-page_program .entry-title:before {
+	color: #000;
+	content: 'Program: ';
+	display: block;
+	font-size: 56px;
+	font-weight: 400;
+}
+
+.page-template-page_program .breadcrumb:before {
+	content: 'Program: ';
+}
+
+.page-template-page_program .breadcrumb {
+	padding-left: 6.25rem;
+}
+
+.page-template-page_program .breadcrumb > span {
+    margin-left: -6.25rem;
+	margin-right: 7rem;
+}
+
+.page-template-page_program .breadcrumb > span.breadcrumb-link-wrap {
+    margin-left: -12.5rem;
+    margin-right: 6.25rem;
 }
