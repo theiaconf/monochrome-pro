@@ -4105,7 +4105,7 @@ ul.program-nav span.current {
     margin-left: -12rem;
     margin-right: 6rem;
 }
-.page-template-page_program .breadcrumb.separator {
+.page-template-page_program .breadcrumb .separator {
 	margin-left: -6rem;
 	margin-right: 6.75rem;
 }
