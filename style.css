@@ -4082,10 +4082,11 @@ ul.program-nav span.current {
 }
 .page-template-page_program .entry-title {
 	color: #81B29A;
-	font-size: 1.25rem;
+	font-size: 2rem;
 	font-weight: 1000;
 }
 .page-template-page_program .entry-title:before {
+	color: #000;
 	content: 'Program: ';
 	display: block;
 	font-size: 56px;
