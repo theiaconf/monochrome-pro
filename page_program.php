@@ -52,15 +52,19 @@ function iac_add_program_crumb($crumbs, $args) {
   /**
    * Alter these two values to alter the resulting output
    */
-  $base_slug = 'thursday';
-  $title = "Program";
   // Need the page ID directly. Brittle so please take down after IAC22
   $page_id = 16884;
-  
+  $title = "Program";
+
   $uri = get_permalink($page_id);
-  
+
   $home_crumb = array_shift($crumbs);
-  $program_crumb = '<a href="' . $uri . '">' . $title . '</a>' . $args['sep'];
+  
+  // If we are on a subpage then make sure it doesn't repeat
+  if (count($crumbs) > 1) {
+    array_shift($crumbs);
+  }  
+  $program_crumb = '<a href="' . $uri . '">' . $title . '</a>';
   
   array_unshift($crumbs, $program_crumb);
   array_unshift($crumbs, $home_crumb);
