@@ -44,25 +44,28 @@ function remove_page_titles() {
 }
 
 /**
- * If there is a second record in the breadcrumbs replace it with a link called
- * "Program" that links to the Thursday (first day of main conference) for all
- * pages using the Program template. Retains the current page at the end of the
- * trail
+ * Add Program entry to navigation even though these pages really nest directly
+ * underneath the Thursday schedule page. Clean up after IAC22
  */
-add_filter('genesis_build_crumbs', 'iac_program_breadcrumbs', 10, 2);
-function iac_program_breadcrumbs($crumbs, $args) {
-    /**
-    $uri = "https;//www.theiaconference.com/stage/thursday";
-    $label = "Program";
-    
-    $crumb = "<a href=\"{$uri}\">{$label}</a>";
-    return $crumb;
-    */
-    $crumbs[0] = "<span class='b1'>Breadcrumb 1</span>";
-    $crumbs[1] = "<span class='b2'>Breadcrumb 2</span>";
-    
-    return $crumbs;
-  } 
+add_filter('genesis_build_crumbs', 'iac_add_program_crumb', 10, 2);
+function iac_add_program_crumb($crumbs, $args) {
+  /**
+   * Alter these two values to alter the resulting output
+   */
+  $base_slug = 'thursday';
+  $title = "Program";
+  // Need the page ID directly. Brittle so please take down after IAC22
+  $page_id = 16884;
+  
+  $uri = get_permalink($page_id);
+  
+  $home_crumb = array_shift($crumbs);
+  $program_crumb = '<a href="' . $uri . '">' . $title . '</a>' . $args['sep'];
+  
+  array_unshift($crumbs, $program_crumb);
+  array_unshift($crumbs, $home_crumb);
+  
+  return $crumbs;
 }
 
 // Run the Genesis loop.
