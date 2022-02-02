@@ -36,40 +36,11 @@ function remove_page_titles() {
   if (is_page('monday') || 
       is_page('tuesday') ||
       is_page('wednesday') ||
-      is_page('thursday') ||
+      is_page('program') ||
       is_page('friday') ||
       is_page('saturday')) {
     remove_action('genesis_entry_header', 'genesis_do_post_title');
   }
-}
-
-/**
- * Add Program entry to navigation even though these pages really nest directly
- * underneath the Thursday schedule page. Clean up after IAC22
- */
-add_filter('genesis_build_crumbs', 'iac_add_program_crumb', 10, 2);
-function iac_add_program_crumb($crumbs, $args) {
-  /**
-   * Alter these two values to alter the resulting output
-   */
-  // Need the page ID directly. Brittle so please take down after IAC22
-  $page_id = 16884;
-  $title = "Program";
-
-  $uri = get_permalink($page_id);
-
-  $home_crumb = array_shift($crumbs);
-  
-  // If we are on a subpage then make sure it doesn't repeat
-  if (count($crumbs) > 1) {
-    array_shift($crumbs);
-  }  
-  $program_crumb = '<a href="' . $uri . '">' . $title . '</a>';
-  
-  array_unshift($crumbs, $program_crumb);
-  array_unshift($crumbs, $home_crumb);
-  
-  return $crumbs;
 }
 
 // Run the Genesis loop.
