@@ -49,8 +49,8 @@ function remove_page_titles() {
  * pages using the Program template. Retains the current page at the end of the
  * trail
  */
-add_filter('genesis_build_crumbs', 'iac_update_breadcrumbs', 10, 2);
-function iac_update_breadcrumbs($crumbs, $args) {
+add_filter('genesis_build_crumbs', 'iac_program_breadcrumbs', 10, 2);
+function iac_program_breadcrumbs($crumbs, $args) {
     /**
     $uri = "https;//www.theiaconference.com/stage/thursday";
     $label = "Program";
@@ -58,8 +58,8 @@ function iac_update_breadcrumbs($crumbs, $args) {
     $crumb = "<a href=\"{$uri}\">{$label}</a>";
     return $crumb;
     */
-    $crumbs[0] = "Breadcrumb 1";
-    $crumbs[1] = "Breadcrumb 2";
+    $crumbs[0] = "<span class='b1'>Breadcrumb 1</span>";
+    $crumbs[1] = "<span class='b2'>Breadcrumb 2</span>";
     
     return $crumbs;
   } 
