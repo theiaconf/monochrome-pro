@@ -50,7 +50,7 @@ function remove_page_titles() {
  * trail
  */
 add_filter('genesis_build_crumbs', 'iac_update_breadcrumbs', 10, 2);
-function iac_update_breadcrumbs($crumb, $args) {
+function iac_update_breadcrumbs($crumbs, $args) {
     /**
     $uri = "https;//www.theiaconference.com/stage/thursday";
     $label = "Program";
