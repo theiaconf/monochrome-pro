@@ -30,7 +30,7 @@ function theme_prefix_show_notice() {
 add_action('get_header', 'remove_page_titles');
 /**
  * Selectively remove page titles only for the main program schedule using the
- * slugs 
+ * slugs. Should be removed after IAC22 if still using Wordpress.
  */
 function remove_page_titles() {
   if (is_page('monday') || 
@@ -41,6 +41,22 @@ function remove_page_titles() {
       is_page('saturday')) {
     remove_action('genesis_entry_header', 'genesis_do_post_title');
   }
+}
+
+/**
+ * If there is a second record in the breadcrumbs replace it with a link called
+ * "Program" that links to the Thursday (first day of main conference) for all
+ * pages using the Program template. Retains the current page at the end of the
+ * trail
+ */
+add_action('genesis_build_crumbs', 'iac_update_breadcrumbs');
+function iac_update_breadcrumbs($crumbs) {
+  if exists($crumbs[1]) {
+    $uri = "https;//www.theiaconference.com/stage/thursday";
+    $label = "Program";
+    
+    $crumbs[1] = "<a href=\"{$uri}\">{$label}</a>";
+  } 
 }
 
 // Run the Genesis loop.
