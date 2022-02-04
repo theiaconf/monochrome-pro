@@ -4103,21 +4103,3 @@ ul.program-nav span.current {
 	font-size: 56px;
 	font-weight: 400;
 }
-
-.page-template-page_program .breadcrumb:before {
-	content: 'Program: ';
-}
-
-.page-template-page_program .breadcrumb {
-	padding-left: 6.25rem;
-}
-
-.page-template-page_program .breadcrumb > span {
-    margin-left: -6.25rem;
-	margin-right: 7rem;
-}
-
-.page-template-page_program .breadcrumb > span.breadcrumb-link-wrap {
-    margin-left: -12.5rem;
-    margin-right: 6.25rem;
-}
