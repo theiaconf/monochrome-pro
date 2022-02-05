@@ -4006,7 +4006,7 @@ th {
 
 /* Talks On Demand */
 .talks-card {
-    max-width: 90rem;
+    max-width: 1400px;
     display: flex;
 	flex-direction: column;
     border-radius: 0.625rem;
