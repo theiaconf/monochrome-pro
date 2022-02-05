@@ -4089,6 +4089,7 @@ a.talker:hover {
 
 .title-hover:hover > .title {
 	overflow: visible;
+	line-clamp: 999;
 }
 
 .talker > img {
