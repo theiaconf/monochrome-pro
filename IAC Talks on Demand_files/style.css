@@ -4009,9 +4009,10 @@ th {
     max-width: 90em;
     display: flex;
 	flex-direction: column;
-	margin-top: 1rem;
+    border-radius: 0.625rem;
+	margin-top: 3rem;
 	margin-bottom: 2rem;
-	padding: 0em 2em 3em 2em;
+	padding: 2em 2em 3em 2em;
 }
 
 .talk-year {
@@ -4059,7 +4060,9 @@ a > span {
 	margin-bottom: 1em;
 
 }
-
+/* .talk > * {
+	margin-bottom: 1em;
+} */
 
 .talk > iframe {
 	width: 380px;
@@ -4078,7 +4081,6 @@ a > span {
 
 }
 
-
 a.talker {
 	display: flex;
 	align-items: center;
@@ -4089,7 +4091,7 @@ a.talker:hover {
 	text-decoration: underline;
 }
 .title-card {
-	height: 6em;
+	height: 10em;
 	margin-top: -1.25em;
 	position: relative;
 }
