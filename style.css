@@ -4036,7 +4036,6 @@ h2 > a {
 a > span {
 	text-decoration: none;
 	display: inline-block;
-	margin-left: .3em;
 }
 
 .talks-card > hr {
@@ -4064,6 +4063,7 @@ a > span {
 
 .talk > iframe {
 	width: 380px;
+	margin-bottom: -1em;
 }
 
 .title {
