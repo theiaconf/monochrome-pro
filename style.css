@@ -4087,6 +4087,10 @@ a.talker:hover {
 	text-decoration: underline;
 }
 
+.title-hover:hover > .title {
+	overflow: visible;
+}
+
 .talker > img {
 		border-radius:50%; 
 		overflow:hidden; 
