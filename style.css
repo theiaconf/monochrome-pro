@@ -4049,10 +4049,13 @@ a > span {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .talk {
 	display: flex;
+	height: 100%;
+	position: relative;
 	flex-direction: column;
 	margin-bottom: 1em;
 
@@ -4075,6 +4078,7 @@ a > span {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
+
 }
 
 a.talker {
@@ -4086,10 +4090,30 @@ a.talker {
 a.talker:hover {
 	text-decoration: underline;
 }
+.title-card {
+	height: 10em;
+	margin-top: -1.25em;
+	position: relative;
+}
+
+
+
+.title-hover:hover {
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 0.3rem 0.6rem 0 rgb(0 0 0 / 25%);
+	border-radius: 0.625rem;
+	padding: .5em;
+}
 
 .title-hover:hover > .title {
 	overflow: visible;
+	-webkit-line-clamp: 999;
 	line-clamp: 999;
+	width: 362px;
+	margin-top: 0;
+
+	
 }
 
 .talker > img {
