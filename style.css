@@ -4058,9 +4058,9 @@ a > span {
 	margin-bottom: 1em;
 
 }
-.talk > * {
+/* .talk > * {
 	margin-bottom: 1em;
-}
+} */
 
 .talk > iframe {
 	width: 400px;
