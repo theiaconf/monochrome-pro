@@ -164,8 +164,11 @@ p .line {
   width: 100%;
 }
 
+/**
+ * Kludge for fixing way Genesis lays out the panel
+ */
 .flexible-widgets.widget-fourths .widget {
-  width: 25%;
+  width: 50%;
 }
 
 .flexible-widgets.widget-halves .widget {
