@@ -4102,6 +4102,8 @@ a.talker:hover {
 	box-shadow: 0 0.3rem 0.6rem 0 rgb(0 0 0 / 25%);
 	border-radius: 0.625rem;
 	padding: .5em;
+	transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition-delay: .2s;
 }
 
 .title-hover:hover > .title {
