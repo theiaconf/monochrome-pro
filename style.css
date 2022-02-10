@@ -4129,6 +4129,12 @@ a.talker:hover {
 	font-size: .875em;
 }
 
+@media screen and (max-width: 1025px){
+	.talks {
+		justify-content: space-around;
+}
+}
+
 @media screen and (max-width: 782px){
 	.talks {
 		justify-content: center;
@@ -4158,8 +4164,6 @@ a.talker:hover {
 		line-clamp: 999;
 		width: 362px;
 		margin-top: 0;
-	
-		
 	}
 
 	
