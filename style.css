@@ -4129,6 +4129,42 @@ a.talker:hover {
 	font-size: .875em;
 }
 
+@media screen and (max-width: 782px){
+	.talks {
+		justify-content: center;
+	}
+
+	.title {
+		overflow: visible;
+		-webkit-line-clamp: 999;
+		line-clamp: 999;
+		width: 362px;
+		margin-top: 0;
+	}
+
+	.title-hover:hover {
+	position: absolute;
+	background-color: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: none;
+	transition: none;
+	transition-delay: none;
+
+	}
+	.title-hover:hover > .title {
+		overflow: visible;
+		-webkit-line-clamp: 999;
+		line-clamp: 999;
+		width: 362px;
+		margin-top: 0;
+	
+		
+	}
+
+	
+}
+
 /*  
 .session-card-overview {
     min-width: 22rem;
