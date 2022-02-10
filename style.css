@@ -4138,13 +4138,6 @@ a.talker:hover {
 	.talks {
 		justify-content: space-around;
 }
-}
-
-@media screen and (max-width: 782px){
-	.talks {
-		justify-content: center;
-	}
-
 	.title {
 		overflow: visible;
 		-webkit-line-clamp: 999;
@@ -4170,6 +4163,14 @@ a.talker:hover {
 		width: 362px;
 		margin-top: 0;
 	}
+}
+
+@media screen and (max-width: 782px){
+	.talks {
+		justify-content: center;
+	}
+
+
 
 	
 }
