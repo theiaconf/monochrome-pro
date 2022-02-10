@@ -4147,7 +4147,7 @@ a.talker:hover {
 	background-color: none;
 	box-shadow: none;
 	border-radius: none;
-	padding: none;
+	padding: 0;
 	transition: none;
 	transition-delay: none;
 
