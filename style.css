@@ -4030,6 +4030,11 @@ th {
 
 h2 > a {
 	color: #DE795D;
+	letter-spacing: .2em;
+}
+
+h2 #recent-uploads {
+	letter-spacing: .2em;
 }
 
 a > span {
