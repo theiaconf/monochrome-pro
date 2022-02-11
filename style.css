@@ -2989,6 +2989,23 @@ h2.session-card-summary-title {
 	}
 }
 
+/**
+ * Custom formaeting for headshot links to sessions
+ */
+.session_with_presenter {
+	text-align: center;
+}
+
+.session_with_presenter-headshot {}
+
+.session_with_presenter-name {
+	text-align: center;
+}
+
+.session_with_presenter-name a {
+	text-align: center;
+}
+
 /* Speakers grid
 --------------------------------------------- */
 .presenter_list_left {	
