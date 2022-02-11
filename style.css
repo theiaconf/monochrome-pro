@@ -2992,8 +2992,18 @@ h2.session-card-summary-title {
 /**
  * Custom formaeting for headshot links to sessions
  */
+.sessions_with_presenter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flext-start;
+}
 .session_with_presenter {
-	text-align: center;
+	width: 33%;
+	min-width: 25rem;
+	max-width: 30rem;
+	padding-left: 5rem;
 }
 
 .session_with_presenter-headshot {}
@@ -3003,8 +3013,9 @@ h2.session-card-summary-title {
 }
 
 .session_with_presenter-name a {
-	text-align: center;
+	text-decoration: none;
 }
+
 
 /* Speakers grid
 --------------------------------------------- */
