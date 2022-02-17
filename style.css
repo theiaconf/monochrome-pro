@@ -331,7 +331,7 @@ h1, #tribe-events-pg-template .tribe-events-content h1, .tribe-events-after-html
 h2,#tribe-events-pg-template .tribe-events-content h2, .tribe-events-after-html h2, .tribe-events-before-html h2 {
 	font-size: 27px;
 	font-weight: 400;
-	color: #E07A5F;
+	color: #DE795D;
 	padding-bottom: 1rem;
 }
 
@@ -3172,7 +3172,7 @@ h2.schedule-date_header {
 
 .page-template-page_sponsor .masthead-banner {
 	background-color: #212231;
-	color: #E07A5F;
+	color: #DE795D;
 }
 .page-template-page_sponsor .banner-section-title::after {
   content: "Sponsor"; 
