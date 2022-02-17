@@ -3780,8 +3780,8 @@ body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {fo
 button, 
 .button, 
 .more-link,
-.wp-block-button__link,
-.wp-block-button,
+/*.wp-block-button__link,
+.wp-block-button,*/
 input[type="button"], 
 input[type="reset"], 
 input[type="submit"] {
