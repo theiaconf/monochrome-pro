@@ -1120,9 +1120,13 @@ aside.sidebar img {max-width:250px!important;width:auto!important;max-height:200
 }
 
 .entry-title {
-	font-size: 56px;
+	font-size: 3.5rem;
 	font-weight: 400;
 	margin: 0 0 2.5rem 0;
+}
+.single .entry-title {
+	text-align: left;
+	line-height: initial;
 }
 
 .type-post .entry-title {
@@ -3776,6 +3780,8 @@ body #gform_wrapper_72 .gform_body .gform_fields .gfield .gfield_description {fo
 button, 
 .button, 
 .more-link,
+/*.wp-block-button__link,
+.wp-block-button,*/
 input[type="button"], 
 input[type="reset"], 
 input[type="submit"] {
@@ -4070,7 +4076,7 @@ th {
 
 h2 > a {
 	color: #DE795D;
-	letter-spacing: .2em;
+	/*letter-spacing: .2em;*/
 }
 
 h2 #recent-uploads {
