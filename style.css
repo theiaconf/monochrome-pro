@@ -1120,9 +1120,13 @@ aside.sidebar img {max-width:250px!important;width:auto!important;max-height:200
 }
 
 .entry-title {
-	font-size: 56px;
+	font-size: 3.5rem;
 	font-weight: 400;
 	margin: 0 0 2.5rem 0;
+}
+.single .entry-title {
+	text-align: left;
+	line-height: initial;
 }
 
 .type-post .entry-title {
