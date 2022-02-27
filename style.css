@@ -617,6 +617,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button,
+.wp-block-button__link,
 .more-link {
 	background-color: #3A78B6;/* change link colors for every year*/
 	border: 0;
