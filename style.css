@@ -2905,7 +2905,7 @@ h3.session-workshop_title {
     border-bottom-right-radius: 0.625rem;
 	margin: 2rem 0;
 	padding: 0 3rem;
-	border-left: 0.5rem solid #81B29A;
+	border-left: 0.5rem solid #D2ECDF; /*changed from #81B29A 2/27/2022 jgr */
 }
 
 .session-card-summary-item {
