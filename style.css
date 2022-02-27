@@ -621,7 +621,7 @@ input[type="submit"],
 .more-link {
 	background-color: #3A78B6;/* change link colors for every year*/
 	border: 0;
-	border-radius: 0;
+	border-radius: 2rem;
 	color: #fff;
 	cursor: pointer;
 	font-family: 'Montserrat', sans-serif;
@@ -631,7 +631,7 @@ input[type="submit"],
 	line-height: 1.5;
 	padding: 1.25rem 1.875rem;
 	text-decoration: none;
-  white-space: normal;
+    white-space: normal;
 	width: auto;
 }
 
@@ -647,7 +647,7 @@ button.sub-menu-toggle:hover {
 .wp-block-button__link {
 	background: #00232f;
 	border: 2px solid #00232f;
-	border-radius: 25px;
+	border-radius: 2rem;
 	display: inline-block;
 	margin: 1.5rem 0;
 	border: 1px solid rgb(0, 0, 0);
@@ -3791,7 +3791,7 @@ input[type="reset"],
 input[type="submit"] {
 	background-color: #32373c;
 	border: 0;
-	border-radius: 1.55em;
+	border-radius: 2rem;
 	color: #fff;
 	cursor: pointer;
 	font-size: 1.125em;
