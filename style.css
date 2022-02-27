@@ -436,6 +436,7 @@ h6 {
 	background-size: cover;
 	background-repeat: none;
 	color: #fff;
+	margin-top: 4rem;
 }
 .header-background.blue {
 	background-image: url("images/header-background.svg");
@@ -617,20 +618,21 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button,
+.wp-block-button__link,
 .more-link {
 	background-color: #3A78B6;/* change link colors for every year*/
 	border: 0;
-	border-radius: 0;
+	border-radius: 3rem;
 	color: #fff;
 	cursor: pointer;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.0em;
+	font-size: 2rem;
 	font-weight: 500;
 	letter-spacing: 1px;
 	line-height: 1.5;
 	padding: 1.25rem 1.875rem;
 	text-decoration: none;
-  white-space: normal;
+    white-space: normal;
 	width: auto;
 }
 
@@ -642,11 +644,11 @@ button.sub-menu-toggle:hover {
 	color:#ccc;
 }
 
-.button {
+.button,
+.wp-block-button__link {
 	background: #00232f;
 	border: 2px solid #00232f;
-	border-radius: 25px;
-
+	border-radius: 3rem;
 	display: inline-block;
 	margin: 1.5rem 0;
 	border: 1px solid rgb(0, 0, 0);
@@ -689,6 +691,8 @@ input:hover[type="submit"],
 input:focus[type="submit"],
 .button:hover,
 .button:focus,
+.wp-block-button__link:hover,
+.wp-block-button__link:focus,
 .more-link:hover,
 .more-link:focus {
 	background-color: #187e36;
@@ -1512,8 +1516,12 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	float: left;
 	min-height: 4em;
 	width: 100%;
-	margin-top: -1em;
+	margin-top: -2.25rem;
 	margin-left: 0.5em;
+}
+.header-image h1.site-title > a {
+    margin-top: -4.675rem;
+    margin-left: 0.9rem;
 }
 
 .header-image .site-title,
@@ -1569,6 +1577,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 .genesis-nav-menu a:focus,
 .genesis-nav-menu a:hover {
+	background: rgb(242, 239, 218);
 	border-bottom:5px solid rgb(61, 64, 91);
 }
 
@@ -2901,7 +2910,7 @@ h3.session-workshop_title {
     border-bottom-right-radius: 0.625rem;
 	margin: 2rem 0;
 	padding: 0 3rem;
-	border-left: 0.5rem solid #81B29A;
+	border-left: 0.5rem solid #D2ECDF; /*changed from #81B29A 2/27/2022 jgr */
 }
 
 .session-card-summary-item {
@@ -2980,7 +2989,7 @@ h2.session-card-summary-title {
 	}
 	.session-card-summary {
 		border-left: none;
-		border-top: 0.5rem solid #81B29A;
+		border-top: 0.5rem solid #D2ECDF; /*changed from #81B29A 2/27/2022 jgr */
 	    border-top-right-radius: 0;
 		margin: 1rem 2rem 3rem 2rem;
 		padding: 1rem 0 0 0;
@@ -3279,7 +3288,7 @@ h2.schedule-date_header {
 		
 	.header-image .site-title > a {
 		min-height:50px;
-		margin-top:-1.1em;
+		margin-top: -2.25rem;
 	}
 
 	.before-footer-cta .wrap,
@@ -3787,7 +3796,7 @@ input[type="reset"],
 input[type="submit"] {
 	background-color: #32373c;
 	border: 0;
-	border-radius: 1.55em;
+	border-radius: 3rem;
 	color: #fff;
 	cursor: pointer;
 	font-size: 1.125em;
