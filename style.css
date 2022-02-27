@@ -1519,7 +1519,8 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	margin-left: 0.5em;
 }
 .header-image h1.site-title > a {
-	margin-top: -3.25rem;
+    margin-top: -4.675rem;
+    margin-left: 0.9rem;
 }
 
 .header-image .site-title,
