@@ -642,11 +642,11 @@ button.sub-menu-toggle:hover {
 	color:#ccc;
 }
 
-.button {
+.button,
+.wp-block-button__link {
 	background: #00232f;
 	border: 2px solid #00232f;
 	border-radius: 25px;
-
 	display: inline-block;
 	margin: 1.5rem 0;
 	border: 1px solid rgb(0, 0, 0);
@@ -689,6 +689,8 @@ input:hover[type="submit"],
 input:focus[type="submit"],
 .button:hover,
 .button:focus,
+.wp-block-button__link:hover,
+.wp-block-button__link:focus,
 .more-link:hover,
 .more-link:focus {
 	background-color: #187e36;
@@ -1512,7 +1514,7 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 	float: left;
 	min-height: 4em;
 	width: 100%;
-	margin-top: -1em;
+	margin-top: -2.25rem;
 	margin-left: 0.5em;
 }
 
@@ -1569,7 +1571,9 @@ div.widget_rotatingtweets_widget, div.rotatingtweet, div.widget_rotatingtweets_w
 
 .genesis-nav-menu a:focus,
 .genesis-nav-menu a:hover {
+	background: rgb(242, 239, 218);
 	border-bottom:5px solid rgb(61, 64, 91);
+	font-weight: bold;
 }
 
 .genesis-nav-menu .current-menu-item > a {
@@ -2980,7 +2984,7 @@ h2.session-card-summary-title {
 	}
 	.session-card-summary {
 		border-left: none;
-		border-top: 0.5rem solid #81B29A;
+		border-top: 0.5rem solid #D2ECDF; /*changed from #81B29A 2/27/2022 jgr */
 	    border-top-right-radius: 0;
 		margin: 1rem 2rem 3rem 2rem;
 		padding: 1rem 0 0 0;
@@ -3279,7 +3283,7 @@ h2.schedule-date_header {
 		
 	.header-image .site-title > a {
 		min-height:50px;
-		margin-top:-1.1em;
+		margin-top: -2.25rem;
 	}
 
 	.before-footer-cta .wrap,
