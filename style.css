@@ -2300,6 +2300,21 @@ display:table;margin:0 auto;max-width:100%;
 	.talk-speaker-list .one-fifth {display:inline-block;}
 }
 
+/**
+ * Social Media Icons
+ *
+ * Replacement for previous plugin that now uses semantic unordered list
+ */
+ul.social-media-icons {
+	display: block;
+	list-style-type: none;
+}
+
+ul.social-media-icons li {
+	display: inline;
+	margin-left: 1.5rem;
+}
+
 /* Before Footer CTA
 ---------------------------------------------------------------------------------------------------- */
 
