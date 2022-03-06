@@ -4423,6 +4423,6 @@ ul.program-nav span.current {
 .feature-box .wp-block-media-text__media img {
 	max-width: 5rem;
 	margin-top: 20%;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 2rem;
+	border-bottom-left-radius: 2rem;
 }
