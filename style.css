@@ -4417,7 +4417,10 @@ ul.program-nav span.current {
 }
 .feature-box .wp-block-media-text__media {
 	background: #34384f;
+	height: 100%;
+	text-align: center;
 }
 .feature-box .wp-block-media-text__media img {
 	max-width: 5rem;
+	margin-top: 40%;
 }
