@@ -4409,8 +4409,8 @@ ul.program-nav span.current {
 /*** Dashboard ***/
 
 .shadow-box {
-	margin: 25px 25px 0 0;
-	padding: 25px;
+	margin: 0 25px 0 0;
+	padding: 0 25px;
 	box-shadow: 0 2px 4px 0 rgba(92, 87, 85, .33);
 	border-radius: 5px;
 	font-size: 80%;
