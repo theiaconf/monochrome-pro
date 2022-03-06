@@ -406,6 +406,7 @@ h4, #tribe-events-pg-template .tribe-events-content h4, .tribe-events-after-html
 #tribe-events-pg-template .tribe-events-content h4, .tribe-events-after-html h4, .tribe-events-before-html h4, .tribe-events-list h2,
 #tribe-events-pg-template .tribe-events-content h2, .tribe-events-after-html h2, .tribe-events-before-html h2 {
 	margin-bottom: 5px;
+	margin-top: 1rem;
 	padding-top: 15px;
 	font-weight: 600;
 	line-height:1.4;
