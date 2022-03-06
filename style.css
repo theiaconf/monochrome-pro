@@ -4440,7 +4440,7 @@ ul.program-nav span.current {
 }
 
 @media screen and (max-width: 780px){
-	.shadow-box {
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
 		margin-left: 0;
 		margin-top: 1rem;
 	}
