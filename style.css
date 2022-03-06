@@ -4438,3 +4438,10 @@ ul.program-nav span.current {
 	border-top-right-radius: 2rem;
 	border-bottom-right-radius: 2rem;
 }
+
+@media screen and (max-width: 780px){
+	.shadowb-box {
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+}
