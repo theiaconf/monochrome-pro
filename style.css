@@ -4418,6 +4418,7 @@ ul.program-nav span.current {
 .feature-box {
 	border-radius: 2rem;
 	box-shadow: 0 2px 4px 0 rgba(92, 87, 85, .33);
+	margin: 4rem 0;
 }
 .feature-box .wp-block-media-text__media {
 	align-content: center;
