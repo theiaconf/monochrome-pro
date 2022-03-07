@@ -4409,6 +4409,9 @@ ul.program-nav span.current {
 
 /*** Dashboard ***/
 
+.page-template-page_dashboard .entry-content p {
+	margin-bottom: 2rem;
+}
 .shadow-box {
 	border-radius: 5px;
 	box-shadow: 0 2px 6px 0 rgba(92, 87, 85, .33);
