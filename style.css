@@ -2621,6 +2621,12 @@ span.event-categories {font-weight:700;}
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+@media screen and (max-width: 1023px) {
+	.sponsor_cards, 
+	.sponsor_cards_small {
+		justify-content: center;
+	}
+}
 
 .sponsor_card {
 	width: 200px;
