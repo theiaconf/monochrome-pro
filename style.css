@@ -4410,11 +4410,12 @@ ul.program-nav span.current {
 /*** Dashboard ***/
 
 .shadow-box {
-	margin: 0 25px 0 0;
-	padding: 0 25px 25px;
-	box-shadow: 0 2px 6px 0 rgba(92, 87, 85, .33);
 	border-radius: 5px;
+	box-shadow: 0 2px 6px 0 rgba(92, 87, 85, .33);
 	font-size: 80%;
+	margin: 0 25px 0 0;
+	max-width: 45.6%;
+	padding: 0 25px 25px;
 }
 .feature-box {
 	border-radius: 2rem;
@@ -4441,6 +4442,9 @@ ul.program-nav span.current {
 }
 
 @media screen and (max-width: 780px) {
+	.shadow-box {
+		max-width: auto;
+	}
 /*This also affects sponsor boxes, which weren't aligning on left in mobile previously*/
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
 		margin-left: 0;
