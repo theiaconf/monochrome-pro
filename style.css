@@ -4453,7 +4453,7 @@ ul.program-nav span.current {
 	}
 }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 781px) {
 	.shadow-box {
 		font-size: 90%;
 		max-width: none;
