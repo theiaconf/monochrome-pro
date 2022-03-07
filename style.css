@@ -856,6 +856,13 @@ th:first-child {
 	max-width: 680px;
 }
 
+@media only screen and (max-width: 1023px) {
+	.site-inner {
+		padding: 0 2rem;
+	}
+}
+
+
 /* Column Widths and Positions
 --------------------------------------------- */
 
@@ -3307,10 +3314,6 @@ h2.schedule-date_header {
 		margin-top: -2.25rem;
 	}
 
-	.before-footer-cta .wrap,
-	.site-inner {
-		/*max-width: 780px;*/
-	}
 	.before-footer-cta [id^="textblockswidget-"] {
 	    margin: 4rem 4% 0 4%;
 	}
