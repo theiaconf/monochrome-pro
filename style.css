@@ -4439,9 +4439,16 @@ ul.program-nav span.current {
 	border-bottom-right-radius: 2rem;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) {
+/*This also affects sponsor boxes, which weren't aligning on left in mobile previously*/
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
 		margin-left: 0;
 		margin-top: 1rem;
+	}
+}
+@media screen and (max-width: 600px){
+	.feature-box .wp-block-media-text__media {
+		border-top-right-radius: 2rem;
+		border-bottom-left-radius: 0;
 	}
 }
