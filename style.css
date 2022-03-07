@@ -4447,7 +4447,7 @@ ul.program-nav span.current {
 	margin-bottom: 2rem;
 }
 
-@media (min-width: 600px) and (max-width: 782px) {
+@media (min-width: 600px) and (max-width: 781px) {
 	body .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
 		margin-left: 0;
 	}
