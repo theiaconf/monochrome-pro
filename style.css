@@ -4447,7 +4447,7 @@ ul.program-nav span.current {
 	margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 782px) {
 	.shadow-box {
 		font-size: 90%;
 		max-width: none;
