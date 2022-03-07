@@ -4411,7 +4411,7 @@ ul.program-nav span.current {
 
 .shadow-box {
 	margin: 0 25px 0 0;
-	padding: 0 25px;
+	padding: 0 25px 25px;
 	box-shadow: 0 2px 6px 0 rgba(92, 87, 85, .33);
 	border-radius: 5px;
 	font-size: 80%;
@@ -4437,18 +4437,22 @@ ul.program-nav span.current {
 .feature-box .wp-block-media-text__content {
 	border-top-right-radius: 2rem;
 	border-bottom-right-radius: 2rem;
+	margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 780px) {
 /*This also affects sponsor boxes, which weren't aligning on left in mobile previously*/
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
 		margin-left: 0;
-		margin-top: 1rem;
+		margin-top: 3rem;
 	}
 }
 @media screen and (max-width: 600px){
 	.feature-box .wp-block-media-text__media {
 		border-top-right-radius: 2rem;
 		border-bottom-left-radius: 0;
+	}
+	.feature-box .wp-block-media-text__media img {
+		padding: 2rem 0;
 	}
 }
