@@ -4480,6 +4480,10 @@ ul.program-nav span.current {
 		font-size: 90%;
 		max-width: none;
 		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+	.shadown-box.one-half {
+		max-width: none;
 	}
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.shadow-box:not(:only-child) {
 		/*Must be important because min stylesheet uses important to enforce this*/
@@ -4488,7 +4492,6 @@ ul.program-nav span.current {
 /*This also affects sponsor boxes, which weren't aligning on left in mobile previously*/
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
 		margin-left: 0;
-		margin-top: 3rem;
 	}
 }
 @media screen and (max-width: 600px){
