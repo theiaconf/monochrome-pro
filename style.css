@@ -4428,12 +4428,15 @@ ul.program-nav span.current {
 	max-width: 45.6%;
  }
  .wp-block-group.shadow-box {
-	 margin-bottom: 1.75em;
+	 margin-bottom: 3rem;
  }
 .shadow-box .wp-block-buttons {
 	margin-bottom: 0;
 }
-.shadow-box.button {
+.shadow-box .wp-block-button__link {
+	margin: 0;
+}
+.shadow-box .button {
 	margin-bottom: 2rem;
 }
 .feature-box {
