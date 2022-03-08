@@ -4424,7 +4424,8 @@ ul.program-nav span.current {
 	padding: 0 25px;
 }
 .shadow-box.one-half {
-	 max-width: 45.6%;
+	margin-left: 0;
+	max-width: 45.6%;
  }
 .feature-box {
 	border-radius: 2rem;
