@@ -4461,7 +4461,7 @@ ul.program-nav span.current {
 .feature-box .wp-block-media-text__content {
 	border-top-right-radius: 2rem;
 	border-bottom-right-radius: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1023px) {
