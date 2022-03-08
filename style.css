@@ -4430,6 +4430,12 @@ ul.program-nav span.current {
  .wp-block-group.shadow-box {
 	 margin-bottom: 1.75em;
  }
+.shadow-box .wp-block-buttons {
+	margin-bottom: 0;
+}
+.shadow-box.button {
+	margin-bottom: 2rem;
+}
 .feature-box {
 	border-radius: 2rem;
 	box-shadow: 0 2px 6px 0 rgba(92, 87, 85, .33);
