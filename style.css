@@ -4435,10 +4435,7 @@ ul.program-nav span.current {
 }
 .shadow-box .wp-block-button__link,
 .feature-box .wp-block-button__link {
-	margin: 0 0 2rem 0;
-}
-.shadow-box .button {
-	margin-bottom: 2rem;
+	margin: 0 0 3rem 0;
 }
 .feature-box {
 	border-radius: 2rem;
