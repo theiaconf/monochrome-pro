@@ -4470,9 +4470,6 @@ ul.program-nav span.current {
 
 
 @media (min-width: 600px) and (max-width: 782px) {
-	body .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
-		margin-left: 2rem;
-	}
 }
 
 @media screen and (max-width: 782px) {
@@ -4484,6 +4481,9 @@ ul.program-nav span.current {
 	}
 	.shadown-box.one-half {
 		max-width: none;
+	}
+	body .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
+		margin-left: 2rem;
 	}
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.shadow-box:not(:only-child) {
 		/*Must be important because min stylesheet uses important to enforce this*/
