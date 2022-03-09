@@ -406,6 +406,7 @@ h4, #tribe-events-pg-template .tribe-events-content h4, .tribe-events-after-html
 #tribe-events-pg-template .tribe-events-content h4, .tribe-events-after-html h4, .tribe-events-before-html h4, .tribe-events-list h2,
 #tribe-events-pg-template .tribe-events-content h2, .tribe-events-after-html h2, .tribe-events-before-html h2 {
 	margin-bottom: 5px;
+	margin-top: 1rem;
 	padding-top: 15px;
 	font-weight: 600;
 	line-height:1.4;
@@ -854,6 +855,8 @@ th:first-child {
 	margin-top: 80px;
 	max-width: 680px;
 }
+
+
 
 /* Column Widths and Positions
 --------------------------------------------- */
@@ -2613,6 +2616,12 @@ span.event-categories {font-weight:700;}
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+@media screen and (max-width: 1023px) {
+	.sponsor_cards, 
+	.sponsor_cards_small {
+		justify-content: center;
+	}
+}
 
 .sponsor_card {
 	width: 200px;
@@ -3306,10 +3315,6 @@ h2.schedule-date_header {
 		margin-top: -2.25rem;
 	}
 
-	.before-footer-cta .wrap,
-	.site-inner {
-		/*max-width: 780px;*/
-	}
 	.before-footer-cta [id^="textblockswidget-"] {
 	    margin: 4rem 4% 0 4%;
 	}
@@ -4403,5 +4408,99 @@ ul.program-nav span.current {
 	}
 	ul.program-nav>li:first-of-type {
 		margin-bottom: 2rem;
+	}
+}
+
+/*** Dashboard ***/
+
+.page-template-page_dashboard .entry-content p {
+	margin-bottom: 2rem;
+}
+.shadow-box {
+	border-radius: 5px;
+	box-shadow: 0 2px 6px 0 rgba(92, 87, 85, .33);
+	font-size: 80%;
+	margin: 0 25px 0 0;
+	padding: 0 25px;
+}
+.shadow-box.one-half {
+	margin-left: 0;
+	max-width: 45.6%;
+ }
+ .wp-block-group.shadow-box {
+	 margin-bottom: 3rem;
+ }
+.shadow-box .wp-block-buttons {
+	margin-bottom: 0;
+}
+.shadow-box .wp-block-button__link,
+.feature-box .wp-block-button__link {
+	margin: 0 0 3rem 0;
+}
+.feature-box {
+	border-radius: 2rem;
+	box-shadow: 0 2px 6px 0 rgba(92, 87, 85, .33);
+	margin: 4rem 0;
+}
+.feature-box .wp-block-media-text__media {
+	align-content: center;
+	background: #34384f;
+	border-top-left-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+	display: grid;
+	height: 100%;
+	justify-content: center;
+	text-align: center;
+}
+.feature-box .wp-block-media-text__media img {
+	max-width: 7rem;
+}
+.feature-box .wp-block-media-text__content {
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+	div.breadcrumb,
+	article {
+		padding: 0 2rem;
+	}
+}
+
+
+@media (min-width: 600px) and (max-width: 782px) {
+	body .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
+		/* margin-left: 2rem;*/	
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.shadow-box,
+	.shadow-box.one-half {
+		font-size: 90%;
+		max-width: none;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+	.shadow-box.one-half:last-of-type {
+		margin-bottom: 0;
+	}
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.shadow-box:not(:only-child) {
+		/*Must be important because min stylesheet uses important to enforce this*/
+		flex-basis: auto !important;
+	}
+/*This also affects sponsor boxes, which weren't aligning on left in mobile previously*/
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n) {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 600px){
+	.feature-box .wp-block-media-text__media {
+		border-top-right-radius: 2rem;
+		border-bottom-left-radius: 0;
+	}
+	.feature-box .wp-block-media-text__media img {
+		padding: 2rem 0;
 	}
 }
