@@ -2317,6 +2317,9 @@ ul.social-media-icons li {
 	display: inline;
 	margin-right: 1.5rem;
 }
+.entry-content ul.social-media-icons {
+	margin-left: 0;
+}
 
 /* Before Footer CTA
 ---------------------------------------------------------------------------------------------------- */
