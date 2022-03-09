@@ -869,7 +869,15 @@ new RW_GF_Total_Field_Logic();
 // End - REE
 
 // add filter to allow Pods to have excerpts
-
 function my_excerpt_filter ( $content ) {
    return wp_trim_words( $content, 70 );
 }
+
+/**
+ * Customize the sender so it does not say Wordpress
+ */
+// Function to change sender name
+function change_sender_name($original_email_from) {
+    return 'The IA conference';
+}
+add_filter('wp_mail_from_name','change_my_sender_name');
