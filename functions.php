@@ -880,4 +880,4 @@ function my_excerpt_filter ( $content ) {
 function change_sender_name($original_email_from) {
     return 'The IA conference';
 }
-add_filter('wp_mail_from_name','change_my_sender_name');
+add_filter('wp_mail_from_name','change_sender_name');
