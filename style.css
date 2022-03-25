@@ -1179,6 +1179,11 @@ body.archive h2.entry-title {
 	margin-bottom: 20px;
 }
 
+/* 404 page */
+.error404 .site-inner {
+	margin-top: 6rem;
+}
+
 
 /* WordPress
 --------------------------------------------- */
