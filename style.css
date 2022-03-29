@@ -592,6 +592,10 @@ input[type="radio"] {
 	color: #4C4C4D;
 }
 
+.pods-form-filters-search {
+	margin: 2rem 0;
+}
+
 /**
  * Styling for buttons
  */
@@ -2060,7 +2064,7 @@ body.archive p.entry-meta {
 --------------------------------------------- */
 .pods-pagination-advanced {
 	display:block;
-	margin-top:2em;
+	margin: 2rem 0 3rem;
 }
 
 .pods-pagination-advanced, .pagination {
