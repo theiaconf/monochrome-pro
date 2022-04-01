@@ -4486,6 +4486,9 @@ ul.program-nav span.current {
 	float: left;
 	clear: inherit;
 }
+.page-template-page_dashboard .shadow-box .wp-block-image {
+	margin: 2rem 0 2rem;
+}
 
 @media only screen and (max-width: 1023px) {
 	div.breadcrumb,
