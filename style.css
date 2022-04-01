@@ -2065,6 +2065,7 @@ body.archive p.entry-meta {
 .pods-pagination-advanced {
 	display:block;
 	margin: 2rem 0 3rem;
+	line-height: 4rem;
 }
 
 .pods-pagination-advanced, .pagination {
@@ -2923,13 +2924,18 @@ h3.session-workshop_title {
 }
   
 .session-card-overview {
-    min-width: 22rem;
+	min-width: 22rem;
 	width: 22rem;
-    border-top-left-radius: 0.625rem;
-    border-bottom-left-radius: 0.625rem;
-	padding: 1rem 3rem 0 5rem;
+	border-top-left-radius: 0.625rem;
+	border-bottom-left-radius: 0.625rem;
+	padding: 1rem 3rem 3rem 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
-
+.session-card-overview .session-utility_link {
+	line-height: 120%;
+}
 
 /* .divider {
 	height: 50rem;
