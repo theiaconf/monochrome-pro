@@ -4483,6 +4483,7 @@ ul.program-nav span.current {
 
 .page-template-page_dashboard .shadow-box.one-half h3 {
 	float: left;
+	clear: inherit;
 }
 
 @media only screen and (max-width: 1023px) {
