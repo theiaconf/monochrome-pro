@@ -2806,10 +2806,6 @@ article.session-type-single-session .entry-content h2 {
 	overflow: scroll;
 }
 
-.session-video iframe {
-  width: 90%;
-}
-
 .session-speaker_bio {
 	margin-bottom: 0.5em;
 }
