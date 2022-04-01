@@ -2935,6 +2935,7 @@ h3.session-workshop_title {
 }
 .session-card-overview .session-utility_link {
 	line-height: 120%;
+	padding: 1rem 0;
 }
 
 /* .divider {
@@ -4478,6 +4479,10 @@ ul.program-nav span.current {
 	border-top-right-radius: 2rem;
 	border-bottom-right-radius: 2rem;
 	margin-bottom: 0;
+}
+
+.page-template-page_dashboard .shadow-box.one-half h3 {
+	float: left;
 }
 
 @media only screen and (max-width: 1023px) {
