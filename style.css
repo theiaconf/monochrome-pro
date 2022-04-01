@@ -4482,9 +4482,11 @@ ul.program-nav span.current {
 	margin-bottom: 0;
 }
 
-.page-template-page_dashboard .shadow-box.one-half h3 {
+.page-template-page_dashboard .shadow-box.one-half h3.big-font {
 	float: left;
 	clear: inherit;
+	margin: 0 0 0.25rem 0;
+	font-size: 2.5rem;
 }
 .page-template-page_dashboard .shadow-box .wp-block-image {
 	margin: 2rem 0 2rem;
