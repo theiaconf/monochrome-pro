@@ -2315,7 +2315,11 @@ ul.social-media-icons {
 
 ul.social-media-icons li {
 	display: inline;
-	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+.entry-content ul.social-media-icons {
+	margin-left: 0;
+	margin-top: 2rem;
 }
 
 /* Before Footer CTA
