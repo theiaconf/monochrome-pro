@@ -4489,6 +4489,10 @@ ul.program-nav span.current {
 .page-template-page_dashboard .shadow-box .wp-block-image {
 	margin: 2rem 0 2rem;
 }
+.page-template-page_dashboard .shadow-box .wp-block-image .alignleft {
+	margin-bottom: 2rem;
+}
+
 
 @media only screen and (max-width: 1023px) {
 	div.breadcrumb,
