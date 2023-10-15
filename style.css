@@ -2888,8 +2888,8 @@ h3.session-workshop_title {
 }
 
 .gform_wrapper.gravity-theme .workshop-registration-entries input + label {
-	margin-left: 1.5rem;
-	vertical-align: top;
+	margin-left: 1.0rem;
+	vertical-align: text-top; 
 }
 
 .workshop-registration-entries .workshop-title {
