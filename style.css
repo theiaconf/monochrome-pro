@@ -960,6 +960,8 @@ th {
 	color: #06c;
 }
 
+/*
+Why are the widget titles small and uppercase like this? 
 .widget-title {
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 16px;
@@ -968,6 +970,7 @@ th {
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
+*/
 
 .sidebar .widget-title {
 	margin-bottom: 20px;
