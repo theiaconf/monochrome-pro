@@ -6,7 +6,7 @@
   }
   
   .frontpage-hero {
-      font-size: 7em; 
+    font-size: 7em; 
     margin-bottom: 0;
     line-height: 1;
   }
@@ -19,6 +19,11 @@
     font-weight: 400;
     margin-top: 2.3em;
   }
+
+.iac24-dates {
+  margin-top: 2em;
+  padding-bottom: 3em;
+}
   
   .frontpage-button {
       background-image: linear-gradient(to right,#E81C28,#FF0195);
