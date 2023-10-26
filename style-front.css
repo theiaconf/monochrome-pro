@@ -1,19 +1,32 @@
 .iac24-homepage-hero {
-  background-image : linear-gradient(#E81C28, #FF0195);
-  text-align: center;    
-}
-
-.frontpage-hero {
-	font-size: 7em; 
-}
-
-.frontpage-button {
-    background-image: linear-gradient(to right,#E81C28,#FF0195);
-    color: #1E1E1E !important;
-    font-size: 1.1em !important;
-    border-style: solid !important;
-    border-color: #1E1E1E !important;
-    border-width: 2px !important;
-    border-radius: 20px !important;
-    font-weight: 800 !important;
+    background-image : linear-gradient(#E81C28, #FF0195);
+    text-align: center;  
+    padding-top: 3.5em;
+    padding-bottom: 2em; 
   }
+  
+  .frontpage-hero {
+      font-size: 7em; 
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  
+  .frontpage-hero-loc {
+    letter-spacing: .57em !important;
+  }
+  
+  .frontpage-theme {
+    font-weight: 400;
+    margin-top: 2.3em;
+  }
+  
+  .frontpage-button {
+      background-image: linear-gradient(to right,#E81C28,#FF0195);
+      color: #1E1E1E !important;
+      font-size: 1.1em !important;
+      border-style: solid !important;
+      border-color: #1E1E1E !important;
+      border-width: 2px !important;
+      border-radius: 20px !important;
+      font-weight: 800 !important;
+    }
