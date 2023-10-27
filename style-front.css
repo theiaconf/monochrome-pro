@@ -5,33 +5,39 @@
     padding-bottom: 2em; 
   }
   
-  .frontpage-hero {
-    font-size: 7em; 
-    margin-bottom: 0;
-    line-height: 1;
-  }
+.frontpage-hero {
+  font-size: 7em; 
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.frontpage-hero-loc {
+  letter-spacing: .57em !important;
+}
   
-  .frontpage-hero-loc {
-    letter-spacing: .57em !important;
-  }
-  
-  .frontpage-theme {
-    font-weight: 400;
-    margin-top: 2.3em;
-  }
+.frontpage-theme {
+  font-weight: 400;
+  margin-top: 2.3em;
+}
 
 .iac24-dates {
   margin-top: 2em;
   padding-bottom: 3em;
 }
   
-  .frontpage-button {
-      background-image: linear-gradient(to right,#E81C28,#FF0195);
-      color: #1E1E1E !important;
-      font-size: 1.1em !important;
-      border-style: solid !important;
-      border-color: #1E1E1E !important;
-      border-width: 2px !important;
-      border-radius: 20px !important;
-      font-weight: 800 !important;
-    }
+.frontpage-button {
+  background-image: linear-gradient(to right, #E81C28, #FF0195);
+  color: #1E1E1E !important;
+  font-size: 1.1em !important;
+  border-style: solid !important;
+  border-color: #1E1E1E !important;
+  border-width: 2px !important;
+  border-radius: 20px !important;
+  font-weight: 800 !important;
+}
+
+.widget-title {
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
