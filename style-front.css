@@ -45,4 +45,16 @@
 .co-chair {
   float: left;
   margin-right: 3em;
+  margin-bottom: 3em;
+}
+
+.co-chair img {
+   filter: grayscale(100%);
+   border-radius: 30px;
+}
+
+.co-chair a {
+  color: #FD028F !important;
+  text-transform: uppercase;
+  font-weight: bold !important;
 }
