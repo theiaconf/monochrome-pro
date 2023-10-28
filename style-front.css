@@ -1,3 +1,8 @@
+@font-face {
+  font-family: raptor_sans_font_by_rotweiler83_d222zcf;
+  src: url("wp-content/themes/monochrome-pro/fonts/raptor_sans_font_by_rotweiler83_d222zcf.ttf");
+}
+
 .iac24-homepage-hero {
     background-image : linear-gradient(#E81C28, #FF0195);
     text-align: center;  
@@ -9,6 +14,10 @@
   font-size: 7em; 
   margin-bottom: 0;
   line-height: 1;
+}
+
+h1.frontpage-hero {
+  font-family: raptor !important;
 }
 
 .frontpage-hero-loc {
