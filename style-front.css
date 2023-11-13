@@ -1,6 +1,12 @@
 @font-face {
-  font-family: raptor;
-  src: url("wp-content/themes/monochrome-pro/fonts/raptor");
+    font-family: 'Raptor';
+    src: url('fonts/Raptor.eot');
+    src: url('fonts/Raptor.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raptor.woff2') format('woff2'),
+        url('fonts/Raptor.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 .iac24-homepage-hero {
@@ -36,7 +42,7 @@
 }
 
 h1.frontpage-hero {
-  font-family: raptor !important;
+  font-family: Raptor !important;
 }
 
 .frontpage-hero-loc {
