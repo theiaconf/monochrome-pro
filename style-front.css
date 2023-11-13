@@ -4,12 +4,31 @@
 }
 
 .iac24-homepage-hero {
-    background-image : linear-gradient(#E81C28, #FF0195);
     text-align: center;  
     padding-top: 3.5em;
     padding-bottom: 2em; 
-  }
+}
   
+/**
+ * Overrides for Genesis widgets
+ */
+.front-page-1 .flexible-widgets,
+.front-page-2 .flexible-widgets,
+.front-page-3 .flexible-widgets,
+.front-page-4 .flexible-widgets,
+.front-page-5 .flexible-widgets,
+.front-page-6 .fleixble-widgets,
+.front-page-7 .flexible-widgets {
+  min-width: 360px;
+  max-width: 960px;
+  margin: auto;
+  padding: 25px 0 25px 0;
+}
+
+.front-page-1 {
+ background-image: linear-gradient(#E81C28, #FF0195);
+}
+
 .frontpage-hero {
   font-size: 7em; 
   margin-bottom: 0;

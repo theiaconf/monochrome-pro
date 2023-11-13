@@ -662,7 +662,7 @@ th {
 	background-color: #fff;
 	clear: both;
 	margin-top: 100px;
-	max-width: 1200px;
+	width: 100%;
 	position: relative;
 	word-wrap: break-word;
 	z-index: 999;
@@ -703,10 +703,10 @@ th {
 }
 
 .full-width-content .content {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-	width: 680px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /* Sidebar */
