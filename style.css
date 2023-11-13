@@ -661,7 +661,7 @@ th {
 .site-inner {
 	background-color: #fff;
 	clear: both;
-	margin-top: 100px;
+	margin-top: 0;
 	width: 100%;
 	position: relative;
 	word-wrap: break-word;
@@ -1322,7 +1322,7 @@ figcaption,
 	margin: 0;
 	padding: 0;
 	background: url(https://www.theiaconference.com/wp-content/uploads/2022/09/iac-logo_temp.png) no-repeat;
-	height: 400px;
+	height: 100px;
 	width: 400px;
 	text-indent: -500em;
 	text-transform: uppercase;
