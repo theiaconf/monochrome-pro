@@ -2112,6 +2112,15 @@ p.entry-meta {
 		color: rgb(234, 28, 40);
 }
 
+/**
+ * Overrides for formatting of dates - use .iac24-dates class in a list to
+ * cleanly display these elements
+ */
+ul.iac24-dates li {
+  margin-bottom: 0.25em;
+  padding: 0;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
