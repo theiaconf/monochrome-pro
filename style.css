@@ -2078,6 +2078,39 @@ p.entry-meta {
 	width: auto;
 }
 
+/**
+ * Custom styling for presenters, co-chairs, and headshots based on existing PODS template
+ */
+.presenter_list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+.presenter:first-of-type {
+	margin-left: 0;
+}
+
+.presenter {
+	margin-left: 2em;
+}
+
+.presenter-headshot img {
+	border: 0.125em solid rgb(30, 30, 30);
+	border-radius: 1.875em;
+	filter: grayscale(100%);
+}
+
+.presenter-name {
+	text-align: center;
+}
+
+.presenter-name a {
+		color: rgb(234, 28, 40);
+}
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
