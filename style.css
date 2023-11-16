@@ -2122,6 +2122,80 @@ ul.iac24-dates li {
   padding: 0;
 }
 
+/**
+ * Program and workshop details
+ */
+.session-card {
+	border-top: 0.25em dashed rgb(30, 30, 30);
+}
+
+.session-card-overview {
+	text-transform: uppercase;
+}
+
+.session-card-summary {
+	display: flex;
+}
+
+.session-card-title-and-speakers {
+  flex: 1;	
+}
+
+.session-card-summary-title {
+	/* Styles here */
+}
+
+.session-card-summary-title a {
+	color: rgb(30, 30, 30);
+	background: rgb(218, 237, 11);
+}
+
+ul.session-card-speaker-list {
+	display: inline-flex;
+	margin-bottom: 0;
+  text-indent: 0;
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+ul.session-card-speaker-list:after {
+	content: ">>>>>>>>>>";
+	font-weight: bold;
+	margin-left: 0.5em;
+}
+
+li.session-card-speaker-name {
+	display: inline;
+	margin-left: 0.33em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+li.session-card-speaker-name:after {
+	content: ", ";
+}
+
+li.session-card-speaker-name:first-of-type {
+	margin-left: 0;
+}
+
+li.session-card-speaker-name:last-of-type:after {
+	content: none;
+}
+
+.session-card-presenter-headshots {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.session-card-presenter-headshots .presenter-headshot {
+	margin-right: 0.66em;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
