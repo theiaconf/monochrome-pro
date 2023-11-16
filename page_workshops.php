@@ -2,7 +2,7 @@
 /**
  * Monochrome Pro.
  *
- * Template Name: Program
+ * Template Name: Workshops
  *
  * This file supports design elements linked to this template.
  *
@@ -17,10 +17,12 @@ function theme_prefix_show_notice() {
 	echo '
 		
 		<div class="masthead-banner">
-			<div class="section-title">' . wp_title() . '</div>
+			<div class="section-title">Workshops</div>
 		</div>
 		
 		';
 }
+remove_action('genesis_entry_header', 'genesis_do_post_title');
+
 // Run the Genesis loop.
 genesis();
