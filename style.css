@@ -2196,6 +2196,24 @@ li.session-card-speaker-name:last-of-type:after {
 	margin-right: 0.66em;
 }
 
+.session-card-audiences > ul {
+	display: inline-block;
+	list-style-type: none;
+  margin: 1em 0;
+	padding: 0;
+	text-indent: 0;
+}
+
+.session-card-audiences ul > li {
+  display: inline;
+	list-style-type: none;
+	text-indent: 0;
+	padding: 0.5em 0.66em;
+	
+	border: 0.1em solid rgb(30, 30, 30);
+	border-radius: 1em;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
