@@ -2244,6 +2244,10 @@ li.session-card-speaker-name:last-of-type:after {
 	background: rgb(218,237,1);
 }
 
+.masthead-banner.logistics {
+   background: rgb(232,28,40);
+}
+
 .masthead-banner .section-title {
 	font-size: 600%;
 	text-transform: uppercase;
