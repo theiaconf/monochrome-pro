@@ -18,29 +18,11 @@ function theme_prefix_show_notice() {
 		
 		<div class="masthead-banner">
 			<div class="text-block">
-				<span class="banner-site-title">IAC 22</span>
-				<span class="banner-site-subtitle"><strong>[Re]</strong>Connect</span>
-				<span class="banner-section-title"></span>
+				<span class="banner-site-title">Workshops</span>
 			</div>
 		</div>
 		
 		';
-}
-
-add_action('get_header', 'remove_page_titles');
-/**
- * Selectively remove page titles only for the main program schedule using the
- * slugs. Should be removed after IAC22 if still using Wordpress.
- */
-function remove_page_titles() {
-  if (is_page('monday') || 
-      is_page('tuesday') ||
-      is_page('wednesday') ||
-      is_page('program') ||
-      is_page('friday') ||
-      is_page('saturday')) {
-    remove_action('genesis_entry_header', 'genesis_do_post_title');
-  }
 }
 
 // Run the Genesis loop.
