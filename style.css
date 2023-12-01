@@ -1688,6 +1688,12 @@ figcaption,
 	margin-bottom: 100px;
 }
 
+.entry-content {
+	max-width: 1040px;
+	text-align: center;
+	margin: auto;
+}
+
 .full-width-content.landing-page .entry {
 	margin-bottom: 0;
 }
