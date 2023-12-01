@@ -1332,19 +1332,24 @@ figcaption,
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.2;
+    height: 120px;
+	width: 320px;
+
 	margin: 0;
 	padding: 0;
-	background: url(images/iac_logo_2024.svg) no-repeat;
-	background-size: contain;
-	height: 50px;
-	width: 160px;
-	text-indent: -500em;
 	text-transform: uppercase;
 }
 
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
+	display: block;
+	background: url(images/iac_logo_2024.svg) no-repeat;
+	background-size: contain;
+    text-indent: -500em;
+	height: 120px;
+	width: 320px;
+	
 	color: #000;
 	text-decoration: none;
 }
