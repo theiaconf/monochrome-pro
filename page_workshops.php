@@ -19,7 +19,8 @@ function theme_prefix_show_notice() {
 		<div class="masthead-banner">
 			<div class="text-block">
 				<span class="banner-site-title">Workshops</span>
-			</div>		
+			</div>	
+		</div>	
 		';
 }
 
