@@ -2241,6 +2241,9 @@ li.session-card-speaker-name:last-of-type:after {
 
 .masthead-banner.workshops {
 	background: rgb(218,237,1);
+	background-image: url('images/Neon Yellow background - Seattle Public Library.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .masthead-banner.logistics {
