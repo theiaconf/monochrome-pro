@@ -16,10 +16,8 @@ add_action( 'genesis_after_header', 'theme_prefix_show_notice' );
 function theme_prefix_show_notice() {
 	echo '
 		
-		<div class="masthead-banner">
-			<div class="text-block">
-				<span class="banner-site-title">Workshops</span>
-			</div>	
+		<div class="masthead-banner workshops">
+			<div class="section-title">Workshops</span>
 		</div>	
 		';
 }
