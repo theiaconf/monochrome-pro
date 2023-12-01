@@ -17,7 +17,9 @@ function theme_prefix_show_notice() {
 	echo '
 		
 		<div class="masthead-banner workshops">
-			<div class="section-title">Workshops</span>
+		  <div class="text-block">
+			<div class="section-title">Workshops</div>
+		  </div>
 		</div>	
 		';
 }
