@@ -228,10 +228,8 @@ li {
 }
 
 hr {
-	border-width: 0;
-	border-collapse: collapse;
-	border-top: 1px solid currentColor;
-	color: #eee;
+	border-top: 0.25rem #1e1e1e solid;
+	color: #1e1e1e;
 	clear: both;
 	margin: 1em 0;
 }
@@ -647,6 +645,17 @@ th {
 	position: relative;
 }
 
+
+/**
+ * Overrides for primary visual elements
+ */
+hr.wp-block-separator {
+	border-top: 0.25rem #1e1e1e dashed;
+	border-bottom: 0;
+	color: #1e1e1e;
+	clear: both;
+	margin: 1em 0;
+}
 
 /* Structure and Layout
 ---------------------------------------------------------------------------- */
@@ -1693,7 +1702,6 @@ figcaption,
 
 .entry-content {
 	max-width: 1040px;
-	text-align: center;
 	margin: auto;
 }
 
@@ -1796,7 +1804,7 @@ p.entry-meta {
 }
 
 .entry-header::after {
-	border-bottom: 1px solid #000;
+	/** border-bottom: 1px solid #000; */
 	content: "";
 	display: block;
 	margin-bottom: 40px;
@@ -2188,6 +2196,28 @@ ul.iac24-ctas a:after {
 /**
  * Button visuals
  */
+.wp-block-buttons.is-layout-flex {
+	justify-content: left;
+	align-items: center;
+}
+
+.wp-block-button {
+	flex-grow: 1;
+}
+
+.wp-block-button a {
+	background: rgb(218, 237, 11);
+	color: #1e1e1e;
+	border: 1px #1e1e1e solid;
+	border-radius: 0.9375rem;
+	font-family: Raptor, "IBM Plex Sans", sans-serif;
+	font-size: 2.25rem;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 0;
+	padding-top: 0.5rem;
+}
+
 .call-to-action-button a.button {
   font-family: Raptor, "IBM Plex Sans", sans-serif;
 }
@@ -2292,7 +2322,7 @@ li.session-card-speaker-name:last-of-type:after {
  */
 .masthead-banner {
 	width: 100%;
-	height: 29rem;
+	height: 23rem;
 	text-align: center;
 
   display: flex;
