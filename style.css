@@ -2144,6 +2144,27 @@ ul.iac24-dates li {
   padding: 0;
 }
 
+ul.iac24-ctas {
+	margin-bottom: 4rem;
+}
+
+ul.iac324-ctas li {
+	margin: 0;
+	padding: 0;
+}
+
+ul.iac24-ctas a {
+	color: #fd028f;
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+ul.iac24-ctas a:after {
+	content: " --->";
+}
+
 /**
  * Program and workshop details
  */
