@@ -285,11 +285,28 @@ h1 {
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 2.5rem;
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 2rem;
+}
+
+h3.wp-block-heading {
+  font-size: 2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #E81C28;
+}
+
+h3.wp-block-heading:after,
+h4.wp-block-heading:after {
+	content: " >>>>>";
+}
+
+h3.wp-block-heading > a {
+	color: inherit;
+	text-decoration: none;
 }
 
 .comment-respond h3,
@@ -311,7 +328,8 @@ h3 {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 2rem;
+	font-weight: 400;
 }
 
 .entry-content h2,
@@ -654,7 +672,7 @@ hr.wp-block-separator {
 	border-bottom: 0;
 	color: #1e1e1e;
 	clear: both;
-	margin: 1em 0;
+	margin: 1em 0 4rem 0;
 }
 
 /* Structure and Layout
@@ -2199,6 +2217,7 @@ ul.iac24-ctas a:after {
 .wp-block-buttons.is-layout-flex {
 	justify-content: left;
 	align-items: center;
+	gap: 1.25rem;
 }
 
 .wp-block-button {
@@ -2317,6 +2336,13 @@ li.session-card-speaker-name:last-of-type:after {
 	border-radius: 1em;
 }
 
+/** 
+ * Price tables
+ */
+figure.price-table {
+	width: 688px;
+}
+
 /**
  * Section headings for different sites - set using PHP templates to change the color of key elements
  */
@@ -2339,6 +2365,9 @@ li.session-card-speaker-name:last-of-type:after {
 
 .masthead-banner.logistics {
    background: rgb(232,28,40);
+	background-image: url('images/Logistics background (Cody Martin).png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .masthead-banner .section-title {
