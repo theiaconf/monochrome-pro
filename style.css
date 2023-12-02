@@ -202,8 +202,8 @@ textarea:focus,
 }
 
 a {
-	color: #06c;
-	text-decoration: none;
+	color: #1e1e1e;
+	text-decoration: underline;
 }
 
 a:hover,
@@ -1975,6 +1975,7 @@ p.entry-meta {
 	line-height: 1.5;
 	padding-bottom: 40px;
 	padding-top: 45px;
+	margin-top: 64px;
 	text-align: center;
 }
 
@@ -2108,7 +2109,7 @@ p.entry-meta {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	
 }
@@ -2125,6 +2126,7 @@ p.entry-meta {
 	border: 0.125em solid rgb(30, 30, 30);
 	border-radius: 1.875em;
 	filter: grayscale(100%);
+	/*! max-width: 196px; */
 }
 
 .presenter-name {
@@ -2132,7 +2134,16 @@ p.entry-meta {
 }
 
 .presenter-name a {
-		color: rgb(234, 28, 40);
+		color: #fd028f;
+	  font-weight: 600;
+}
+
+.presenter-name a:before {
+	content: ">>";
+}
+
+.presenter-name a:after {
+	content: ">>>";
 }
 
 /**
