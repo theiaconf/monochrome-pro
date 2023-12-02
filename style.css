@@ -1418,7 +1418,7 @@ figcaption,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .toggle-header-search:focus,
 .genesis-nav-menu .toggle-header-search:hover {
-	color: #06c;
+	color: rgb(0, 0, 0);
 }
 
 .genesis-nav-menu .sub-menu {
