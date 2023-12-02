@@ -1974,10 +1974,15 @@ p.entry-meta {
 	background: #1E1E1E;
 	line-height: 1.5;
 	padding-bottom: 40px;
-	padding-top: 45px;
+	padding-top: 120px;
 	margin-top: 64px;
 	text-align: center;
+	
+	background-image: url('images/Seattle Public Library windows (Cody Martin).png');
+	background-repeat: no-repeat;
+	background-size: cover;	
 }
+
 
 .before-footer-cta .wrap {
 	max-width: 50rem;
