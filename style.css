@@ -294,9 +294,19 @@ h3 {
 
 h3.wp-block-heading {
   font-size: 2rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #E81C28;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E81C28;
+}
+
+h3.wp-block-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h3.logistics-heading {
+  color: #E81C28;
 }
 
 h3.wp-block-heading:after,
