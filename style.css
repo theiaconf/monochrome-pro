@@ -1980,7 +1980,16 @@ p.entry-meta {
 }
 
 .before-footer-cta .wrap {
-	max-width: 1200px;
+	max-width: 50rem;
+	text-align: left;
+}
+
+.before-footer-cta .widget-title {
+  margin-bottom: 1rem;	
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-bottom: none;
+  padding: 0;
 }
 
 .before-footer-cta p:last-of-type,
@@ -1993,10 +2002,6 @@ p.entry-meta {
 .before-footer-cta p,
 .before-footer-cta .widget-title {
 	color: #fff;
-}
-
-.before-footer-cta a {
-	border-bottom: 1px solid currentColor;
 }
 
 .before-footer-cta a:focus,
@@ -2035,7 +2040,6 @@ p.entry-meta {
 	background-color: #000;
 	color: #fff;
 }
-
 
 /* Site Footer
 ---------------------------------------------------------------------------- */
