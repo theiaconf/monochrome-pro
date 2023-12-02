@@ -1314,8 +1314,6 @@ figcaption,
 
 .title-area {
 	float: left;
-	padding-bottom: 20px;
-	padding-top: 20px;
 }
 
 .wp-custom-logo .title-area {
@@ -1332,8 +1330,8 @@ figcaption,
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.2;
-    height: 120px;
-	width: 320px;
+    height: 60px;
+	width: 160px;
 
 	margin: 0;
 	padding: 0;
