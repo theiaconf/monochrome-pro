@@ -75,8 +75,10 @@ h1.frontpage-hero {
 
 .widget-title {
   font-size: 2em;
-  margin-top: 2em;
+  padding-bottom: 1rem;
+  margin-top: 1em;
   margin-bottom: 1em;
+  border-bottom: 0.25rem #1e1e1e dashed;
 }
 
 .co-chair {
