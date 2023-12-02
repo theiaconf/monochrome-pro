@@ -294,12 +294,9 @@ h3 {
 
 h3.wp-block-heading {
   font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-h3.logistics-heading {
-  color: #E81C28;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #E81C28;
 }
 
 h3.wp-block-heading:after,
@@ -2267,12 +2264,13 @@ ul.iac24-ctas a:after {
 }
 
 .session-card-summary-title {
-	/* Styles here */
+	font-size: 2rem;
 }
 
 .session-card-summary-title a {
 	color: rgb(30, 30, 30);
 	background: rgb(218, 237, 11);
+	text-decoration: none;
 }
 
 ul.session-card-speaker-list {
