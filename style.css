@@ -2186,6 +2186,17 @@ ul.iac24-ctas a:after {
 }
 
 /**
+ * Button visuals
+ */
+.call-to-action-button a.button {
+  font-family: Raptor, "IBM Plex Sans", sans-serif;
+}
+
+.centered-button {
+  text-align: center;
+}
+
+/**
  * Program and workshop details
  */
 .session-card {
