@@ -2275,6 +2275,10 @@ ul.iac24-ctas a:after {
 	padding-top: 0.5rem;
 }
 
+.jump-links a:after {
+	content: '';
+}
+
 .call-to-action-button a.button {
   font-family: Raptor, "IBM Plex Sans", sans-serif;
 }
@@ -2412,7 +2416,8 @@ li.session-card-speaker-name:last-of-type:after {
 
 .logistics .wp-block-button a {
   background: var(--color-redhall);
-  color: white;
+  color: var(--color-almostblack);
+  border: 2px black solid;
 }
 
 .masthead-banner .section-title {
