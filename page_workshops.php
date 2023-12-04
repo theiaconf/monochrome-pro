@@ -24,6 +24,12 @@ function theme_prefix_show_notice() {
 		';
 }
 
+function custom_body_classes($classes) {
+  $classes[] = 'workshops';
+  return $classes;
+}
+
+add_action('body_class', 'custom_body_classes');
 remove_action('genesis_entry_header', 'genesis_do_post_title');
 
 // Run the Genesis loop.
