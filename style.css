@@ -2224,17 +2224,45 @@ ul.iac24-ctas a:after {
 /**
  * Button visuals
  */
-.wp-block-buttons.is-layout-flex {
+/**
+ * Default button behaviour
+ */
+.wp-block-buttons {
+  justify-content: center;
+}
+
+.wp-block-button {
+	text-transform: uppercase;
+}
+
+.wp-block-button a {
+  font-family: Raptor, "IBM Plex Sans", sans-serif;
+  padding-top: 16px;
+}
+
+.wp-block-button a:after {
+	content: ' ------>>>';
+}
+
+.wp-block-button a:hover,
+.wp-block-button a:focus {
+	color: rgb(255, 255, 255);
+}
+
+/**
+ * Jump links and utility buttons
+ */
+.jump-links.is-layout-flex {
 	justify-content: left;
 	align-items: center;
 	gap: 1.25rem;
 }
 
-.wp-block-button {
+.jump-links .wp-block-button {
 	flex-grow: 1;
 }
 
-.wp-block-button a {
+.jump-links a {
 	background: rgb(218, 237, 11);
 	color: #1e1e1e;
 	border: 1px #1e1e1e solid;
@@ -2350,8 +2378,9 @@ li.session-card-speaker-name:last-of-type:after {
 /** 
  * Price tables
  */
-figure.price-table {
+.price-tables {
 	width: 688px;
+	margin: auto;
 }
 
 /**
@@ -2374,11 +2403,16 @@ figure.price-table {
 	background-repeat: no-repeat;
 }
 
-.masthead-banner.logistics {
-   background: rgb(232,28,40);
+.logistics .masthead-banner {
+  background: var(--color-redhall);
 	background-image: url('images/Logistics background (Cody Martin).png');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.logistics .wp-block-button a {
+  background: var(--color-redhall);
+  color: white;
 }
 
 .masthead-banner .section-title {
