@@ -306,7 +306,7 @@ h3.wp-block-heading {
   font-size: 2rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: var(--color-redhall);
+	color: var(--color-almostblack);
 }
 
 h3.wp-block-heading:after,
@@ -1849,6 +1849,17 @@ p.entry-meta {
 	display: none;
 }
 
+.entry-header {
+	max-width: 1040px;
+  margin: auto;	
+  margin-top: 2rem;
+	text-transform: uppercase;
+}
+
+h1.entry-title {
+	font-family: Raptor, "IBM Plex Sans", sans-serif !important;
+}
+
 .entry-footer {
 	margin-top: 30px;
 }
@@ -2418,6 +2429,10 @@ li.session-card-speaker-name:last-of-type:after {
   background: var(--color-redhall);
   color: var(--color-almostblack);
   border: 2px black solid;
+}
+
+.logistics h3 {
+  color: var(--color-redhall);
 }
 
 .masthead-banner .section-title {
