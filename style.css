@@ -157,6 +157,16 @@ input[type="search"] {
 /* Defaults
 ---------------------------------------------------------------------------- */
 
+/**
+ * Color schemes for different elements
+ */
+:root {
+  --color-escalator: #daed01;
+  --color-cyberpink: #fd028f;
+  --color-almostblack: #1e1e1e;
+  --color-redhall: #e81c28;
+}
+
 /* Typographical Elements
 --------------------------------------------- */
 
@@ -202,7 +212,7 @@ textarea:focus,
 }
 
 a {
-	color: #1e1e1e;
+	color: var(--color-almostblack);
 	text-decoration: underline;
 }
 
@@ -228,8 +238,8 @@ li {
 }
 
 hr {
-	border-top: 0.25rem #1e1e1e solid;
-	color: #1e1e1e;
+	border-top: 0.25rem var(--color-almostblack) solid;
+	color: var(--color-almostblack);
 	clear: both;
 	margin: 1em 0;
 }
@@ -296,7 +306,7 @@ h3.wp-block-heading {
   font-size: 2rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #E81C28;
+	color: var(--color-redhall);
 }
 
 h3.wp-block-heading:after,
@@ -668,9 +678,9 @@ th {
  * Overrides for primary visual elements
  */
 hr.wp-block-separator {
-	border-top: 0.25rem #1e1e1e dashed;
+	border-top: 0.25rem var(--color-almostblack) dashed;
 	border-bottom: 0;
-	color: #1e1e1e;
+	color: var(--color-almostblack);
 	clear: both;
 	margin: 1em 0 4rem 0;
 }
