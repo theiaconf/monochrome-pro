@@ -58,15 +58,22 @@ h1.frontpage-hero {
   padding-bottom: 2em;
 }
 
-.frontpage-button {
+.front-page-button {
   background-image: linear-gradient(to right, #E81C28, #FF0195);
-  color: #1E1E1E !important;
-  font-size: 1.1em !important;
-  border-style: solid !important;
-  border-color: #1E1E1E !important;
-  border-width: 2px !important;
-  border-radius: 20px !important;
-  font-weight: 800 !important;
+  color: #1E1E1E;
+  border-style: solid;
+  border-color: #1E1E1e;
+  border-width: 2px;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.front-page-button a {
+  background: inherit;
+  color: #1e1e1e;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  padding-bottom: 14px;
 }
 
 .widget-title {
