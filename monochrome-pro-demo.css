@@ -75,19 +75,6 @@ Requires PHP: 5.6
 		- Max-width: 600px
 */
 
-/**
- * Additional fonts
- */
-@font-face {
-    font-family: 'Raptor';
-    src: url('fonts/Raptor.eot');
-    src: url('fonts/Raptor.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raptor.woff2') format('woff2'),
-        url('fonts/Raptor.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* HTML5 Reset
 ---------------------------------------------------------------------------- */
@@ -157,16 +144,6 @@ input[type="search"] {
 /* Defaults
 ---------------------------------------------------------------------------- */
 
-/**
- * Color schemes for different elements
- */
-:root {
-  --color-escalator: #daed01;
-  --color-cyberpink: #fd028f;
-  --color-almostblack: #1e1e1e;
-  --color-redhall: #e81c28;
-}
-
 /* Typographical Elements
 --------------------------------------------- */
 
@@ -175,7 +152,7 @@ body {
 	color: #000;
 	font-family: Muli, sans-serif;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.875;
 	margin: 0;
 	overflow-x: hidden;
@@ -212,8 +189,8 @@ textarea:focus,
 }
 
 a {
-	color: var(--color-almostblack);
-	text-decoration: underline;
+	color: #06c;
+	text-decoration: none;
 }
 
 a:hover,
@@ -238,8 +215,10 @@ li {
 }
 
 hr {
-	border-top: 0.25rem var(--color-almostblack) solid;
-	color: var(--color-almostblack);
+	border-width: 0;
+	border-collapse: collapse;
+	border-top: 1px solid currentColor;
+	color: #eee;
 	clear: both;
 	margin: 1em 0;
 }
@@ -295,28 +274,11 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 30px;
 }
 
 h3 {
-	font-size: 2rem;
-}
-
-h3.wp-block-heading {
-  font-size: 2rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: var(--color-almostblack);
-}
-
-h3.wp-block-heading:after,
-h4.wp-block-heading:after {
-	content: " >>>>>";
-}
-
-h3.wp-block-heading > a {
-	color: inherit;
-	text-decoration: none;
+	font-size: 24px;
 }
 
 .comment-respond h3,
@@ -338,8 +300,7 @@ h3.wp-block-heading > a {
 }
 
 h4 {
-	font-size: 2rem;
-	font-weight: 400;
+	font-size: 20px;
 }
 
 .entry-content h2,
@@ -674,17 +635,6 @@ th {
 }
 
 
-/**
- * Overrides for primary visual elements
- */
-hr.wp-block-separator {
-	border-top: 0.25rem var(--color-almostblack) dashed;
-	border-bottom: 0;
-	color: var(--color-almostblack);
-	clear: both;
-	margin: 1em 0 4rem 0;
-}
-
 /* Structure and Layout
 ---------------------------------------------------------------------------- */
 
@@ -711,8 +661,8 @@ hr.wp-block-separator {
 .site-inner {
 	background-color: #fff;
 	clear: both;
-	margin-top: 0;
-	width: 100%;
+	margin-top: 100px;
+	max-width: 1200px;
 	position: relative;
 	word-wrap: break-word;
 	z-index: 999;
@@ -753,10 +703,10 @@ hr.wp-block-separator {
 }
 
 .full-width-content .content {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
 }
 
 /* Sidebar */
@@ -1010,8 +960,6 @@ hr.wp-block-separator {
 	color: #06c;
 }
 
-/*
-Why are the widget titles small and uppercase like this? 
 .widget-title {
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 16px;
@@ -1020,7 +968,6 @@ Why are the widget titles small and uppercase like this?
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
-*/
 
 .sidebar .widget-title {
 	margin-bottom: 20px;
@@ -1320,8 +1267,8 @@ figcaption,
 .site-header {
 	background-color: #fff;
 	border-bottom: 1px solid transparent;
-	min-height: 60px;
-	padding: 10px 40px 0 40px;
+	min-height: 80px;
+	padding: 10px 40px;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -1351,6 +1298,8 @@ figcaption,
 
 .title-area {
 	float: left;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .wp-custom-logo .title-area {
@@ -1367,24 +1316,13 @@ figcaption,
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.2;
-    height: 60px;
-	width: 160px;
-
-	margin: 0;
-	padding: 0;
+	margin-bottom: 0;
 	text-transform: uppercase;
 }
 
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
-	display: block;
-	background: url(images/iac24-logo.svg) no-repeat;
-	background-size: contain;
-    text-indent: -500em;
-	height: 60px;
-	width: 160px;
-	
 	color: #000;
 	text-decoration: none;
 }
@@ -1455,7 +1393,7 @@ figcaption,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .toggle-header-search:focus,
 .genesis-nav-menu .toggle-header-search:hover {
-	color: rgb(0, 0, 0);
+	color: #06c;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1728,11 +1666,6 @@ figcaption,
 	margin-bottom: 100px;
 }
 
-.entry-content {
-	max-width: 1040px;
-	margin: auto;
-}
-
 .full-width-content.landing-page .entry {
 	margin-bottom: 0;
 }
@@ -1832,7 +1765,7 @@ p.entry-meta {
 }
 
 .entry-header::after {
-	/** border-bottom: 1px solid #000; */
+	border-bottom: 1px solid #000;
 	content: "";
 	display: block;
 	margin-bottom: 40px;
@@ -1847,17 +1780,6 @@ p.entry-meta {
 
 .sidebar .entry-header::after {
 	display: none;
-}
-
-.entry-header {
-	max-width: 1040px;
-  margin: auto;	
-  margin-top: 2rem;
-	text-transform: uppercase;
-}
-
-h1.entry-title {
-	font-family: Raptor, "IBM Plex Sans", sans-serif !important;
 }
 
 .entry-footer {
@@ -2018,30 +1940,16 @@ h1.entry-title {
 ---------------------------------------------------------------------------- */
 
 .before-footer-cta {
-	background: #1E1E1E;
+	background: #06c;
+	background: linear-gradient(45deg, #06c, #02cbfb);
 	line-height: 1.5;
 	padding-bottom: 40px;
-	padding-top: 120px;
-	margin-top: 64px;
+	padding-top: 45px;
 	text-align: center;
-	
-	background-image: url('images/Seattle Public Library windows (Cody Martin).png');
-	background-repeat: no-repeat;
-	background-size: cover;	
 }
-
 
 .before-footer-cta .wrap {
-	max-width: 50rem;
-	text-align: left;
-}
-
-.before-footer-cta .widget-title {
-  margin-bottom: 1rem;	
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  border-bottom: none;
-  padding: 0;
+	max-width: 1200px;
 }
 
 .before-footer-cta p:last-of-type,
@@ -2054,6 +1962,10 @@ h1.entry-title {
 .before-footer-cta p,
 .before-footer-cta .widget-title {
 	color: #fff;
+}
+
+.before-footer-cta a {
+	border-bottom: 1px solid currentColor;
 }
 
 .before-footer-cta a:focus,
@@ -2092,6 +2004,7 @@ h1.entry-title {
 	background-color: #000;
 	color: #fff;
 }
+
 
 /* Site Footer
 ---------------------------------------------------------------------------- */
@@ -2158,289 +2071,6 @@ h1.entry-title {
 	width: auto;
 }
 
-/**
- * Custom styling for presenters, co-chairs, and headshots based on existing PODS template
- */
-.presenter_list {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	
-}
-
-.presenter:first-of-type {
-	margin-left: 0;
-}
-
-.presenter {
-	margin-left: 2em;
-}
-
-.presenter-headshot img {
-	border: 0.125em solid rgb(30, 30, 30);
-	border-radius: 1.875em;
-	filter: grayscale(100%);
-	/*! max-width: 196px; */
-}
-
-.presenter-name {
-	text-align: center;
-}
-
-.presenter-name a {
-		color: #fd028f;
-	  font-weight: 600;
-}
-
-.presenter-name a:before {
-	content: ">>";
-}
-
-.presenter-name a:after {
-	content: ">>>";
-}
-
-/**
- * Overrides for formatting of dates - use .iac24-dates class in a list to
- * cleanly display these elements
- */
-ul.iac24-dates li {
-  margin-bottom: 0.25em;
-  padding: 0;
-}
-
-ul.iac24-ctas {
-	margin-bottom: 4rem;
-}
-
-ul.iac324-ctas li {
-	margin: 0;
-	padding: 0;
-}
-
-ul.iac24-ctas a {
-	color: #fd028f;
-	font-size: 2rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-decoration: underline;
-}
-
-ul.iac24-ctas a:after {
-	content: " --->";
-}
-
-/**
- * Button visuals
- */
-/**
- * Default button behaviour
- */
-.wp-block-buttons {
-  justify-content: center;
-}
-
-.wp-block-button {
-	text-transform: uppercase;
-}
-
-.wp-block-button a {
-  font-family: Raptor, "IBM Plex Sans", sans-serif;
-  padding-top: 16px;
-}
-
-.wp-block-button a:after {
-	content: ' ------>>>';
-}
-
-.wp-block-button a:hover,
-.wp-block-button a:focus {
-	color: rgb(255, 255, 255);
-}
-
-/**
- * Jump links and utility buttons
- */
-.jump-links.is-layout-flex {
-	justify-content: left;
-	align-items: center;
-	gap: 1.25rem;
-}
-
-.jump-links .wp-block-button {
-	flex-grow: 1;
-}
-
-.jump-links a {
-	background: rgb(218, 237, 11);
-	color: #1e1e1e;
-	border: 1px #1e1e1e solid;
-	border-radius: 0.9375rem;
-	font-family: Raptor, "IBM Plex Sans", sans-serif;
-	font-size: 2.25rem;
-	text-transform: uppercase;
-	width: 100%;
-	padding: 0;
-	padding-top: 0.5rem;
-}
-
-.jump-links a:after {
-	content: '';
-}
-
-.call-to-action-button a.button {
-  font-family: Raptor, "IBM Plex Sans", sans-serif;
-}
-
-.centered-button {
-  text-align: center;
-}
-
-/**
- * Program and workshop details
- */
-.session-card {
-}
-
-.session-card-overview {
-	text-transform: uppercase;
-}
-
-.session-card-summary {
-	display: flex;
-}
-
-.session-card-title-and-speakers {
-  flex: 1;	
-}
-
-.session-card-summary-title {
-	font-size: 2rem;
-}
-
-.session-card-summary-title a {
-	color: rgb(30, 30, 30);
-	background: rgb(218, 237, 11);
-	text-decoration: none;
-}
-
-ul.session-card-speaker-list {
-	display: inline-flex;
-	margin-bottom: 0;
-  text-indent: 0;
-	margin-left: 0;
-	padding-left: 0;
-	list-style-type: none;
-}
-
-ul.session-card-speaker-list:after {
-	content: ">>>>>>>>>>";
-	font-weight: bold;
-	margin-left: 0.5em;
-}
-
-li.session-card-speaker-name {
-	display: inline;
-	margin-left: 0.33em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-li.session-card-speaker-name:after {
-	content: ", ";
-}
-
-li.session-card-speaker-name:first-of-type {
-	margin-left: 0;
-}
-
-li.session-card-speaker-name:last-of-type:after {
-	content: none;
-}
-
-.session-card-presenter-headshots {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.session-card-presenter-headshots .presenter-headshot {
-	margin-right: 0.66em;
-}
-
-.session-card-audiences > ul {
-	display: inline-block;
-	list-style-type: none;
-  margin: 1em 0;
-	padding: 0;
-	text-indent: 0;
-}
-
-.session-card-audiences ul > li {
-  display: inline;
-	list-style-type: none;
-	text-indent: 0;
-	padding: 0.5em 0.66em;
-	
-	border: 0.1em solid rgb(30, 30, 30);
-	border-radius: 1em;
-}
-
-/** 
- * Price tables
- */
-.price-tables {
-	width: 688px;
-	margin: auto;
-}
-
-/**
- * Section headings for different sites - set using PHP templates to change the color of key elements
- */
-.masthead-banner {
-	width: 100%;
-	height: 23rem;
-	text-align: center;
-
-  display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.masthead-banner.workshops {
-	background: rgb(218,237,1);
-	background-image: url('images/Neon Yellow background - Seattle Public Library.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.logistics .masthead-banner {
-  background: var(--color-redhall);
-	background-image: url('images/Logistics background (Cody Martin).png');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.logistics .wp-block-button a {
-  background: var(--color-redhall);
-  color: var(--color-almostblack);
-  border: 2px black solid;
-}
-
-.logistics h3 {
-  color: var(--color-redhall);
-}
-
-.masthead-banner .section-title {
-	font-size: 600%;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-family: Raptor;
-}
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
