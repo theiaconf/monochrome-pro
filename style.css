@@ -2304,6 +2304,7 @@ ul.iac24-ctas a:after {
  */
 h2.program-header {
 	margin-top: -3rem;
+	margin-bottom: 3rem;
 }
 
 .session-card {
@@ -2365,6 +2366,10 @@ li.session-card-speaker-name {
 	margin-left: 0.33em;
 	text-transform: uppercase;
 	/*! font-weight: bold; */
+}
+
+li.session-card-speaker-name a {
+	text-decoration: none;
 }
 
 li.session-card-speaker-name:after {
