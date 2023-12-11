@@ -2301,6 +2301,10 @@ ul.iac24-ctas a:after {
 /**
  * Program and workshop details
  */
+.program-header {
+	margin-top: -3rem;
+}
+
 .session-card {
 	margin-bottom: 3rem;
 }
@@ -2320,6 +2324,7 @@ ul.iac24-ctas a:after {
 
 .session-card-title-and-speakers {
   flex: 1;	
+  margin-right: 3rem;
 }
 
 .session-card-summary-title {
