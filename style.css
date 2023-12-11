@@ -2302,6 +2302,7 @@ ul.iac24-ctas a:after {
  * Program and workshop details
  */
 .session-card {
+	margin-bottom: 3rem;
 }
 
 .session-card-overview {
@@ -2312,12 +2313,21 @@ ul.iac24-ctas a:after {
 	display: flex;
 }
 
+.session-card-time {
+  font-size: 1.5rem;	
+	line-height: 1;
+}
+
 .session-card-title-and-speakers {
   flex: 1;	
 }
 
 .session-card-summary-title {
+	color: rgb(30, 30, 30);
+	background: rgb(218, 237, 11);
+	text-decoration: none;
 	font-size: 2rem;
+	margin: 1.75rem 0;
 }
 
 .session-card-summary-title a {
@@ -2327,12 +2337,14 @@ ul.iac24-ctas a:after {
 }
 
 ul.session-card-speaker-list {
-	display: inline-flex;
+	display: inline-block;
 	margin-bottom: 0;
   text-indent: 0;
 	margin-left: 0;
 	padding-left: 0;
 	list-style-type: none;
+	font-size: 1.5rem;
+	line-height: 1;
 }
 
 ul.session-card-speaker-list:after {
@@ -2345,7 +2357,7 @@ li.session-card-speaker-name {
 	display: inline;
 	margin-left: 0.33em;
 	text-transform: uppercase;
-	font-weight: bold;
+	/*! font-weight: bold; */
 }
 
 li.session-card-speaker-name:after {
@@ -2366,6 +2378,7 @@ li.session-card-speaker-name:last-of-type:after {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
+	max-width: 40%;
 }
 
 .session-card-presenter-headshots .presenter-headshot {
