@@ -2268,6 +2268,7 @@ ul.iac24-ctas a:after {
 	align-items: center;
 	gap: 1.25rem;
 	margin-top: 6rem;
+	margin-bottom: 4rem;
 }
 
 .jump-links .wp-block-button {
@@ -2301,7 +2302,7 @@ ul.iac24-ctas a:after {
 /**
  * Program and workshop details
  */
-.program-header {
+h2.program-header {
 	margin-top: -3rem;
 }
 
@@ -2327,12 +2328,13 @@ ul.iac24-ctas a:after {
   margin-right: 3rem;
 }
 
-.session-card-summary-title {
+h2.session-card-summary-title {
 	color: rgb(30, 30, 30);
 	background: rgb(218, 237, 11);
 	text-decoration: none;
 	font-size: 2rem;
 	margin: 1.75rem 0;
+	line-height: 1.5em;
 }
 
 .session-card-summary-title a {
@@ -2388,6 +2390,7 @@ li.session-card-speaker-name:last-of-type:after {
 
 .session-card-presenter-headshots .presenter-headshot {
 	margin-right: 0.66em;
+	max-width: 196px;
 }
 
 .session-card-audiences > ul {
