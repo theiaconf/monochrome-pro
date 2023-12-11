@@ -2267,6 +2267,7 @@ ul.iac24-ctas a:after {
 	justify-content: left;
 	align-items: center;
 	gap: 1.25rem;
+	margin-top: 6rem;
 }
 
 .jump-links .wp-block-button {
@@ -2283,7 +2284,6 @@ ul.iac24-ctas a:after {
 	text-transform: uppercase;
 	width: 100%;
 	padding: 0;
-	padding-top: 0.5rem;
 }
 
 .jump-links a:after {
@@ -2411,7 +2411,8 @@ li.session-card-speaker-name:last-of-type:after {
 	align-items: center;
 }
 
-.masthead-banner.workshops {
+.masthead-banner.workshops,
+.masthead-banner.program {
 	background: rgb(218,237,1);
 	background-image: url('images/Neon Yellow background - Seattle Public Library.png');
 	background-size: cover;
@@ -2429,6 +2430,10 @@ li.session-card-speaker-name:last-of-type:after {
   background: var(--color-redhall);
   color: var(--color-almostblack);
   border: 2px black solid;
+  font-family: Raptor, "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .logistics h3 {
@@ -2440,6 +2445,17 @@ li.session-card-speaker-name:last-of-type:after {
 	text-transform: uppercase;
 	font-weight: normal;
 	font-family: Raptor;
+}
+
+.program .wp-block-button a,
+.logistics .wp-block-button a {
+  background: var(--color-escalator);
+  color: var(--color-almostblack);
+  border: 2px black solid;
+  font-family: Raptor. "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  width: 100%;
 }
 
 /* Media Queries
