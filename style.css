@@ -2416,6 +2416,68 @@ li.session-card-speaker-name:last-of-type:after {
 	border-radius: 1em;
 }
 
+/**
+ * Sssion detail pages contain information on a single session
+ */
+.single-session .entry-title {
+	text-align: left;
+	background: var(--color-escalator);
+	margin-bottom: 4rem;
+	padding: 2.625rem 0;
+}
+
+.single-session .entry-header {
+	margin-top: 0;
+}
+
+.single-session .entry-header:after {
+	display: none;
+}
+
+.session-date_time {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: "IBM Plex Sans", sans-serif;
+	color: var(--color-almostblack);
+	line-height: 1.5;
+	margin-bottom: 3.5rem;
+}
+
+.session-description {
+	margin-bottom: 4rem;
+}
+
+.session-speaker-image {
+	float: left;
+	position: relative;
+}
+
+.session-speaker-image img {
+	border: 2px var(--color-almostblack) solid;
+	border-radius: 2.5rem;
+	width: 196px;
+	height: auto;
+	filter: grayscale(100%);
+	margin: 0 2rem 2rem 0;
+}
+
+.session-speaker_bio-name {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: "IBM Plex Sans", sans-serif;
+	color: var(--color-almostblack);
+	line-height: 1.5;
+	margin-bottom: 3rem;
+}
+
+.session-speaker_bio-name a {
+	text-decoration: none;
+}
+
+.session-speaker_bio-name a:after {
+	content: ">>>>>";
+}
+
 /** 
  * Price tables
  */
