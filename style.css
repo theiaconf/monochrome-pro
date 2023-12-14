@@ -2430,6 +2430,7 @@ li.session-card-speaker-name:last-of-type:after {
 	max-width: 1040px;
 	text-align: left;
 	margin: auto;
+}
 
 .single-session .entry-header {
 	margin-top: 0;
