@@ -2416,15 +2416,20 @@ li.session-card-speaker-name:last-of-type:after {
 	border-radius: 1em;
 }
 
-/**
- * Sssion detail pages contain information on a single session
+/*
+ * Session detail pages contain information on a single session
  */
+.single-session .entry-header {
+  background: var(--color-escalator);
+  margin-bottom: 4rem;
+} 
+
 .single-session .entry-title {
 	text-align: left;
-	background: var(--color-escalator);
-	margin-bottom: 4rem;
 	padding: 2.625rem 0;
-}
+	max-width: 1040px;
+	text-align: left;
+	margin: auto;
 
 .single-session .entry-header {
 	margin-top: 0;
@@ -2447,9 +2452,17 @@ li.session-card-speaker-name:last-of-type:after {
 	margin-bottom: 4rem;
 }
 
+.session-speaker {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
 .session-speaker-image {
-	float: left;
-	position: relative;
+	width: 100%;
+	max-width: 196px;
+	margin-right: 2rem;
 }
 
 .session-speaker-image img {
