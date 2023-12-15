@@ -2419,12 +2419,15 @@ li.session-card-speaker-name:last-of-type:after {
 /*
  * Session detail pages contain information on a single session
  */
-.single-session .entry-header {
+.single-session .entry-header,
+.single-person .entry-header {
   background: var(--color-escalator);
   margin-bottom: 4rem;
+  max-width: 100%;
 } 
 
-.single-session .entry-title {
+.single-session .entry-title,
+.single-person .entry-title {
 	text-align: left;
 	padding: 2.625rem 0;
 	max-width: 1040px;
@@ -2466,6 +2469,10 @@ li.session-card-speaker-name:last-of-type:after {
 	margin-right: 2rem;
 }
 
+.single-person .session-speaker-image {
+  max-width: 300px;	
+}
+
 .session-speaker-image img {
 	border: 2px var(--color-almostblack) solid;
 	border-radius: 2.5rem;
@@ -2490,6 +2497,24 @@ li.session-card-speaker-name:last-of-type:after {
 
 .session-speaker_bio-name a:after {
 	content: ">>>>>";
+}
+
+.session-speaker-current_role,
+.session-speaker-past_roles {
+	text-transform: uppercase;
+}
+
+.session-speaker-biography {
+	margin-top: 2.5rem;
+	margin-bottom: 4rem;
+}
+
+.session-presentations h3 {
+	text-transform: uppercase;
+}
+
+.session-presentations h3:after {
+	content: " >>>>>";
 }
 
 /** 
