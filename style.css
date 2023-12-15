@@ -2196,8 +2196,8 @@ h1.entry-title {
 
 .presenter-name a,
 .cochairs-cochair-name a {
-		color: var(--color-cyberpink);
-	  font-weight: 600;
+  color: var(--color-cyberpink);
+  font-weight: 600;
 }
 
 .presenter-name a:before,
@@ -2600,7 +2600,7 @@ li.session-card-speaker-name:last-of-type:after {
 
 	.before-footer-cta .wrap,
 	.site-inner {
-		max-width: 960px;
+		/* max-width: 960px; */
 	}
 
 	.content {
@@ -2617,7 +2617,7 @@ li.session-card-speaker-name:last-of-type:after {
 
 	.before-footer-cta .wrap,
 	.site-inner {
-		max-width: 720px;
+		/* max-width: 720px; */
 	}
 
 	.content,
