@@ -19,6 +19,18 @@ function theme_prefix_show_notice() {
 		<div class="masthead-banner logistics">
 			<div class="section-title">Logistics</div>
 		</div>
+	   <div class="cta-ticker">
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	   </div>
 		
 		';
 }

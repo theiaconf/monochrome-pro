@@ -21,6 +21,18 @@ function theme_prefix_show_notice() {
 			<div class="section-title">Program</div>
 		  </div>
 		</div>	
+	   <div class="cta-ticker">
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	   </div>
 		';
 }
 

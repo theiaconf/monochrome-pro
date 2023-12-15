@@ -32,18 +32,6 @@ function theme_prefix_show_notice() {
 	     <a href="/register">Register &gt; </a>
 	     <a href="/register">Register &gt; </a>
 	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
-	     <a href="/register">Register &gt; </a>
 	   </div>
 		';
 }

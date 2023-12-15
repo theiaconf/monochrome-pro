@@ -2562,20 +2562,28 @@ li.session-card-speaker-name:last-of-type:after {
 	background-repeat: no-repeat;
 }
 
-.program .cta-ticker,
-.workshops .cta-ticker {
+.cta-ticker {
 	padding: 2rem 0;
-	background: var(--color-escalator);
 	width: 100%;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	overflow: hidden;
+	white-space: nowrap;
 }
 
 .cta-ticker a,
 .cta-ticker a:hover,
 .cta-ticker a:focus {
 	text-decoration: none;
+}
+
+.program .cta-ticker,
+.workshops .cta-ticker {
+  background: var(--color-escalator);
+}
+
+.logistics .cta-ticker {
+  background: var(--color-redhall);
 }
 
 .logistics .masthead-banner {
