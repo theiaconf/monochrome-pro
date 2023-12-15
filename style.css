@@ -2161,7 +2161,8 @@ h1.entry-title {
 /**
  * Custom styling for presenters, co-chairs, and headshots based on existing PODS template
  */
-.presenter_list {
+.presenter_list,
+.cochairs {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -2174,31 +2175,37 @@ h1.entry-title {
 	margin-left: 0;
 }
 
-.presenter {
+.presenter,
+.cochair {
 	margin-left: 2em;
 }
 
-.presenter-headshot img {
+.presenter-headshot img,
+.cochairs-cochair-headshot img {
 	border: 0.125em solid rgb(30, 30, 30);
 	border-radius: 1.875em;
 	filter: grayscale(100%);
-	/*! max-width: 196px; */
+	max-width: 196px;
 }
 
-.presenter-name {
+.presenter-name,
+.cochairs-cochair-name {
 	text-align: center;
 }
 
-.presenter-name a {
+.presenter-name a,
+.cochairs-cochair-name a {
 		color: #fd028f;
 	  font-weight: 600;
 }
 
-.presenter-name a:before {
+.presenter-name a:before,
+.cochairs-cochair-name a:before {
 	content: ">>";
 }
 
-.presenter-name a:after {
+.presenter-name a:after,
+.cochairs-cochair-name a:after{
 	content: ">>>";
 }
 
@@ -2869,7 +2876,17 @@ li.session-card-speaker-name:last-of-type:after {
 		margin: 0;
 		width: 100%;
 	}
-
+	
+	/**
+	 * Adjustments for mobile for sessions
+	 */
+	.session-card-summary {
+		flex-flow: column;
+	}
+	
+	.session-card-presenter-headshots {
+		max-width: 100%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
