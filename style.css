@@ -2019,7 +2019,7 @@ h1.entry-title {
 ---------------------------------------------------------------------------- */
 
 .before-footer-cta {
-	background: #1E1E1E;
+	background: var(--color-almostblack);
 	line-height: 1.5;
 	padding-bottom: 40px;
 	padding-top: 120px;
@@ -2098,16 +2098,49 @@ h1.entry-title {
 ---------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #000;
-	bottom: 0;
-	font-size: 13px;
-	line-height: 1;
+	background-color: var(--color-almostblack);
+	line-height: 1.5;
 	padding-bottom: 40px;
-	padding-top: 40px;
-	position: fixed;
+	padding-top: 120px;
+	margin-top: 64px;
 	text-align: center;
+	
+	background-image: url('images/Seattle Public Library windows (Cody Martin).png');
+	background-repeat: no-repeat;
+	background-size: cover;	
+
 	width: 100%;
-	z-index: -99;
+}
+
+.site-footer .wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+	max-width: 50rem;
+	margin: auto;
+	text-align: left;
+	
+	color: white;
+}
+
+.site-footer h3 {
+	text-transform: uppercase;
+}
+
+.site-footer .wrap .footer-col1 {
+	width: 5rem;
+}
+
+.site-footer .footer-col1 a,
+.site-footer .footer-col1 a:hover,
+.site-footer .footer-col1 a:focus {
+	text-decoration: none;
+	border: 0;
+}
+
+.site-footer .wrap .footer-col2 {
+	flex: 1;
 }
 
 .gmm-active .site-footer {
