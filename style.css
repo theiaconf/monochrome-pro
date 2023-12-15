@@ -2601,6 +2601,14 @@ li.session-card-speaker-name:last-of-type:after {
   width: 100%;
 }
 
+/**
+ * Styling for site footers
+ */
+.utility-links {
+	text-align: right;
+	font-size: 0.75rem;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
