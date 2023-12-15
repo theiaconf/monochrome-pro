@@ -2569,6 +2569,7 @@ li.session-card-speaker-name:last-of-type:after {
 	text-transform: uppercase;
 	overflow: hidden;
 	white-space: nowrap;
+	margin-bottom: 4rem;
 }
 
 .cta-ticker a,
