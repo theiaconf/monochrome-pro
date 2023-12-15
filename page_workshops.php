@@ -22,7 +22,28 @@ function theme_prefix_show_notice() {
 		  </div>
 	   </div>
 	   <div class="cta-ticker">
-	     <a href="/register">Register &gt;</a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
+	     <a href="/register">Register &gt; </a>
 	   </div>
 		';
 }

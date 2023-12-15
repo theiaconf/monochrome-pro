@@ -2562,6 +2562,22 @@ li.session-card-speaker-name:last-of-type:after {
 	background-repeat: no-repeat;
 }
 
+.program .cta-ticker,
+.workshops .cta-ticker {
+	padding: 2rem 0;
+	background: var(--color-escalator);
+	width: 100%;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.cta-ticker a,
+.cta-ticker a:hover,
+.cta-ticker a:focus {
+	text-decoration: none;
+}
+
 .logistics .masthead-banner {
   background: var(--color-redhall);
 	background-image: url('images/Logistics background (Cody Martin).png');
