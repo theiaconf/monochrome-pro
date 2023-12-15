@@ -165,6 +165,7 @@ input[type="search"] {
   --color-cyberpink: #fd028f;
   --color-almostblack: #1e1e1e;
   --color-redhall: #e81c28;
+  --color-white: #ffffff;
 }
 
 /* Typographical Elements
@@ -172,7 +173,7 @@ input[type="search"] {
 
 body {
 	background-color: #fff;
-	color: #000;
+	color: var(--color-almostblack);
 	font-family: Muli, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -1455,7 +1456,7 @@ figcaption,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .toggle-header-search:focus,
 .genesis-nav-menu .toggle-header-search:hover {
-	color: rgb(0, 0, 0);
+	color: var(--color-almostblack);
 }
 
 .genesis-nav-menu .sub-menu {
@@ -2182,7 +2183,7 @@ h1.entry-title {
 
 .presenter-headshot img,
 .cochairs-cochair-headshot img {
-	border: 0.125em solid rgb(30, 30, 30);
+	border: 0.125em solid var(--color-almostblack);
 	border-radius: 1.875em;
 	filter: grayscale(100%);
 	max-width: 196px;
@@ -2195,7 +2196,7 @@ h1.entry-title {
 
 .presenter-name a,
 .cochairs-cochair-name a {
-		color: #fd028f;
+		color: var(--color-cyberpink);
 	  font-weight: 600;
 }
 
@@ -2228,7 +2229,7 @@ ul.iac324-ctas li {
 }
 
 ul.iac24-ctas a {
-	color: #fd028f;
+	color: var(--color-cyberpink);
 	font-size: 2rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -2264,7 +2265,7 @@ ul.iac24-ctas a:after {
 
 .wp-block-button a:hover,
 .wp-block-button a:focus {
-	color: rgb(255, 255, 255);
+	color: var(--color-white);
 }
 
 /**
@@ -2283,8 +2284,8 @@ ul.iac24-ctas a:after {
 }
 
 .jump-links a {
-	background: rgb(218, 237, 11);
-	color: #1e1e1e;
+	background: var(--color-escalator);
+	color: var(--color-almostblack);
 	border: 1px #1e1e1e solid;
 	border-radius: 0.9375rem;
 	font-family: Raptor, "IBM Plex Sans", sans-serif;
@@ -2337,8 +2338,8 @@ h2.program-header {
 }
 
 h2.session-card-summary-title {
-	color: rgb(30, 30, 30);
-	background: rgb(218, 237, 11);
+	color: var(--color-almostblack);
+	background: var(--color-escalator);
 	text-decoration: none;
 	font-size: 2rem;
 	margin: 1.75rem 0;
@@ -2346,8 +2347,8 @@ h2.session-card-summary-title {
 }
 
 .session-card-summary-title a {
-	color: rgb(30, 30, 30);
-	background: rgb(218, 237, 11);
+	color: var(--color-almostblack);
+	background: var(--color-escalator);
 	text-decoration: none;
 }
 
@@ -2419,7 +2420,7 @@ li.session-card-speaker-name:last-of-type:after {
 	text-indent: 0;
 	padding: 0.5em 0.66em;
 	
-	border: 0.1em solid rgb(30, 30, 30);
+	border: 0.1em solid var(--color-almostblack);
 	border-radius: 1em;
 }
 
@@ -2547,7 +2548,7 @@ li.session-card-speaker-name:last-of-type:after {
 
 .masthead-banner.workshops,
 .masthead-banner.program {
-	background: rgb(218,237,1);
+	background: var(--color-escalator);
 	background-image: url('images/Neon Yellow background - Seattle Public Library.png');
 	background-size: cover;
 	background-repeat: no-repeat;
