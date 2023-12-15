@@ -2335,7 +2335,7 @@ h2.session-card-summary-title {
 	text-decoration: none;
 	font-size: 2rem;
 	margin: 1.75rem 0;
-	line-height: 1.5em;
+	line-height: 1.2em;
 }
 
 .session-card-summary-title a {
@@ -2575,7 +2575,7 @@ li.session-card-speaker-name:last-of-type:after {
 }
 
 .program .wp-block-button a,
-.logistics .wp-block-button a {
+.workshops .wp-block-button a {
   background: var(--color-escalator);
   color: var(--color-almostblack);
   border: 2px black solid;
