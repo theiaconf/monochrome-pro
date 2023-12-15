@@ -2773,7 +2773,7 @@ li.session-card-speaker-name:last-of-type:after {
 	.genesis-responsive-menu .genesis-nav-menu .sub-menu .menu-item a:focus,
 	.genesis-responsive-menu .genesis-nav-menu .sub-menu .menu-item a:hover,
 	.genesis-responsive-menu.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
-		color: #06c;
+		color: var(--color-almostblack); 
 	}
 
 	.genesis-responsive-menu .genesis-nav-menu .menu-item a,
