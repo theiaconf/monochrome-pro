@@ -21,7 +21,7 @@ function theme_prefix_show_notice() {
 			<div class="section-title">Workshops</div>
 		  </div>
 		  <div class="cta-ticker">
-		    <a href="/register"> >
+		    <a href="/register"> &gt;
 		  </div>
 		</div>	
 		';
