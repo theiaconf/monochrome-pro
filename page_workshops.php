@@ -20,6 +20,9 @@ function theme_prefix_show_notice() {
 		  <div class="text-block">
 			<div class="section-title">Workshops</div>
 		  </div>
+		  <div class="cta-ticker">
+		    <a href="/register"> >
+		  </div>
 		</div>	
 		';
 }
