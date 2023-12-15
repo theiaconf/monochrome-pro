@@ -2299,6 +2299,14 @@ ul.iac24-ctas a:after {
 	content: '';
 }
 
+/**
+ * Plus a fix for the header so jump location is not occluded - may be a little
+ * fragile and merits further refining
+ */
+h2[id] {
+	scroll-margin-top: 3.75rem;
+}
+
 .call-to-action-button a.button {
   font-family: Raptor, "IBM Plex Sans", sans-serif;
 }
