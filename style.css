@@ -2217,7 +2217,8 @@ h1.entry-title {
 }
 
 .presenter-headshot img,
-.cochairs-cochair-headshot img {
+.cochairs-cochair-headshot img,
+.poster-presenter-headshot img {
 	border: 0.125em solid var(--color-almostblack);
 	border-radius: 1.875em;
 	filter: grayscale(100%);
@@ -2351,7 +2352,8 @@ h2[id] {
 }
 
 /**
- * Program and workshop details
+ * Program and workshop details - lay out for sessions, workshops,
+ * and posters
  */
 h2.program-header {
 	margin-top: -3rem;
@@ -2362,11 +2364,13 @@ h2.program-header {
 	margin-bottom: 3rem;
 }
 
-.session-card-overview {
+.session-card-overview,
+.poster-summary {
 	text-transform: uppercase;
 }
 
-.session-card-summary {
+.session-card-summary,
+.poster-summary {
 	display: flex;
 }
 
@@ -2375,12 +2379,14 @@ h2.program-header {
 	line-height: 1;
 }
 
-.session-card-title-and-speakers {
+.session-card-title-and-speakers,
+.poster-title-and-speakers {
   flex: 1;	
   margin-right: 3rem;
 }
 
-h2.session-card-summary-title {
+h2.session-card-summary-title,
+h2.poster-title {
 	color: var(--color-almostblack);
 	background: var(--color-escalator);
 	text-decoration: none;
@@ -2389,13 +2395,15 @@ h2.session-card-summary-title {
 	line-height: 1.2em;
 }
 
-.session-card-summary-title a {
+.session-card-summary-title a,
+.poster-title a {
 	color: var(--color-almostblack);
 	background: var(--color-escalator);
 	text-decoration: none;
 }
 
-ul.session-card-speaker-list {
+ul.session-card-speaker-list,
+ul.poster-presenter-list {
 	display: inline-block;
 	margin-bottom: 0;
   text-indent: 0;
@@ -2406,36 +2414,42 @@ ul.session-card-speaker-list {
 	line-height: 1;
 }
 
-ul.session-card-speaker-list:after {
+ul.session-card-speaker-list:after,
+ul.poster-presenter-list:after {
 	content: ">>>>>>>>>>";
 	font-weight: bold;
 	margin-left: 0.5em;
 }
 
-li.session-card-speaker-name {
+li.session-card-speaker-name,
+li.poster-presenter-name {
 	display: inline;
 	margin-left: 0.33em;
 	text-transform: uppercase;
-	/*! font-weight: bold; */
 }
 
-li.session-card-speaker-name a {
+li.session-card-speaker-name a,
+li.poster-presenter-name a {
 	text-decoration: none;
 }
 
-li.session-card-speaker-name:after {
+li.session-card-speaker-name:after,
+li.poster-presenter-name:after {
 	content: ", ";
 }
 
-li.session-card-speaker-name:first-of-type {
+li.session-card-speaker-name:first-of-type,
+li.poster-presenter-name:first-of-type {
 	margin-left: 0;
 }
 
-li.session-card-speaker-name:last-of-type:after {
+li.session-card-speaker-name:last-of-type:after,
+li.poster-presenter-name:last-of-type:after {
 	content: none;
 }
 
-.session-card-presenter-headshots {
+.session-card-presenter-headshots,
+.poster-presenter-headshots {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -2444,7 +2458,8 @@ li.session-card-speaker-name:last-of-type:after {
 	max-width: 40%;
 }
 
-.session-card-presenter-headshots .presenter-headshot {
+.session-card-presenter-headshots .presenter-headshot,
+.poster-presenter-headshots .poster-presenter-headshot {
 	margin-right: 0.66em;
 	max-width: 196px;
 }
