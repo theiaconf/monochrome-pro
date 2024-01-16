@@ -4,7 +4,7 @@
  *
  * This file adds the pricing page template to the Monochrome Pro Theme.
  *
- * Template Name: Pricing
+ * Template Name: Pricing (IAC24)
  *
  * @package Monochrome
  * @author  StudioPress

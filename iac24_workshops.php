@@ -2,7 +2,7 @@
 /**
  * Monochrome Pro.
  *
- * Template Name: Workshops
+ * Template Name: Workshops (IAC24)
  *
  * This file supports design elements linked to this template.
  *
@@ -20,7 +20,19 @@ function theme_prefix_show_notice() {
 		  <div class="text-block">
 			<div class="section-title">Workshops</div>
 		  </div>
-		</div>	
+	   </div>
+	   <div class="cta-ticker">
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	     <a href="/iac24-registration">Register &gt; </a>
+	   </div>
 		';
 }
 
