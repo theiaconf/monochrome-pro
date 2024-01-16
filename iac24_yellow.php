@@ -18,7 +18,7 @@ function theme_prefix_show_notice() {
 		
 		<div class="masthead-banner program">
 		  <div class="text-block">
-			<div class="section-title">$title</div>
+			<div class="section-title">' . $title . '</div>
 		  </div>
 	   </div>
 	   <div class="cta-ticker">
