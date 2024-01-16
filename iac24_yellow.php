@@ -18,7 +18,7 @@ function theme_prefix_show_notice() {
 		
 		<div class="masthead-banner program">
 		  <div class="text-block">
-			<div class="section-title">' . wp_title() . '</div>
+			<div class="section-title">' .  genesis_post_title_text() . '</div>
 		  </div>
 	   </div>
 	   <div class="cta-ticker">
