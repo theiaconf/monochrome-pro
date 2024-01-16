@@ -66,6 +66,7 @@ h1.frontpage-hero {
   border-width: 2px;
   border-radius: 20px;
   font-weight: 800;
+  margin-top: 1.5rem;
 }
 
 .front-page-button a {
@@ -75,7 +76,7 @@ h1.frontpage-hero {
   margin-bottom: 0;
   padding-bottom: 14px;
 }
-o
+
 .widget-title {
   font-size: 2em;
   padding-bottom: 1rem;

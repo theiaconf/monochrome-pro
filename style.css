@@ -165,6 +165,7 @@ input[type="search"] {
   --color-cyberpink: #fd028f;
   --color-almostblack: #1e1e1e;
   --color-redhall: #e81c28;
+  --color-white: #ffffff;
 }
 
 /* Typographical Elements
@@ -172,7 +173,7 @@ input[type="search"] {
 
 body {
 	background-color: #fff;
-	color: #000;
+	color: var(--color-almostblack);
 	font-family: Muli, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -1455,7 +1456,7 @@ figcaption,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .toggle-header-search:focus,
 .genesis-nav-menu .toggle-header-search:hover {
-	color: rgb(0, 0, 0);
+	color: var(--color-almostblack);
 }
 
 .genesis-nav-menu .sub-menu {
@@ -2018,7 +2019,7 @@ h1.entry-title {
 ---------------------------------------------------------------------------- */
 
 .before-footer-cta {
-	background: #1E1E1E;
+	background: var(--color-almostblack);
 	line-height: 1.5;
 	padding-bottom: 40px;
 	padding-top: 120px;
@@ -2097,16 +2098,51 @@ h1.entry-title {
 ---------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #000;
-	bottom: 0;
-	font-size: 13px;
-	line-height: 1;
+	background-color: var(--color-almostblack);
+	line-height: 1.5;
 	padding-bottom: 40px;
-	padding-top: 40px;
-	position: fixed;
+	padding-top: 120px;
+	margin-top: 64px;
 	text-align: center;
+	
+	background-image: url('images/Seattle Public Library windows (Cody Martin).png');
+	background-repeat: no-repeat;
+	background-size: cover;	
+
 	width: 100%;
-	z-index: -99;
+}
+
+.site-footer .wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+	max-width: 50rem;
+	margin: auto;
+	text-align: left;
+	
+	color: white;
+}
+
+.site-footer h3 {
+	text-transform: uppercase;
+	line-height: 0.8;
+	margin-bottom: 1.25rem;
+}
+
+.site-footer .wrap .footer-col1 {
+	width: 5rem;
+}
+
+.site-footer .footer-col1 a,
+.site-footer .footer-col1 a:hover,
+.site-footer .footer-col1 a:focus {
+	text-decoration: none;
+	border: 0;
+}
+
+.site-footer .wrap .footer-col2 {
+	flex: 1;
 }
 
 .gmm-active .site-footer {
@@ -2161,7 +2197,8 @@ h1.entry-title {
 /**
  * Custom styling for presenters, co-chairs, and headshots based on existing PODS template
  */
-.presenter_list {
+.presenter_list,
+.cochairs {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -2174,31 +2211,38 @@ h1.entry-title {
 	margin-left: 0;
 }
 
-.presenter {
+.presenter,
+.cochair {
 	margin-left: 2em;
 }
 
-.presenter-headshot img {
-	border: 0.125em solid rgb(30, 30, 30);
+.presenter-headshot img,
+.cochairs-cochair-headshot img,
+.poster-presenter-headshot img {
+	border: 0.125em solid var(--color-almostblack);
 	border-radius: 1.875em;
 	filter: grayscale(100%);
-	/*! max-width: 196px; */
+	max-width: 196px;
 }
 
-.presenter-name {
+.presenter-name,
+.cochairs-cochair-name {
 	text-align: center;
 }
 
-.presenter-name a {
-		color: #fd028f;
-	  font-weight: 600;
+.presenter-name a,
+.cochairs-cochair-name a {
+  color: var(--color-cyberpink);
+  font-weight: 600;
 }
 
-.presenter-name a:before {
+.presenter-name a:before,
+.cochairs-cochair-name a:before {
 	content: ">>";
 }
 
-.presenter-name a:after {
+.presenter-name a:after,
+.cochairs-cochair-name a:after{
 	content: ">>>";
 }
 
@@ -2221,7 +2265,7 @@ ul.iac324-ctas li {
 }
 
 ul.iac24-ctas a {
-	color: #fd028f;
+	color: var(--color-cyberpink);
 	font-size: 2rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -2257,7 +2301,7 @@ ul.iac24-ctas a:after {
 
 .wp-block-button a:hover,
 .wp-block-button a:focus {
-	color: rgb(255, 255, 255);
+	color: var(--color-almostblack);
 }
 
 /**
@@ -2267,6 +2311,8 @@ ul.iac24-ctas a:after {
 	justify-content: left;
 	align-items: center;
 	gap: 1.25rem;
+	margin-top: 6rem;
+	margin-bottom: 4rem;
 }
 
 .jump-links .wp-block-button {
@@ -2274,8 +2320,8 @@ ul.iac24-ctas a:after {
 }
 
 .jump-links a {
-	background: rgb(218, 237, 11);
-	color: #1e1e1e;
+	background: var(--color-escalator);
+	color: var(--color-almostblack);
 	border: 1px #1e1e1e solid;
 	border-radius: 0.9375rem;
 	font-family: Raptor, "IBM Plex Sans", sans-serif;
@@ -2283,11 +2329,18 @@ ul.iac24-ctas a:after {
 	text-transform: uppercase;
 	width: 100%;
 	padding: 0;
-	padding-top: 0.5rem;
 }
 
 .jump-links a:after {
 	content: '';
+}
+
+/**
+ * Plus a fix for the header so jump location is not occluded - may be a little
+ * fragile and merits further refining
+ */
+h2[id] {
+	scroll-margin-top: 3.75rem;
 }
 
 .call-to-action-button a.button {
@@ -2299,77 +2352,116 @@ ul.iac24-ctas a:after {
 }
 
 /**
- * Program and workshop details
+ * Program and workshop details - lay out for sessions, workshops,
+ * and posters
  */
-.session-card {
+h2.program-header {
+	margin-top: -3rem;
+	margin-bottom: 3rem;
 }
 
-.session-card-overview {
+.session-card {
+	margin-bottom: 3rem;
+}
+
+.session-card-overview,
+.poster-summary {
 	text-transform: uppercase;
 }
 
-.session-card-summary {
+.session-card-summary,
+.poster-summary {
 	display: flex;
 }
 
-.session-card-title-and-speakers {
+.session-card-time {
+  font-size: 1.5rem;	
+	line-height: 1;
+}
+
+.session-card-title-and-speakers,
+.poster-title-and-speakers {
   flex: 1;	
+  margin-right: 3rem;
 }
 
-.session-card-summary-title {
+h2.session-card-summary-title,
+h2.poster-title {
+	color: var(--color-almostblack);
+	background: var(--color-escalator);
+	text-decoration: none;
 	font-size: 2rem;
+	margin: 1.75rem 0;
+	line-height: 1.2em;
 }
 
-.session-card-summary-title a {
-	color: rgb(30, 30, 30);
-	background: rgb(218, 237, 11);
+.session-card-summary-title a,
+.poster-title a {
+	color: var(--color-almostblack);
+	background: var(--color-escalator);
 	text-decoration: none;
 }
 
-ul.session-card-speaker-list {
-	display: inline-flex;
+ul.session-card-speaker-list,
+ul.poster-presenter-list {
+	display: inline-block;
 	margin-bottom: 0;
   text-indent: 0;
 	margin-left: 0;
 	padding-left: 0;
 	list-style-type: none;
+	font-size: 1.5rem;
+	line-height: 1;
 }
 
-ul.session-card-speaker-list:after {
+ul.session-card-speaker-list:after,
+ul.poster-presenter-list:after {
 	content: ">>>>>>>>>>";
 	font-weight: bold;
 	margin-left: 0.5em;
 }
 
-li.session-card-speaker-name {
+li.session-card-speaker-name,
+li.poster-presenter-name {
 	display: inline;
 	margin-left: 0.33em;
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
-li.session-card-speaker-name:after {
+li.session-card-speaker-name a,
+li.poster-presenter-name a {
+	text-decoration: none;
+}
+
+li.session-card-speaker-name:after,
+li.poster-presenter-name:after {
 	content: ", ";
 }
 
-li.session-card-speaker-name:first-of-type {
+li.session-card-speaker-name:first-of-type,
+li.poster-presenter-name:first-of-type {
 	margin-left: 0;
 }
 
-li.session-card-speaker-name:last-of-type:after {
+li.session-card-speaker-name:last-of-type:after,
+li.poster-presenter-name:last-of-type:after {
 	content: none;
 }
 
-.session-card-presenter-headshots {
+.session-card-presenter-headshots,
+.poster-presenter-headshots {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
+	max-width: 40%;
 }
 
-.session-card-presenter-headshots .presenter-headshot {
+.session-card-presenter-headshots .presenter-headshot,
+.poster-presenter-headshots .poster-presenter-headshot {
 	margin-right: 0.66em;
+	max-width: 196px;
 }
 
 .session-card-audiences > ul {
@@ -2386,8 +2478,109 @@ li.session-card-speaker-name:last-of-type:after {
 	text-indent: 0;
 	padding: 0.5em 0.66em;
 	
-	border: 0.1em solid rgb(30, 30, 30);
+	border: 0.1em solid var(--color-almostblack);
 	border-radius: 1em;
+}
+
+/*
+ * Session detail pages contain information on a single session
+ */
+.single-session .entry-header,
+.single-person .entry-header {
+  background: var(--color-escalator);
+  margin-bottom: 4rem;
+  max-width: 100%;
+} 
+
+.single-session .entry-title,
+.single-person .entry-title {
+	text-align: left;
+	padding: 2.625rem 0;
+	max-width: 1040px;
+	text-align: left;
+	margin: auto;
+}
+
+.single-session .entry-header {
+	margin-top: 0;
+}
+
+.single-session .entry-header:after {
+	display: none;
+}
+
+.session-date_time {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: "IBM Plex Sans", sans-serif;
+	color: var(--color-almostblack);
+	line-height: 1.5;
+	margin-bottom: 3.5rem;
+}
+
+.session-description {
+	margin-bottom: 4rem;
+}
+
+.session-speaker {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.session-speaker-image {
+	width: 100%;
+	max-width: 196px;
+	margin-right: 2rem;
+}
+
+.single-person .session-speaker-image {
+  max-width: 300px;	
+}
+
+.session-speaker-image img {
+	border: 2px var(--color-almostblack) solid;
+	border-radius: 2.5rem;
+	width: 196px;
+	height: auto;
+	filter: grayscale(100%);
+	margin: 0 2rem 2rem 0;
+}
+
+.session-speaker_bio-name {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: "IBM Plex Sans", sans-serif;
+	color: var(--color-almostblack);
+	line-height: 1.5;
+	margin-bottom: 3rem;
+}
+
+.session-speaker_bio-name a {
+	text-decoration: none;
+}
+
+.session-speaker_bio-name a:after {
+	content: ">>>>>";
+}
+
+.session-speaker-current_role,
+.session-speaker-past_roles {
+	text-transform: uppercase;
+}
+
+.session-speaker-biography {
+	margin-top: 2.5rem;
+	margin-bottom: 4rem;
+}
+
+.session-presentations h3 {
+	text-transform: uppercase;
+}
+
+.session-presentations h3:after {
+	content: " >>>>>";
 }
 
 /** 
@@ -2411,11 +2604,37 @@ li.session-card-speaker-name:last-of-type:after {
 	align-items: center;
 }
 
-.masthead-banner.workshops {
-	background: rgb(218,237,1);
+.masthead-banner.workshops,
+.masthead-banner.program {
+	background: var(--color-escalator);
 	background-image: url('images/Neon Yellow background - Seattle Public Library.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.cta-ticker {
+	padding: 2rem 0;
+	width: 100%;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-bottom: 4rem;
+}
+
+.cta-ticker a,
+.cta-ticker a:hover,
+.cta-ticker a:focus {
+	text-decoration: none;
+}
+
+.program .cta-ticker,
+.workshops .cta-ticker {
+  background: var(--color-escalator);
+}
+
+.logistics .cta-ticker {
+  background: var(--color-redhall);
 }
 
 .logistics .masthead-banner {
@@ -2429,6 +2648,10 @@ li.session-card-speaker-name:last-of-type:after {
   background: var(--color-redhall);
   color: var(--color-almostblack);
   border: 2px black solid;
+  font-family: Raptor, "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .logistics h3 {
@@ -2442,6 +2665,25 @@ li.session-card-speaker-name:last-of-type:after {
 	font-family: Raptor;
 }
 
+.program .wp-block-button a,
+.workshops .wp-block-button a {
+  background: var(--color-escalator);
+  color: var(--color-almostblack);
+  border: 2px black solid;
+  font-family: Raptor. "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  width: 100%;
+}
+
+/**
+ * Styling for site footers
+ */
+.utility-links {
+	text-align: right;
+	font-size: 0.75rem;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
@@ -2449,7 +2691,7 @@ li.session-card-speaker-name:last-of-type:after {
 
 	.before-footer-cta .wrap,
 	.site-inner {
-		max-width: 960px;
+		/* max-width: 960px; */
 	}
 
 	.content {
@@ -2466,7 +2708,7 @@ li.session-card-speaker-name:last-of-type:after {
 
 	.before-footer-cta .wrap,
 	.site-inner {
-		max-width: 720px;
+		/* max-width: 720px; */
 	}
 
 	.content,
@@ -2606,7 +2848,7 @@ li.session-card-speaker-name:last-of-type:after {
 	.genesis-responsive-menu .genesis-nav-menu .sub-menu .menu-item a:focus,
 	.genesis-responsive-menu .genesis-nav-menu .sub-menu .menu-item a:hover,
 	.genesis-responsive-menu.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
-		color: #06c;
+		color: var(--color-almostblack); 
 	}
 
 	.genesis-responsive-menu .genesis-nav-menu .menu-item a,
@@ -2726,7 +2968,17 @@ li.session-card-speaker-name:last-of-type:after {
 		margin: 0;
 		width: 100%;
 	}
-
+	
+	/**
+	 * Adjustments for mobile for sessions
+	 */
+	.session-card-summary {
+		flex-flow: column;
+	}
+	
+	.session-card-presenter-headshots {
+		max-width: 100%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
