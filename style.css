@@ -2354,7 +2354,7 @@ h2[id] {
 /**
  * Styles for image galleries, featured images, etc
  */
-figure.feature-image {
+figure.featured-image {
   margin-bottom: 4rem;
 }
 
