@@ -2,7 +2,7 @@
 /**
  * Monochrome Pro.
  *
- * Template Name: Workshops
+ * Template Name: Workshops (IAC24)
  *
  * This file supports design elements linked to this template.
  *

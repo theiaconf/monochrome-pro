@@ -2352,6 +2352,13 @@ h2[id] {
 }
 
 /**
+ * Styles for image galleries, featured images, etc
+ */
+figure.featured-image {
+  margin-bottom: 4rem;
+}
+
+/**
  * Program and workshop details - lay out for sessions, workshops,
  * and posters
  */
@@ -2672,7 +2679,7 @@ li.poster-presenter-name:last-of-type:after {
   border: 2px black solid;
   font-family: Raptor. "IBM Plex Sans", sans-serif;
   font-size: 2rem;
-  padding: 0;
+  flex-grow: 1;
   width: 100%;
 }
 
@@ -2682,6 +2689,42 @@ li.poster-presenter-name:last-of-type:after {
 .utility-links {
 	text-align: right;
 	font-size: 0.75rem;
+}
+
+/**
+ * FAQ and list formatting
+ */
+.faq-entries h4 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+	padding-bottom: 0;
+}
+
+.testimonial-quotes div {
+	display: flex;
+	flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+	gap: 4rem;
+}
+
+.testimonial-quotes blockquote {
+	width: calc(50% - 4rem);
+	margin: 0;
+  font-style: normal;
+	font-size: 1.125rem;
+}
+
+.testimonial-quotes blockquote:before {
+	content: "";
+}
+
+.testimonial-quotes cite {
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 1.25rem;
 }
 
 /* Media Queries
