@@ -2598,6 +2598,10 @@ li.poster-presenter-name:last-of-type:after {
 	margin: auto;
 }
 
+.price-tables thead {
+	font-weight: bold;
+}
+
 /**
  * Section headings for different sites - set using PHP templates to change the color of key elements
  */
