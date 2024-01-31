@@ -317,13 +317,13 @@ function monochrome_before_footer_cta() {
 genesis_register_sidebar(array(
 	'id' => 'footer-left',
     'name'=>'Footer Left',
-    'description' => 'Left column of footer section.',
+    'description' => 'This is the first column of the footer section.',
     // 'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 ));
 genesis_register_sidebar(array(
 	'id' => 'footer-right',
     'name'=>'Footer Right',
-    'description' => 'Right column of footer section.',
+    'description' => 'This is the second column of the footer section.',
     // 'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 ));
 
@@ -602,7 +602,7 @@ END REE */
 	function ignore_already_registered_error($form, $config, $pagenum){
  
 		// Make sure we only run this code on the specified form ID
-		if($form['id'] != 16 && $form['id'] != 19) {
+		if($form['id'] != 21 && $form['id'] != 20 && $form['id'] != 19) {
 			return $form;
 		}
  
@@ -620,7 +620,8 @@ END REE */
 		return $form;
  
 	}
-	add_filter( 'gform_disable_registration_16', 'disable_registration', 5, 3 );
+	add_filter( 'gform_disable_registration_21', 'disable_registration', 5, 3 );
+	add_filter( 'gform_disable_registration_20', 'disable_registration', 5, 3 );
 	add_filter( 'gform_disable_registration_19', 'disable_registration', 5, 3 );
 	function disable_registration( $is_disabled, $form, $entry ) {
 		$email = rgar($entry, '16');
@@ -640,6 +641,14 @@ END REE */
 			}
 			if ( $formid  == '19' ) {
                 save_meeting_reg_ia_22($entry, $form);
+				return;
+			}
+			if ( $formid  == '20' ) {
+                save_meeting_reg_ia_23($entry, $form);
+				return;
+			}
+			if ( $formid  == '21' ) {
+                save_meeting_reg_ia_24($entry, $form);
 				return;
 			}
 			return;
@@ -827,6 +836,163 @@ END REE */
 		}
 		return;
 	}
+	function save_meeting_reg_ia_23($entry, $form) {
+		$payment = rgar($entry, 'payment_status');
+		$fields = array();
+		$function_ids = array();
+		foreach( $form['fields'] as $field ) {
+			$fields[$field['id']] =  $field['type'];
+		}
+		foreach( $entry as $key => $value) {
+			if (  $fields[(int)$key] == 'product' || $fields[(int)$key] == 'option' )
+				$function_ids[] = $key;
+		}
+		$functions = '';
+		$funcs = array();
+		foreach ( $function_ids as $function ) {
+			if (isset($entry[$function]) && $entry[$function] != '') {
+				$pos = strpos($entry[$function],"|");
+				if ($pos > '0') {
+					$functions .= substr($entry[$function],0,$pos) . ',';
+					if ( substr($entry[$function],0,$pos) != 'None' )
+						$funcs[] = substr($entry[$function],0,$pos);
+				} else {
+					$functions .= $entry[$function] . ',';
+					if ( $entry[$function] != 'None' )
+						$funcs[] = $entry[$function];
+				}
+			}
+		}
+  
+			//global $wpdb;
+			// add form data to meetings database table
+		$wpdb_kunverj = new wpdb('kunverj', 'isscei60', 'i4033072_wp1', 'db.kunverj.com');
+		$wpdb_kunverj->show_errors();
+		$wpdb_kunverj->insert( 'meeting_registration',
+			array(
+				'meeting' => 'IAC23',
+				'regdate' => $entry['40'],
+				'mbrid' => '',
+				'mbrof' => '',
+				'firstname' => $entry['337'],
+				'lastname' => $entry['13'],
+				'title' => '',
+				'org' => $entry['5'],
+				'address1' => $entry['41.1'],
+				'address2' => $entry['41.2'],
+				'city' => $entry['41.3'],
+				'state' => $entry['41.4'],
+				'zip' => $entry['41.5'],
+				'country' => $entry['41.6'],
+				'email' => $entry['16'],
+				'phone' => $entry['265'],
+				'nickname' => $entry['12'],
+				'badgename' => $entry['337'] . ' ' . $entry['13'],
+				'badgeorg' => $entry['5'],
+				'badgelocation' => $entry['6'],
+				'badgecountry' => $entry['253'],
+				'survey_q1' => $entry['81'],
+				'survey_q2' => $entry['338'],
+				'survey_q3' => '',
+				'survey_q4' => '',
+				'survey_q5' => '',
+				'firsttime' => '',
+				'diet' => '',
+				'comments' => $entry['25'],
+				'functions' => $functions,
+				'order_id' => $entry['id'],
+				'is_processed' => '0'
+			)
+		);
+		if($wpdb_kunverj->last_error !== '') {
+			$str   = htmlspecialchars( $wpdb_kunverj->last_result, ENT_QUOTES );
+			$query = htmlspecialchars( $wpdb_kunverj->last_query, ENT_QUOTES );
+			print "<div id='error'>
+			<p class='wpdberror'><strong>WordPress database error:</strong> [$str]<br />
+			<code>$query</code></p>
+			</div>";
+		}
+		return;
+	}
+
+	function save_meeting_reg_ia_24($entry, $form) {
+		$payment = rgar($entry, 'payment_status');
+		$fields = array();
+		$function_ids = array();
+		foreach( $form['fields'] as $field ) {
+			$fields[$field['id']] =  $field['type'];
+		}
+		foreach( $entry as $key => $value) {
+			if (  $fields[(int)$key] == 'product' || $fields[(int)$key] == 'option' )
+				$function_ids[] = $key;
+		}
+		$functions = '';
+		$funcs = array();
+		foreach ( $function_ids as $function ) {
+			if (isset($entry[$function]) && $entry[$function] != '') {
+				$pos = strpos($entry[$function],"|");
+				if ($pos > '0') {
+					$functions .= substr($entry[$function],0,$pos) . ',';
+					if ( substr($entry[$function],0,$pos) != 'None' )
+						$funcs[] = substr($entry[$function],0,$pos);
+				} else {
+					$functions .= $entry[$function] . ',';
+					if ( $entry[$function] != 'None' )
+						$funcs[] = $entry[$function];
+				}
+			}
+		}
+  
+			//global $wpdb;
+			// add form data to meetings database table
+		$wpdb_kunverj = new wpdb('kunverj', 'isscei60', 'i4033072_wp1', 'db.kunverj.com');
+		$wpdb_kunverj->show_errors();
+		$wpdb_kunverj->insert( 'meeting_registration',
+			array(
+				'meeting' => 'IAC24',
+				'regdate' => $entry['40'],
+				'mbrid' => '',
+				'mbrof' => '',
+				'firstname' => $entry['337'],
+				'lastname' => $entry['13'],
+				'title' => '',
+				'org' => $entry['5'],
+				'address1' => $entry['41.1'],
+				'address2' => $entry['41.2'],
+				'city' => $entry['41.3'],
+				'state' => $entry['41.4'],
+				'zip' => $entry['41.5'],
+				'country' => $entry['41.6'],
+				'email' => $entry['16'],
+				'phone' => $entry['265'],
+				'nickname' => $entry['12'],
+				'badgename' => $entry['337'] . ' ' . $entry['13'],
+				'badgeorg' => $entry['5'],
+				'badgelocation' => $entry['6'],
+				'badgecountry' => $entry['253'],
+				'survey_q1' => $entry['81'],
+				'survey_q2' => $entry['338'],
+				'survey_q3' => '',
+				'survey_q4' => '',
+				'survey_q5' => '',
+				'firsttime' => '',
+				'diet' => '',
+				'comments' => $entry['25'],
+				'functions' => $functions,
+				'order_id' => $entry['id'],
+				'is_processed' => '0'
+			)
+		);
+		if($wpdb_kunverj->last_error !== '') {
+			$str   = htmlspecialchars( $wpdb_kunverj->last_result, ENT_QUOTES );
+			$query = htmlspecialchars( $wpdb_kunverj->last_query, ENT_QUOTES );
+			print "<div id='error'>
+			<p class='wpdberror'><strong>WordPress database error:</strong> [$str]<br />
+			<code>$query</code></p>
+			</div>";
+		}
+		return;
+	}
 
 // REE - Allow use of total in conditional logic
 class RW_GF_Total_Field_Logic {
@@ -890,7 +1056,9 @@ add_filter('wp_mail_from_name','change_sender_name');
  */
 add_filter( 'pods_shortcode', function( $tags )  {
   $tags[ 'shortcodes' ] = true;
+  
   return $tags;
+  
 });
 
 /**
