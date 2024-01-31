@@ -317,13 +317,13 @@ function monochrome_before_footer_cta() {
 genesis_register_sidebar(array(
 	'id' => 'footer-left',
     'name'=>'Footer Left',
-    'description' => 'This is the first column of the footer section.',
+    'description' => 'Left column of footer section.',
     // 'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 ));
 genesis_register_sidebar(array(
 	'id' => 'footer-right',
     'name'=>'Footer Right',
-    'description' => 'This is the second column of the footer section.',
+    'description' => 'Right column of footer section.',
     // 'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 ));
 
@@ -890,7 +890,16 @@ add_filter('wp_mail_from_name','change_sender_name');
  */
 add_filter( 'pods_shortcode', function( $tags )  {
   $tags[ 'shortcodes' ] = true;
-  
   return $tags;
-  
 });
+
+/**
+ * Alter oEmbed to not include the author name and URI
+ */
+function filter_oembed_response_data($data) {
+    if (isset($data['author_name'])) unset($data['author_name']);
+    if (isset($data['author_url'])) unset($data['author_url']);
+
+    return $data;
+}
+add_filter('oembed_response_data', 'filter_oembed_response_data');
