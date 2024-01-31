@@ -2198,7 +2198,9 @@ h1.entry-title {
  * Custom styling for presenters, co-chairs, and headshots based on existing PODS template
  */
 .presenter_list,
-.cochairs {
+.cochairs,
+.volunteers,
+.advisory-board {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -2212,13 +2214,17 @@ h1.entry-title {
 }
 
 .presenter,
-.cochair {
+.cochair,
+.volunteer,
+.board-member {
 	margin-left: 2em;
 }
 
 .presenter-headshot img,
 .cochairs-cochair-headshot img,
-.poster-presenter-headshot img {
+.poster-presenter-headshot img,
+.volunteer-headshot img,
+.board-member img {
 	border: 0.125em solid var(--color-almostblack);
 	border-radius: 1.875em;
 	filter: grayscale(100%);
@@ -2226,23 +2232,31 @@ h1.entry-title {
 }
 
 .presenter-name,
-.cochairs-cochair-name {
+.cochairs-cochair-name,
+.volunteer-name,
+.board-member-name {
 	text-align: center;
 }
 
 .presenter-name a,
-.cochairs-cochair-name a {
+.cochairs-cochair-name a,
+.volunteer-name a,
+.board-member-name a {
   color: var(--color-cyberpink);
   font-weight: 600;
 }
 
 .presenter-name a:before,
-.cochairs-cochair-name a:before {
+.cochairs-cochair-name a:before,
+.volunteer-name a:before,
+.board-member-name a:before {
 	content: ">>";
 }
 
 .presenter-name a:after,
-.cochairs-cochair-name a:after{
+.cochairs-cochair-name a:after,
+.volunteer-name a:after,
+.board-member-name a:after {
 	content: ">>>";
 }
 
@@ -2596,6 +2610,10 @@ li.poster-presenter-name:last-of-type:after {
 .price-tables {
 	width: 688px;
 	margin: auto;
+}
+
+.price-tables thead {
+	font-weight: bold;
 }
 
 /**
