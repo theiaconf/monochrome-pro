@@ -15,7 +15,7 @@
 add_action( 'genesis_after_header', 'theme_prefix_show_notice' );
 function theme_prefix_show_notice() {
 	echo '
-		<div class="masthead-banner logistics">
+		<div class="masthead-banner logistics secondary">
 			<div class="section-title">' . get_the_title() . '</div>
 		</div>
 		';
