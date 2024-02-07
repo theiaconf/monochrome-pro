@@ -2705,7 +2705,6 @@ li.poster-presenter-name:last-of-type:after {
 .logistics .benefits h4 {
   color: var(--color-cyberpink);
 	font-size: 1.25rem;
-	text-decoration: underline;
 }
 
 .logistics .benefits h4:after {
