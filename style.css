@@ -2361,6 +2361,10 @@ h2[id] {
   font-family: Raptor, "IBM Plex Sans", sans-serif;
 }
 
+.wp-block-button.call-to-action {
+  margin-bottom: 4rem;
+}
+
 .centered-button {
   text-align: center;
 }
@@ -2629,6 +2633,12 @@ li.poster-presenter-name:last-of-type:after {
 	align-items: center;
 }
 
+.masthead-banner.secondary {
+  height: auto;
+	padding-top: 3.5rem;
+	padding-bottom: 2rem;
+}
+
 .masthead-banner.workshops,
 .masthead-banner.program {
 	background: var(--color-escalator);
@@ -2669,6 +2679,11 @@ li.poster-presenter-name:last-of-type:after {
 	background-repeat: no-repeat;
 }
 
+.logistics .masthead-banner.secondary {
+  background: var(--hot-gradient, linear-gradient(180deg, #E81C28 0%, #FF0195 100%));;
+	
+}
+
 .logistics .wp-block-button a {
   background: var(--color-redhall);
   color: var(--color-almostblack);
@@ -2683,11 +2698,33 @@ li.poster-presenter-name:last-of-type:after {
   color: var(--color-redhall);
 }
 
+.logistics .benefits h3 {
+  color: var(--color-cyberpink);
+}
+
+.logistics .benefits h4 {
+  color: var(--color-cyberpink);
+	font-size: 1.25rem;
+}
+
+.logistics .benefits h4:after {
+  content: "";
+}
+
 .masthead-banner .section-title {
 	font-size: 600%;
 	text-transform: uppercase;
 	font-weight: normal;
 	font-family: Raptor;
+	
+	width: 100%;
+	max-width: 65rem;
+}
+
+.masthead-banner.secondary .section-title {
+	line-height: 1;
+	text-align: left;
+	
 }
 
 .program .wp-block-button a,
@@ -2743,6 +2780,39 @@ li.poster-presenter-name:last-of-type:after {
 	text-transform: uppercase;
 	font-style: normal;
 	font-size: 1.25rem;
+}
+
+/**
+ * Audience styles for sponsorship page
+ */
+ul.audiences {
+	display: inline;
+	padding-left: 0;
+}
+
+ul.audiences li {
+	display: inline;
+	list-style-type: none;
+	text-indent: 0;
+}
+
+ul.audiences li:after {
+	content: ", ";
+}
+
+ul.audiences li:last-of-type:after {
+	content: "";
+}
+
+/**
+ * Styles for contacting Kunverj
+ */
+.contact-information {
+	font-style: italic;
+}
+
+.contact-address {
+	margin-bottom: 1rem;
 }
 
 /* Media Queries
