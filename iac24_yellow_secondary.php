@@ -2,7 +2,7 @@
 /**
  * Monochrome Pro.
  *
- * Template Name: Red Secondary (IAC24)
+ * Template Name: Yellow - Secondary (IAC24)
  *
  * This file supports design elements linked to this template.
  *

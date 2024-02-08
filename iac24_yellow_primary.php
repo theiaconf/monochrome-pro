@@ -2,7 +2,7 @@
 /**
  * Monochrome Pro.
  *
- * Template Name: Posters (IAC24)
+ * Template Name: Yellow - Primary (IAC24)
  *
  * This file supports design elements linked to this template.
  *
