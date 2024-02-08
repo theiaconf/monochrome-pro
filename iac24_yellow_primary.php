@@ -2,7 +2,7 @@
 /**
  * Monochrome Pro.
  *
- * Template Name: Posters (IAC24)
+ * Template Name: Yellow - Primary (IAC24)
  *
  * This file supports design elements linked to this template.
  *
@@ -18,7 +18,7 @@ function theme_prefix_show_notice() {
 		
 		<div class="masthead-banner program">
 		  <div class="text-block">
-			<div class="section-title">Poster Night</div>
+			<div class="section-title">' . get_the_title() . '</div>
 		  </div>
 	   </div>
 	   <div class="cta-ticker">
