@@ -2423,7 +2423,6 @@ h2.poster-title {
 .session-card-summary-title a,
 .poster-title a {
 	color: var(--color-almostblack);
-	background: var(--color-escalator);
 	text-decoration: none;
 }
 
