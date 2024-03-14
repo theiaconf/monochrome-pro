@@ -85,6 +85,12 @@ h1.frontpage-hero {
   border-bottom: 0.25rem #1e1e1e dashed;
 }
 
+
+.site-footer .widget-title {
+  border-bottom: 0;
+  margin-top: 0;
+}
+
 .co-chair {
   float: left;
   margin-right: 3em;
