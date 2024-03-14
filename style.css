@@ -2204,7 +2204,7 @@ h1.entry-title {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: left;
 	align-items: center;
 	
 }
@@ -2214,7 +2214,7 @@ h1.entry-title {
 }
 
 .presenter,
-.cochair,
+.cochairs-cochair,
 .volunteer,
 .board-member {
 	margin-left: 2em;
@@ -2423,6 +2423,7 @@ h2.poster-title {
 .session-card-summary-title a,
 .poster-title a {
 	color: var(--color-almostblack);
+	background: var(--color-escalator);
 	text-decoration: none;
 }
 
