@@ -2327,6 +2327,7 @@ ul.iac24-ctas a:after {
 	gap: 1.25rem;
 	margin-top: 6rem;
 	margin-bottom: 4rem;
+	/*! flex-direction: column; */
 }
 
 .jump-links .wp-block-button {
@@ -3122,5 +3123,17 @@ ul.audiences li:last-of-type:after {
 	.footer-cta-button {
 		display: block;
 	}
+	
+	/**
+	 * Buttons should fill screen in a vertical column
+	 */
+	.jump-links.is-layout-flex {
+		flex-direction: column;
+	}
+	
+	.jump-links .wp-block-button {
+		width: 100%;
+	}
+	
 
 }
