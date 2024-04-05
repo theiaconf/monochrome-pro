@@ -21,18 +21,7 @@ function theme_prefix_show_notice() {
 			<div class="section-title">Workshops</div>
 		  </div>
 	   </div>
-	   <div class="cta-ticker">
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	     <a href="/iac24-registration">Register &gt; </a>
-	   </div>
+	   <div class="cta-ticker"></div>
 		';
 }
 
