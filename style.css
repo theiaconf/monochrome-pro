@@ -2508,6 +2508,12 @@ li.poster-presenter-name:last-of-type:after {
 	border-radius: 1em;
 }
 
+.session-location {
+	margin-bottom: 2rem;
+	font-size: 150%;
+	font-weight: bold;
+}
+
 /*
  * Session detail pages contain information on a single session
  */
