@@ -52,7 +52,7 @@
 }
 
 .front-page-button {
-  background-image: linear-gradient(to right, #E81C28, #FF0195);
+  background: var(--color-orange);
   color: #1E1E1E;
   border-style: solid;
   border-color: #1E1E1e;
@@ -60,6 +60,10 @@
   border-radius: 20px;
   font-weight: 800;
   margin-top: 1.5rem;
+}
+
+.front-page-button:hover {
+  background: var(--color-orange);
 }
 
 .front-page-button a {
