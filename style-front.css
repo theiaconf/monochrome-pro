@@ -1,4 +1,4 @@
-.iac24-homepage-hero {
+.iac25-hero {
     text-align: center;  
     padding-top: 3.5em;
     padding-bottom: 2em; 
@@ -21,7 +21,8 @@
 }
 
 .front-page-1 {
- background-image: linear-gradient(#E81C28, #FF0195);
+ background: var(--color-blue);
+ color: var(--color-orange);
 }
 
 .front-page-2,
@@ -30,7 +31,7 @@
 .front-page-5,
 .front-page-6,
 .front-page-7 {
-  max-width: 680px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -38,14 +39,6 @@
   font-size: 7em; 
   margin-bottom: 0;
   line-height: 1;
-}
-
-h1.frontpage-hero {
-  font-family: Raptor !important;
-}
-
-.frontpage-hero-loc {
-  letter-spacing: .18em;
 }
   
 .frontpage-theme {
@@ -59,7 +52,7 @@ h1.frontpage-hero {
 }
 
 .front-page-button {
-  background-image: linear-gradient(to right, #E81C28, #FF0195);
+  background: var(--color-orange);
   color: #1E1E1E;
   border-style: solid;
   border-color: #1E1E1e;
@@ -67,6 +60,10 @@ h1.frontpage-hero {
   border-radius: 20px;
   font-weight: 800;
   margin-top: 1.5rem;
+}
+
+.front-page-button:hover {
+  background: var(--color-orange);
 }
 
 .front-page-button a {
@@ -82,7 +79,6 @@ h1.frontpage-hero {
   padding-bottom: 1rem;
   margin-top: 1em;
   margin-bottom: 1em;
-  border-bottom: 0.25rem #1e1e1e dashed;
 }
 
 

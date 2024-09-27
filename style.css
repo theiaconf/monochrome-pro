@@ -161,11 +161,15 @@ input[type="search"] {
  * Color schemes for different elements
  */
 :root {
+  /** Deprecated IAC24 colors */
   --color-escalator: #daed01;
   --color-cyberpink: #fd028f;
   --color-almostblack: #1e1e1e;
   --color-redhall: #e81c28;
-  --color-white: #ffffff;
+  /** 'Classic' theme */
+  --color-orange: rgb(230, 163, 4);
+  --color-blue: rgb(0, 35, 47);
+  --color-white: rgb(255, 255, 255);
 }
 
 /* Typographical Elements
@@ -2105,10 +2109,6 @@ h1.entry-title {
 	margin-top: 64px;
 	text-align: center;
 	
-	background-image: url('images/Seattle Public Library windows (Cody Martin).png');
-	background-repeat: no-repeat;
-	background-size: cover;	
-
 	width: 100%;
 }
 
@@ -2205,11 +2205,12 @@ h1.entry-title {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: left;
-	align-items: center;
+	align-items: left;
 	
 }
 
-.presenter:first-of-type {
+.presenter:first-of-type,
+.cochairs-cochair:first-of-type {
 	margin-left: 0;
 }
 
@@ -2242,22 +2243,9 @@ h1.entry-title {
 .cochairs-cochair-name a,
 .volunteer-name a,
 .board-member-name a {
-  color: var(--color-cyberpink);
+  color: var(--color-orange);
   font-weight: 600;
-}
-
-.presenter-name a:before,
-.cochairs-cochair-name a:before,
-.volunteer-name a:before,
-.board-member-name a:before {
-	content: ">>";
-}
-
-.presenter-name a:after,
-.cochairs-cochair-name a:after,
-.volunteer-name a:after,
-.board-member-name a:after {
-	content: ">>>";
+	text-decoration: none;
 }
 
 /**
@@ -2279,11 +2267,10 @@ ul.iac324-ctas li {
 }
 
 ul.iac24-ctas a {
-	color: var(--color-cyberpink);
+	color: var(--color-orange);
 	font-size: 2rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-decoration: underline;
 }
 
 ul.iac24-ctas a:after {
@@ -2506,12 +2493,6 @@ li.poster-presenter-name:last-of-type:after {
 	
 	border: 0.1em solid var(--color-almostblack);
 	border-radius: 1em;
-}
-
-.session-location {
-	margin-bottom: 2rem;
-	font-size: 150%;
-	font-weight: bold;
 }
 
 /*
