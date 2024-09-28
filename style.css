@@ -2273,10 +2273,6 @@ ul.iac24-ctas a {
 	text-transform: uppercase;
 }
 
-ul.iac24-ctas a:after {
-	content: " --->";
-}
-
 /**
  * Button visuals
  */
@@ -2294,10 +2290,6 @@ ul.iac24-ctas a:after {
 .wp-block-button a {
   font-family: Raptor, "IBM Plex Sans", sans-serif;
   padding-top: 16px;
-}
-
-.wp-block-button a:after {
-	content: ' ------>>>';
 }
 
 .wp-block-button a:hover,
@@ -2429,7 +2421,6 @@ ul.poster-presenter-list {
 
 ul.session-card-speaker-list:after,
 ul.poster-presenter-list:after {
-	content: ">>>>>>>>>>";
 	font-weight: bold;
 	margin-left: 0.5em;
 }
@@ -2574,10 +2565,6 @@ li.poster-presenter-name:last-of-type:after {
 	text-decoration: none;
 }
 
-.session-speaker_bio-name a:after {
-	content: ">>>>>";
-}
-
 .session-speaker-current_role,
 .session-speaker-past_roles {
 	text-transform: uppercase;
@@ -2590,10 +2577,6 @@ li.poster-presenter-name:last-of-type:after {
 
 .session-presentations h3 {
 	text-transform: uppercase;
-}
-
-.session-presentations h3:after {
-	content: " >>>>>";
 }
 
 /** 
