@@ -232,6 +232,8 @@ p {
 	padding: 0;
 }
 
+/**
+ * Remove for now
 ol,
 ul {
 	margin: 0;
@@ -241,6 +243,7 @@ ul {
 li {
 	list-style-type: none;
 }
+*/
 
 hr {
 	border-top: 0.25rem var(--color-almostblack) solid;
@@ -312,11 +315,6 @@ h3.wp-block-heading {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--color-almostblack);
-}
-
-h3.wp-block-heading:after,
-h4.wp-block-heading:after {
-	content: " >>>>>";
 }
 
 h3.wp-block-heading > a {
