@@ -236,12 +236,9 @@ p {
 
 ol,
 ul {
-	margin: 0;
+	margin: 1.75rem;
+	margin-left: 2rem;
 	padding: 0;
-}
-
-li {
-	list-style-type: none;
 }
 
 hr {
@@ -1104,11 +1101,6 @@ figcaption,
 .widget ul > li:last-of-type,
 .widget-area .widget:last-of-type {
 	margin-bottom: 0;
-}
-
-.widget ul > li {
-	margin-bottom: 10px;
-	padding-bottom: 10px;
 }
 
 .widget ul > li:last-of-type {
