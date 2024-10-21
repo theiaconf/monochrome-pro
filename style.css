@@ -89,6 +89,8 @@ Requires PHP: 5.6
     font-display: swap;
 }
 
+
+
 /* HTML5 Reset
 ---------------------------------------------------------------------------- */
 
@@ -178,7 +180,7 @@ input[type="search"] {
 body {
 	background-color: #fff;
 	color: var(--color-almostblack);
-	font-family: Muli, sans-serif;
+	font-family: Nunito, Avenir, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.875;
@@ -289,7 +291,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	line-height: 1.2;
 	margin: 0 0 10px;
@@ -516,7 +518,7 @@ input[type="submit"],
 	border-radius: 3px;
 	color: #fff;
 	cursor: pointer;
-	font-family: "Open Sans Condensed", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -1015,18 +1017,6 @@ hr.wp-block-separator {
 	color: #06c;
 }
 
-/*
-Why are the widget titles small and uppercase like this? 
-.widget-title {
-	font-family: "Helvetica Neue", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	letter-spacing: -0.5px;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-*/
-
 .sidebar .widget-title {
 	margin-bottom: 20px;
 }
@@ -1368,7 +1358,7 @@ figcaption,
 }
 
 .site-title {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.2;
@@ -1389,7 +1379,6 @@ figcaption,
     text-indent: -500em;
 	height: 60px;
 	width: 160px;
-	
 	color: #000;
 	text-decoration: none;
 }
