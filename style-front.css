@@ -25,9 +25,13 @@
  color: var(--color-orange);
 }
 
+.front-page-4 {
+  background: var(--color-blue);
+  color: var(--color-orange);
+}
+
 .front-page-2,
 .front-page-3,
-.front-page-4,
 .front-page-5,
 .front-page-6,
 .front-page-7 {
